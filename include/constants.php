@@ -20,7 +20,7 @@
  * correct.
  */
 define("DB_SERVER", "localhost");
-define("DB_USER", "apousc5_apousc5");
+define("DB_USER", "root");
 define("DB_PASS", "str0ngThec!rcl");
 define("DB_NAME", "apousc5_main");
 
