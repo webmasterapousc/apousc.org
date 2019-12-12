@@ -26,9 +26,9 @@ class MySQLDB
 	function MySQLDB()
 	{
 		/* Make connection to database */
-		$this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysql_error());
-		mysqli_select_db($this->connection, DB_NAME) or die(mysql_error());
-		session_start();
+		$this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysqli_error());
+		mysqli_select_db($this->connection, DB_NAME) or die(mysqli_error());
+		
 		/**
 		 * Only query database to find out number of members
 		 * when getNumMembers() is called for the first time,
@@ -62,13 +62,13 @@ class MySQLDB
 		
 		/* Verify that user is in database */
 		$q      = "SELECT `password` FROM `" . TBL_USERS . "` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		if (!$result || (mysql_numrows($result) < 1)) {
+		$result = mysqli_query($this->connection, $q);
+		if (!$result || (mysqli_numrows($result) < 1)) {
 			return 1; //Indicates username failure
 		}
 		
 		/* Retrieve password from result, strip slashes */
-		$dbarray             = mysql_fetch_array($result);
+		$dbarray             = mysqli_fetch_array($result);
 		$dbarray['password'] = stripslashes($dbarray['password']);
 		$password            = stripslashes($password);
 		
@@ -97,13 +97,13 @@ class MySQLDB
 		
 		/* Verify that user is in database */
 		$q      = "SELECT `userid` FROM `" . TBL_USERS . "` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		if (!$result || (mysql_numrows($result) < 1)) {
+		$result = mysqli_query($this->connection, $q);
+		if (!$result || (mysqli_numrows($result) < 1)) {
 			return 1; //Indicates username failure
 		}
 		
 		/* Retrieve userid from result, strip slashes */
-		$dbarray           = mysql_fetch_array($result);
+		$dbarray           = mysqli_fetch_array($result);
 		$dbarray['userid'] = stripslashes($dbarray['userid']);
 		$userid            = stripslashes($userid);
 		
@@ -125,8 +125,8 @@ class MySQLDB
 			$username = addslashes($username);
 		}
 		$q      = "SELECT `username` FROM `" . TBL_USERS . "` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		return (mysql_numrows($result) > 0);
+		$result = mysqli_query($this->connection, $q);
+		return (mysqli_numrows($result) > 0);
 	}
 	
 	/**
@@ -139,8 +139,8 @@ class MySQLDB
 			$username = addslashes($username);
 		}
 		$q      = "SELECT `username` FROM `" . TBL_BANNED_USERS . "` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		return (mysql_numrows($result) > 0);
+		$result = mysqli_query($this->connection, $q);
+		return (mysqli_numrows($result) > 0);
 	}
 	
 	/**
@@ -158,7 +158,7 @@ class MySQLDB
 			$ulevel = USER_LEVEL;
 		}
 		$q = "INSERT INTO `" . TBL_USERS . "` VALUES ('$username', '$password', '0', $ulevel, $status, '$email', $time, '$fname', '$lname', $family, $semester, $year, $position, '$big', '$phone', '$uscid', '$address', '$shirtsize')";
-		if (mysql_query($q, $this->connection)) {
+		if (mysqli_query($this->connection, $q)) {
 			if ($this->configureDefaultUser($username)) {
 				return true;
 			}
@@ -173,9 +173,9 @@ class MySQLDB
 
 	function configureDefaultUser($username) {
 		$q1 = "INSERT INTO `" . TBL_CALENDAR . "` VALUES ('$username', '0')";
-		mysql_query($q1, $this->connection);		
+		mysqli_query($this->connection, $q1);		
 		$q2 = "INSERT INTO `" . TBL_REMINDER . "` VALUES ('$username', '0')";
-		return mysql_query($q2, $this->connection);
+		return mysqli_query($this->connection, $q2);
 	}
 	
 	/**
@@ -185,17 +185,17 @@ class MySQLDB
 	function updateUserField($username, $field, $value)
 	{
 		$q = "UPDATE `" . TBL_USERS . "` SET `" . $field . "` = '$value' WHERE `username` = '$username'";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 	
 	function updateGraduation($username, $value)
 	{
-		$query=mysql_query("SELECT * FROM user_graduation WHERE username = '$username'");
-		$result=mysql_fetch_array($query);
-		if(mysql_num_rows($query)==0){$q = "INSERT INTO user_graduation (graduation_term, username) VALUES($value,'$username')";
+		$query=mysqli_query("SELECT * FROM user_graduation WHERE username = '$username'");
+		$result=mysqli_fetch_array($query);
+		if(mysqli_num_rows($query)==0){$q = "INSERT INTO user_graduation (graduation_term, username) VALUES($value,'$username')";
 	}
 		else {$q="UPDATE user_graduation SET graduation_term = $value WHERE username = '$username'";}
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 	
 	/**
@@ -206,23 +206,23 @@ class MySQLDB
 	function getUserInfo($username)
 	{
 		$q      = "SELECT * FROM `" . TBL_USERS . "` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
+		$result = mysqli_query($this->connection, $q);
 		/* Error occurred, return given name by default */
-		if (!$result || (mysql_numrows($result) < 1)) {
+		if (!$result || (mysqli_numrows($result) < 1)) {
 			return NULL;
 		}
 		/* Return result array */
-		$dbarray = mysql_fetch_array($result);
+		$dbarray = mysqli_fetch_array($result);
 		return $dbarray;
 	}
 	
 	function getOfficerInfo($username){
 		$q = "SELECT * FROM users JOIN officer ON officer.username = users.username WHERE username = '$username'";
-		$result = mysql_query($q, $this->connection);
-				if (!$result || (mysql_numrows($result) < 1)) {
+		$result = mysqli_query($this->connection, $q);
+				if (!$result || (mysqli_numrows($result) < 1)) {
 			return NULL;
 		}
-		$dbarray = mysql_fetch_array($result);
+		$dbarray = mysqli_fetch_array($result);
 		return $dbarray;
 	}
 
@@ -234,17 +234,17 @@ class MySQLDB
 
 	function getReminderSettings($username){
 		$q = "SELECT * FROM `reminder_settings` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		if (!result || (mysql_numrows($result) < 1)) {
+		$result = mysqli_query($this->connection, $q);
+		if (!result || (mysqli_numrows($result) < 1)) {
 			return NULL;
 		}
-		$dbarray = mysql_fetch_array($result);
+		$dbarray = mysqli_fetch_array($result);
 		return $dbarray;
 	}
 
 	function updateReminder($username, $reminder) {
-		$query=mysql_query("SELECT * FROM reminder_settings WHERE username = '$username'");
-		if(mysql_num_rows($query)==0){
+		$query=mysqli_query("SELECT * FROM reminder_settings WHERE username = '$username'");
+		if(mysqli_num_rows($query)==0){
 			if ($reminder) {
 				$q = "INSERT INTO reminder_settings (notify, username) VALUES('1','$username')";
 			} else {
@@ -257,7 +257,7 @@ class MySQLDB
 				$q = "UPDATE reminder_settings SET notify = '0' WHERE username = '$username'";
 			}
 		}
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/* 
@@ -266,17 +266,17 @@ class MySQLDB
 
 	function getCalendarSettings($username){
 		$q = "SELECT * FROM `user_calendar` WHERE `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		if (!result || (mysql_numrows($result) < 1)) {
+		$result = mysqli_query($this->connection, $q);
+		if (!result || (mysqli_numrows($result) < 1)) {
 			return NULL;
 		}
-		$dbarray = mysql_fetch_array($result);
+		$dbarray = mysqli_fetch_array($result);
 		return $dbarray;
 	}
 
 	function updateCalendarSettings($username, $calendar) {
-		$query=mysql_query("SELECT * FROM user_calendar WHERE username = '$username'");
-		if(mysql_num_rows($query)==0){
+		$query=mysqli_query("SELECT * FROM user_calendar WHERE username = '$username'");
+		if(mysqli_num_rows($query)==0){
 			if ($calendar) {
 				$q = "INSERT INTO user_calendar (calendar_setting, username) VALUES('1','$username')";
 			} else {
@@ -289,7 +289,7 @@ class MySQLDB
 				$q = "UPDATE user_calendar SET calendar_setting = '0' WHERE username = '$username'";
 			}
 		}
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 	
 	/**
@@ -304,8 +304,8 @@ class MySQLDB
 	{
 		if ($this->num_members < 0) {
 			$q                 = "SELECT * FROM `" . TBL_USERS . "`";
-			$result            = mysql_query($q, $this->connection);
-			$this->num_members = mysql_numrows($result);
+			$result            = mysqli_query($this->connection, $q);
+			$this->num_members = mysqli_numrows($result);
 		}
 		return $this->num_members;
 	}
@@ -318,8 +318,8 @@ class MySQLDB
 	{
 		/* Calculate number of users at site */
 		$q                      = "SELECT * FROM `" . TBL_ACTIVE_USERS . "`";
-		$result                 = mysql_query($q, $this->connection);
-		$this->num_active_users = mysql_numrows($result);
+		$result                 = mysqli_query($this->connection, $q);
+		$this->num_active_users = mysqli_numrows($result);
 	}
 	
 	/**
@@ -330,8 +330,8 @@ class MySQLDB
 	{
 		/* Calculate number of guests at site */
 		$q                       = "SELECT * FROM `" . TBL_ACTIVE_GUESTS . "`";
-		$result                  = mysql_query($q, $this->connection);
-		$this->num_active_guests = mysql_numrows($result);
+		$result                  = mysqli_query($this->connection, $q);
+		$this->num_active_guests = mysqli_numrows($result);
 	}
 	
 	/**
@@ -342,13 +342,13 @@ class MySQLDB
 	function addActiveUser($username, $time)
 	{
 		$q = "UPDATE `" . TBL_USERS . "` SET `timestamp` = '$time' WHERE `username` = '$username'";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		
 		if (!TRACK_VISITORS) {
 			return;
 		}
 		$q = "REPLACE INTO `" . TBL_ACTIVE_USERS . "` VALUES ('$username', '$time')";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		$this->calcNumActiveUsers();
 	}
 	
@@ -359,7 +359,7 @@ class MySQLDB
 			return;
 		}
 		$q = "REPLACE INTO `" . TBL_ACTIVE_GUESTS . "` VALUES ('$ip', '$time')";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		$this->calcNumActiveGuests();
 	}
 	
@@ -372,7 +372,7 @@ class MySQLDB
 			return;
 		}
 		$q = "DELETE FROM `" . TBL_ACTIVE_USERS . "` WHERE `username` = '$username'";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		$this->calcNumActiveUsers();
 	}
 	
@@ -383,7 +383,7 @@ class MySQLDB
 			return;
 		}
 		$q = "DELETE FROM `" . TBL_ACTIVE_GUESTS . "` WHERE `ip` = '$ip'";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		$this->calcNumActiveGuests();
 	}
 	
@@ -395,7 +395,7 @@ class MySQLDB
 		}
 		$timeout = time() - USER_TIMEOUT * 60;
 		$q       = "DELETE FROM `" . TBL_ACTIVE_USERS . "` WHERE `timestamp` < $timeout";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		$this->calcNumActiveUsers();
 	}
 	
@@ -407,7 +407,7 @@ class MySQLDB
 		}
 		$timeout = time() - GUEST_TIMEOUT * 60;
 		$q       = "DELETE FROM `" . TBL_ACTIVE_GUESTS . "` WHERE `timestamp` < $timeout";
-		mysql_query($q, $this->connection);
+		mysqli_query($this->connection, $q);
 		$this->calcNumActiveGuests();
 	}
 	
@@ -419,7 +419,7 @@ class MySQLDB
 	function addNewEvent($name, $type, $desc, $start, $end, $hours, $max, $walk, $meet, $location, $address)
 	{
 		$q = "INSERT INTO `" . TBL_EVENTS . "` VALUES ('','$name',$type,'$desc','$start','$end',$hours,$max,$walk,'$meet','$location',0,0,'$address')";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -430,7 +430,7 @@ class MySQLDB
 	function editExistingEvent($eventid, $name, $type, $desc, $start, $end, $hours, $max, $walk, $meet, $location, $address)
 	{
 		$q = "UPDATE `" . TBL_EVENTS . "` SET `name` = '$name', `type` = $type, `desc` = '$desc', `start` = '$start', `end` = '$end', `hours` = $hours, `max` = $max, `walk` = $walk, `meet` = '$meet', `location` = '$location', `address` = '$address', `rush` = 0, `pledge` = 0 WHERE `ID` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -441,13 +441,13 @@ class MySQLDB
 	function getEventInfo($eventid)
 	{
 		$q      = "SELECT * FROM `" . TBL_EVENTS . "` WHERE `ID` = $eventid";
-		$result = mysql_query($q, $this->connection);
+		$result = mysqli_query($this->connection, $q);
 		/* Error occurred, return given name by default */
-		if (!$result || (mysql_numrows($result) < 1)) {
+		if (!$result || (mysqli_numrows($result) < 1)) {
 			return NULL;
 		}
 		/* Return result array */
-		$dbarray = mysql_fetch_array($result);
+		$dbarray = mysqli_fetch_array($result);
 		return $dbarray;
 	}
 	
@@ -458,8 +458,8 @@ class MySQLDB
 	function eventExists($eventid)
 	{
 		$q      = "SELECT `ID` FROM `" . TBL_EVENTS . "` WHERE `ID` = '$eventid'";
-		$result = mysql_query($q, $this->connection);
-		return (mysql_num_rows($result) > 0);
+		$result = mysqli_query($this->connection, $q);
+		return (mysqli_num_rows($result) > 0);
 	}
 	
 	/**
@@ -470,7 +470,7 @@ class MySQLDB
 	function addEventSignup($username, $eventid, $drive, $lead, $weight, $guest, $time)
 	{
 		$q = "INSERT INTO `" . TBL_SIGNUPS . "` VALUES ('$username',$eventid,$drive,$lead,$weight,$guest,$time,0)";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -479,7 +479,7 @@ class MySQLDB
 	function flakeUser($eventid, $username)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `weight` = -0.5 WHERE `username` = '$username' AND `eventid` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -488,7 +488,7 @@ class MySQLDB
 	function flakeOtherUser($eventid, $username)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `weight` = -1 WHERE `username` = '$username' AND `eventid` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -497,7 +497,7 @@ class MySQLDB
 	function rmEvent($eventid)
 	{
 		$q = "DELETE FROM `" . TBL_EVENTS . "` WHERE `ID` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 
@@ -507,14 +507,14 @@ class MySQLDB
 	function diffDrive($eventid, $username, $drive)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `drive` = $drive WHERE `username` = '$username' AND `eventid` = $eventid LIMIT 1";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	function guestAllowance($eventid, $guestallow)
 	{
 		if      ($guestallow == 1) {$q = "INSERT INTO event_guest (event_id) VALUES         (".$eventid.")";}
 		else if ($guestallow == 0) {$q = "DELETE FROM event_guest WHERE event_id= '$eventid'  LIMIT 1";}
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -523,7 +523,7 @@ class MySQLDB
 	function diffGuest($eventid, $username, $guest)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `guest` = $guest WHERE `username` = '$username' AND `eventid` = $eventid LIMIT 1";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -532,7 +532,7 @@ class MySQLDB
 	function diffLead($eventid, $username, $lead)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `lead` = $lead WHERE `username` = '$username' AND `eventid` = $eventid LIMIT 1";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -541,7 +541,7 @@ class MySQLDB
 	function removeSignup($eventid, $username)
 	{
 		$q = "DELETE FROM `" . TBL_SIGNUPS . "` WHERE `username` = '$username' AND `eventid` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -550,7 +550,7 @@ class MySQLDB
 	function assignWeightHalf($eventid, $username)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `weight` = 0.5 WHERE `username` = '$username' AND `eventid` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -559,7 +559,7 @@ class MySQLDB
 	function assignWeightNormal($eventid, $username)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `weight` = 1 WHERE `username` = '$username' AND `eventid` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -568,7 +568,7 @@ class MySQLDB
 	function assignWeightDouble($eventid, $username)
 	{
 		$q = "UPDATE `" . TBL_SIGNUPS . "` SET `weight` = 2 WHERE `username` = '$username' AND `eventid` = $eventid";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -578,8 +578,8 @@ class MySQLDB
 	function signedUp($eventid, $username)
 	{
 		$q = "SELECT * FROM `" . TBL_SIGNUPS . "` WHERE `eventid` = '$eventid' AND `username` = '$username'";
-		$result = mysql_query($q, $this->connection);
-		return (mysql_num_rows($result) > 0);
+		$result = mysqli_query($this->connection, $q);
+		return (mysqli_num_rows($result) > 0);
 	}
 
 	/**
@@ -589,7 +589,7 @@ class MySQLDB
 	function waitlisted($eventid, $username, $volunteer_c)
 	{
 		$q = "SELECT E.max FROM events as E, signups as S WHERE $eventid = ID AND S.eventid = E.ID AND S.username = $session->username";
-		$result = mysql_query($q, $this->connection);
+		$result = mysqli_query($this->connection, $q);
 		if($volunteer_c > $result['max']){
 		return TRUE;};
 	}
@@ -600,7 +600,7 @@ class MySQLDB
 	function addNewAnnouncement($title, $body, $date)
 	{
 		$q = "INSERT INTO `" . TBL_ANNOUNCEMENTS . "` VALUES ('','$title','$date','$body')";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -609,7 +609,7 @@ class MySQLDB
 	function editExistingAnnouncement($title, $body, $id)
 	{
 		$q = "UPDATE `" . TBL_ANNOUNCEMENTS . "` SET `title` = '$title', `body` = '$body' WHERE `ID` = $id";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -618,7 +618,7 @@ class MySQLDB
 	function removeAnnouncement($id)
 	{
 		$q = "DELETE FROM `" . TBL_ANNOUNCEMENTS . "` WHERE `ID` = $id LIMIT 1";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -627,7 +627,7 @@ class MySQLDB
 	function addNewComment($username, $eventid, $comment, $timestamp)
 	{
 		$q = "INSERT INTO `" . TBL_COMMENTS . "` VALUES ('','$username',$eventid,'$comment',$timestamp)";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -636,7 +636,7 @@ class MySQLDB
 	function addNewNomination($username, $position)
 	{
 		$q = "INSERT INTO `" . TBL_NOMINATIONS . "` VALUES ('','$username',$position,'','')";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 	/**
 	 * checkNomination
@@ -644,8 +644,8 @@ class MySQLDB
 	function checkNomination($username, $position)
 	{
 		$q = "SELECT * FROM `" . TBL_NOMINATIONS . "` WHERE `name` = '$username' AND `position` = $position";
-		$result = mysql_query($q, $this->connection);
-		return (mysql_num_rows($result) > 0);
+		$result = mysqli_query($this->connection, $q);
+		return (mysqli_num_rows($result) > 0);
 	}
 	/**
 	 * editSecondField
@@ -653,7 +653,7 @@ class MySQLDB
 	function editSecondField($username, $position)
 	{
 		$q = "UPDATE `" . TBL_NOMINATIONS . "` SET `second` = 1 WHERE `name` = '$username' AND `position` = $position";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 	/**
 	 * editDeclineField
@@ -661,7 +661,7 @@ class MySQLDB
 	function editDeclineField($username, $position)
 	{
 		$q = "UPDATE `" . TBL_NOMINATIONS . "` SET `decline` = 1 WHERE `name` = '$username' AND `position` = $position";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -673,7 +673,7 @@ class MySQLDB
 	{
 		print "I reached here ok."; die;
 		$q = "INSERT INTO `" . TBL_POTW . "` VALUES ('','$date','$title','$caption','$submitter','$filepath')";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -682,12 +682,12 @@ class MySQLDB
 	*/
 	function getPolls(){
 		$q = "SELECT * FROM `". TBL_POLLS . "` ORDER BY poll_start DESC";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	function addPoll($name, $type, $start, $end, $url){
 		$q = "INSERT INTO `". TBL_POLLS . "` VALUES('', '{$name}', '{$type}', '{$start}', '{$end}', '{$url}')";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 
 	/**
@@ -697,18 +697,18 @@ class MySQLDB
 	 */
 	function query($query)
 	{
-		return mysql_query($query, $this->connection);
+		return mysqli_query($this->connection, $query);
 	}
 
 	function getDriversAndAtt($eventid) {
 		$drivas  = "SELECT S.username, U.fname, U.lname, COUNT(S.username) AS nAtt, SUM(S.drive) as nDrivers, SUM(S.guest) as nGuest, S.lead, S.weight, S.timestamp FROM `" . TBL_SIGNUPS . "` AS S, `" . TBL_USERS . "` AS U WHERE S.eventid = '$eventid' AND S.username = U.username";
-		return mysql_query($drivas);
+		return mysqli_query($drivas);
 	}
 
 	function hasLead($eventid) {
 		$q = "SELECT * FROM (SELECT S.username, U.fname, U.lname, U.status, S.drive, S.lead FROM `" . TBL_SIGNUPS . "` AS S, `" . TBL_USERS . "` AS U WHERE S.eventid = '$eventid' AND S.username = U.username) AS T1";
 		$q2 = "SELECT * FROM (SELECT S.lead FROM `" . TBL_SIGNUPS . "` AS S WHERE S.eventid = '$eventid')";
-		return mysql_query($q, $this->connection);
+		return mysqli_query($this->connection, $q);
 	}
 }
 
