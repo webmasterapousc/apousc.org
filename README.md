@@ -2,11 +2,13 @@
 
 ## TODO
 ---
-* transfer domain from GoDaddy to NameCheap
+* ~~transfer domain from GoDaddy to NameCheap~~
 * ~~Create and Download backup of website from InMotion~~
+* ~~Import database and get phpmyadmin working~~
 * Get website backup working on localhost
-* Set up AWS EC2 instance (Apache, MySQL, PHP, Github integration)
-* Get website working on EC2, link domain
+* ~~Set up AWS EC2 instance (Apache, MySQL, PHP, Github integration)~~
+* ~~Get website working on EC2~~
+* completely rebuild website on EC2
 * Take down Inmotion (disable payments)
 * Set up EBS backups
 * Set up DevOps pipeline (automatically updates website when repo updated)
