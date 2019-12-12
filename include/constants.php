@@ -10,6 +10,7 @@
  * Last Updated: August 19, 2004
  *
  * Modified by: Brad Ramos (bradleyRamos@gmail.com)
+ * Modified by : Nick Chen (nickchen@usc.edu)
  * Last Updated: January 2011
  */
 
@@ -196,7 +197,7 @@ $officers = array(
         PLEDGE_VP_FELLOWSHIP => "Pledge Class VP of Fellowship",
         PLEDGE_FUNDRAISING_CHAIR => "Pledge Class Fundraising Chair",
         PLEDGE_INTERCHAPTER_CHAIR => "Pledge Class Interchapter Chair",
-		FALL_FELLOWSHIP_CHAIR => "Fall Fellowship Co-Chair"
+	FALL_FELLOWSHIP_CHAIR => "Fall Fellowship Co-Chair"
 );
 
 
