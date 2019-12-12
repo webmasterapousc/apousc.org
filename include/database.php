@@ -26,9 +26,9 @@ class MySQLDB
 	function MySQLDB()
 	{
 		/* Make connection to database */
-		$this->connection = mysql_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysql_error());
-		mysql_select_db(DB_NAME, $this->connection) or die(mysql_error());
-		
+		$this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysql_error());
+		mysqli_select_db($this->connection, DB_NAME) or die(mysql_error());
+		session_start();
 		/**
 		 * Only query database to find out number of members
 		 * when getNumMembers() is called for the first time,
