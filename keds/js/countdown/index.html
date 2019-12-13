@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<title>KEDS APO USC</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<link href="css/master.css" rel="stylesheet" type="text/css"/>
+<link href="css/font/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/style_4.css" rel="stylesheet" type="text/css"/>
+<!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+<![endif]-->
+<!-- JQUERY -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<!-- JQUERY COUNTDOWN -->
+<script type="text/javascript" src="js/countdown/jquery.countdown.js"></script>
+<script type="text/javascript">
+$(function () {
+	var austDay = new Date();
+	//austDay = new Date(austDay.getFullYear() + 1, 8-12, 01);
+  //austDay = new Date(2016, 8-1, 30, 9, 30);
+	//$('#defaultCountdown').countdown({until: austDay});
+  $('#defaultCountdown').countdown({until:new Date(2016, 9 - 1, 04)});
+});
+</script>
+<!-- Jquery Validate-->
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myform").validate();
+  });
+  </script>
+</head>
+
+<body>
+
+<div id="container_main">
+
+<!-- Start wrapper -->
+<div id="wrapper">
+<!--<img src="img/kedsbg.jpg" height="500" width="1000" style="position: absolute; top: 0px; left: 0px;">-->
+<img src="img/KEDS.jpg" height="500" width="1200" style="position: absolute; top: 0px; left: 0px;">
+<div id="logo"><a href="http://www.apousc.org/main/"><img src="img/logoapo.png" width="70" height="70" alt="Your Logo" style="position: absolute; top: 10px; left: 10px;" /></a></div> <!-- Your logo-->
+<div style="position: absolute; top: 20px; left: 880px;"> <h3><font color="white">Sponsored by</font></h3></div>
+<div id="logo"><a href="http://usg.usc.edu/"><img src="img/usg2.png" width="150" height="40" alt="Your Logo" style="position: absolute; top: 10px; left: 1030px;" /></a></div> <!-- Your logo-->
+    <!--<div align="left">
+      <h2><br> </h2>
+      <!-- <h4><center>SORRY ALL SPOTS ARE NOW FULL!! </center></h4> -->
+    <!--</div>-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="defaultCountdown"></div>
+<div class="clr"></div>
+
+<img src="img/whatiskeds.png">
+<br>
+<!-- <h4> SORRY ALL SPOTS ARE NOW FULL!! </h4> -->
+<div align="left"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEDS (Kids Explore and Discover ‘SC) is APO’s (learn more about APO below) bi-annual philanthropy event in which students from various schools and organizations from all over the Los Angeles area are invited to come together for a fun day of learning. We have prepared a series of hands-on workshops throughout the morning along with a FREE visit to the nearby California Science Center in the afternoon, including its Endeavor Exhibit. Our hope is that this variety of workshops will engage the students, kindling a passion for learning, fostering creativity and encouraging curiosity. Last semester, we were able to host 100 students of all ages. After the event, we received great feedback, that they loved getting to spend a day on the USC campus with current USC students and would love the opportunity to do it again. The purpose of KEDS is to give students from underprivileged backgrounds and various cultural backgrounds the opportunity to explore a variety of subjects through engaging workshops to help foster their drive for education. We hope that by incorporating fun into our workshops, we can instill a curiosity and love for learning in the kids from a young age. We hope that this early introduction to the value of education at a college campus will also inspire them to continue fueling their passion for learning and pursue higher education. Past workshops have included a recycling relay to teach the students how to properly sort trash and recyclables, rocket launching experiments to teach aerodynamics, and art projects. This year we are planning on having a boat building experiment to teach buoyancy, an art project to make slime that will also serve to teach how the states of matter can change via reactions, and other team building workshops.
+
+ <center><span class="get"><h3>&nbsp;&nbsp;The day will include: </h3><br>
+   <h4>
+   &nbsp;&nbsp;&nbsp; • A free trip to the California Science Center <br>
+   &nbsp;&nbsp;&nbsp; • Fun and educational workshops about physics, science, team work, and more! <br>
+   &nbsp;&nbsp;&nbsp; • Free Lunch!! 
+   <br>
+   <br>
+
+<u>Date</u>: Sunday, September 4, 2016 <br>
+<u>Time</u>: 10:00 AM – 3:30 PM &nbsp;&nbsp;<br>
+<u>Location</u>: USC campus - meet at McCarthy Quad <br> (it’s next to Leavey Library)</h4></span></center><br>
+
+<div id="slideshow">
+   <div>
+     <img src="img/1.jpg">
+   </div>
+   <div>
+     <img src="img/2.jpg">
+   </div>
+   <div>
+     <img src="img/3.jpg">
+   </div>
+   <div>
+     <img src="img/4.jpg">
+   </div>
+   <div>
+     <img src="img/5.jpg">
+   </div>
+   <div>
+     <img src="img/6.jpg">
+   </div>
+</div>
+<script>
+  $("#slideshow > div:gt(0)").hide();
+
+  setInterval(function() { 
+    $('#slideshow > div:first')
+      .fadeOut(2000)
+      .next()
+      .fadeIn(2000)
+      .end()
+      .appendTo('#slideshow');
+  },  3000);
+</script> 
+
+<center><span class="get">Please RSVP by TBD via the Google form and email any questions to <u>philanthropy@apousc.org</u>
+</span></center></span></p></div>
+
+<!-- UPDATED 7/26/16; ADD BACK WHEN FORM IS CREATED - MARK -->
+<!-- Insert google form here -->
+<!--<iframe src="https://docs.google.com/forms/d/17d2SNXnIPYPqwbIkQhTVSt72M3lRoQnKYPLFXXRcU9Y/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> --> 
+
+<br>
+<span class="get">Hosted by USC’s Alpha Phi Omega – Alpha Kappa Chapter </span>
+Alpha Phi Omega is a coeducational national service organization that provides it members the chance to develop leadership skills through service projects on their campus, in their community and across the nation. While other groups volunteer, making the world a better place is not their primary focus. This is why more than 400,000 students have chosen APO since our founding in 1925. The USC chapter is called Alpha Kappa chapter and we aim to bring service opportunities throughout the local Los Angeles community to students on campus. Our chapter has over 100 actives who are passionate about community service. Whether it is mentoring local K-12 students or helping clean up beaches, our members wish to impact the community in a positive way. Visit our main website <a href="http://www.apousc.org/main/"><u>here</u></a>.
+
+<br>
+<!-- Start newsletter form -->
+<!-- <div id="form_bg">
+	<form method="post" id="myform" action="#">
+    <input name="Email" type="text" value="enter your email address..." class="required email" />
+    <button type="submit" class="send_bt">Send Message</button>
+    </form>
+</div> -->
+
+</div><!-- End wrapper -->
+
+<!-- Start footer -->
+<div id="footer">
+<img src="img/kids.png" width="500" height="167" alt="footerpic"/>
+<ul>
+    <li><a href="https://twitter.com/apousc">Twitter</a></li>
+    <li><a href="https://www.facebook.com/apousc">Facebook</a></li>
+    <li class="last"><a href="https://www.instagram.com/apousc">Instagram</a></li>
+</ul>
+<div class="clr"></div>
+Copyright © 2016 APO USC
+</div><!-- End footer -->
+
+</div><!-- End container main -->
+</body>
+</html>
