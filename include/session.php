@@ -1694,7 +1694,15 @@ date_default_timezone_set('America/Los_Angeles');
 	{
 		return (($this->position >= 1 && $this->position <= 23) || $this->isAdmin());
 	}
-
+	/**
+	 * isWebmaster - Returns true if currently logged in user is
+	 * a webmaster, false otherwise.
+	 * -- Nick Chen, Spring 2020
+	 */
+	function isWebmaster()
+	{
+		return ($this->position >= 16 || $this->isAdmin());
+	}
 	function isFakeOfficer() {
 		return $this->position == 99;
 	}
