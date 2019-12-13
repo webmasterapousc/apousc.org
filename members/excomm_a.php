@@ -51,7 +51,7 @@ include_once("include/topnav.php");
 							$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
 							echo "\t\t\t\t\t<tr".$zebra.">\n";
 							echo "\t\t\t\t\t\t<td>$pos</td>\n";
-							echo "\t\t\t\t\t\t<td><a href=/userinfo.php?user=$username . >$first $last</a></td>\n";
+							echo "\t\t\t\t\t\t<td><a href=/members/userinfo.php?user=$username . >$first $last</a></td>\n";
 							//commented out ($mail,$mail)
 							echo "\t\t\t\t\t\t<td>".email_link($mail)."</td>\n";
 							if ($session->logged_in) {

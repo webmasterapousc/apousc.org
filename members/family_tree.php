@@ -57,8 +57,8 @@ if ($user == 'alpha') {
 	<link rel="shortcut icon" href="img/favicon.gif" type="image/gif" />
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="img/family_tree/family_tree.js"></script>
-	<link rel="stylesheet" type="text/css" href="img/family_tree/family_tree.css">
+    <script type="text/javascript" src="family_tree/family_tree.js"></script>
+	<link rel="stylesheet" type="text/css" href="family_tree/family_tree.css">
 </head>
 <body>
 <div class="logo"><a href="home.php"><img src="img/torchbanner.jpg"></a></div>
