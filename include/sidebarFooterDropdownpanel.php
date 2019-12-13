@@ -53,9 +53,9 @@ if ($session->isAdmin()) {
 		<li>
 			<h5>Admin Tools</h5>
 			<ul>
-				<li><a href="admin.php">Admin Center</a></li>
-				<li><a href="register.php">Add Member</a></li>
-				<li><a href="admin_manual.php">Website User Manual</a></li>
+				<li><a href="../admin/admin.php">Admin Center</a></li>
+				<li><a href="../admin/register.php">Add Member</a></li>
+				<li><a href="../admin/admin_manual.php">Website User Manual</a></li>
 			</ul>
 		</li>
 HERE;
