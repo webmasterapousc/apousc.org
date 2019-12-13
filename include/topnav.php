@@ -51,7 +51,7 @@ fputs($opener,$file_array[0]);
 
 ?>
 <br /> <br/>
-<div class = "headerWrapper" style= "text-align:center;"><a href="home.php"><img class="shadow" src="img/banner1.jpg" style="width:940px; height:296px"></a></div>
+<div class = "headerWrapper" style= "text-align:center;"><a href="../members/home.php"><img class="shadow" src="img/banner1.jpg" style="width:940px; height:296px"></a></div>
 <br />
 <div id="content" >
 

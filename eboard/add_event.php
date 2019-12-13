@@ -84,7 +84,7 @@ if (!$session->isAdmin() && !$session->isOfficer()) {
 				echo ("\t\t\t<p>Event added successfully!</p>\n");
 			} else {
 			?>
-			<form action="process.php" method="post">
+			<form action="../members/process.php" method="post">
 				<fieldset>
 					<?php
 					if ($form->num_errors > 0) {
