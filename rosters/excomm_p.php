@@ -20,9 +20,11 @@ include_once("include/topnav.php");
 
 // Below this PHP block, enter only the main HTML content of the page. All necessary layout, body, html, etc. tags are included in the PHP includes.
 ##################################################
-?>
-			<h2>Pledge Executive Committee</h2>
+?>			<?php
+			echo "<h3 style= \"margin-top : 0\"><a href='excomm_past.php' style= \"color:#890000\">View All Past Executive Committees >></a></h3>";
+			?>
 			<noscript><p>If you are reading this message, it means that you do not have JavaScript enabled. Unfortunately, the e-mail addresses on this page are being protected from spam harvesters using JavaScript, so please enable JavaScript, switch Internet browsers, or feel free to use our <a href="contact.php">contact form</a>.</p></noscript>
+			<h2>Pledge Executive Committee</h2>
 			<table id="eventTable" cellspacing="0" class="pretty">
 				<thead>
 					<tr>

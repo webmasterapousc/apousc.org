@@ -34,7 +34,7 @@ if ($session->status == FROZEN_MEMBER) {
 </div>
 		<li>
 		<?php
-			echo "<h5><a href='userinfo.php?user=" . $session->username . "' title='View/edit user info'>" . $session->fname . " " . $session->lname . "</a></h5>" ?>
+			echo "<h5><a href='../members/userinfo.php?user=" . $session->username . "' title='View/edit user info'>" . $session->fname . " " . $session->lname . "</a></h5>" ?>
 			<!-<ul>
 				<!--<li><a href="useredit.php">Edit My Info</a></li>
 				<li><a href="process.php">Log Out</a></li>
@@ -42,7 +42,7 @@ if ($session->status == FROZEN_MEMBER) {
 		</li>
 
 		<li>
-			<h5><a href="/home.php">Home Page</a></h5>
+			<h5><a href="../members/home.php">Home Page</a></h5>
 		</li>
 
 		
@@ -128,12 +128,12 @@ HERE;
 
 <?php
 // If user is an alumni, show alumni-specific information
-if ($session->status == ALUMNI_MEMBER) {
+if ($session->status == ALUMNI_MEMBER || $session->isAdmin()) {
 	echo <<< HERE
 		<li>
 			<h5>Alumni</h5>
 			<ul>
-				<li><a href="alumni_newsletter.php">Alumni Newsletter</a></li>
+				<li><a href="../members/alumni_newsletter.php">Alumni Newsletter</a></li>
 			</ul>
 		</li>
 HERE;
