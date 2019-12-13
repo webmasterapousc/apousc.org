@@ -48,7 +48,7 @@ include_once("include/topnav.php");
 							echo "\t\t\t\t\t\t<td>$pos</td>\n";
 							echo "\t\t\t\t\t\t<td><a href=/members/userinfo.php?user=$username . >$first $last</a></td>\n";
 							//,$mail
-							echo "\t\t\t\t\t\t<td>".email_link($mail)."</td>\n";
+							echo "\t\t\t\t\t\t<td>".$mail."</td>\n";
 							echo "\t\t\t\t\t</tr>\n";
 							$i++;
 						}

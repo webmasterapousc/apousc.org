@@ -53,7 +53,7 @@ include_once("include/topnav.php");
 							echo "\t\t\t\t\t\t<td>$pos</td>\n";
 							echo "\t\t\t\t\t\t<td><a href=/members/userinfo.php?user=$username . >$first $last</a></td>\n";
 							//commented out ($mail,$mail)
-							echo "\t\t\t\t\t\t<td>".email_link($mail)."</td>\n";
+							echo "\t\t\t\t\t\t<td>".$mail."</td>\n";
 							if ($session->logged_in) {
 								echo "\t\t\t\t\t\t<td>";
 									echo preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $phone);
