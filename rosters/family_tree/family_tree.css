@@ -8,10 +8,6 @@ body {
 	font-family: Helvetica, Verdana, Geneva, Arial, sans-serif;
 }
 
-.shadow {
-	box-shadow: 0px 0px 20px 0px #333;
-}
-
 .logo {
 	text-align: center;
 	margin-top: 30px;

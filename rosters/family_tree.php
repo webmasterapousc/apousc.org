@@ -53,7 +53,7 @@ if ($user == 'alpha') {
 	<meta name="description" content="Official website of the Alpha Kappa Chapter of Alpha Phi Omega national service fraternity at the University of Southern California." />
 	<meta name="author" content="Nikita Zolotykh" />
 	<meta name = "viewport" content = "width = device-width">
-	<link rel="home" title="Alpha Phi Omega - Alpha Kappa" href="http://www.apousc.com/" />
+	<link rel="home" title="Alpha Phi Omega - Alpha Kappa" href="http://www.apousc.org/" />
 	<link rel="shortcut icon" href="img/favicon.gif" type="image/gif" />
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -61,7 +61,7 @@ if ($user == 'alpha') {
 	<link rel="stylesheet" type="text/css" href="family_tree/family_tree.css">
 </head>
 <body>
-<div class="logo"><a href="home.php"><img src="img/torchbanner.jpg"></a></div>
+<div class="logo"><a href="../members/home.php"><img src="img/torchbanner.jpg"></a></div>
 
 <div class="mainContent">
 	<div <?= $ERROR_STYLE ?>><?= $ERROR_MESSAGE?></div>

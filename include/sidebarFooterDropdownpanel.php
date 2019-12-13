@@ -13,7 +13,6 @@ if ($session->logged_in) {
 if ($session->status == FROZEN_MEMBER) {
 // If user is frozen, display warning message.
 	echo "<p><strong>Your account has been frozen. Please pay your dues.</strong></p>\n";
-
 }
 ?>
 
