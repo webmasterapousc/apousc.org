@@ -61,7 +61,7 @@ if ($user == 'alpha') {
 	<link rel="stylesheet" type="text/css" href="family_tree/family_tree.css">
 </head>
 <body>
-<div class="logo"><a href="../members/home.php"><img src="img/torchbanner.jpg"></a></div>
+<div class="logo"><a href="../members/home.php"><img src="img/torchbanner.jpg" style="width:940px; height:296px"></a></div>
 
 <div class="mainContent">
 	<div <?= $ERROR_STYLE ?>><?= $ERROR_MESSAGE?></div>
