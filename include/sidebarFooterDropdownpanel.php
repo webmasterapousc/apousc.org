@@ -20,7 +20,7 @@ if ($session->status == FROZEN_MEMBER) {
 <ul id="sideNav">
 
 	
-<div class='highlighter central'><a href='events.php?span=soon'>Events</a></div>
+<div class='highlighter central'><a href='../members/events.php?span=soon'>Events</a></div>
 <!-- <div class='highlighter central'><a href='https://docs.google.com/forms/d/1WPuEn5Ugs8KoZP6G2HFXmvuTBXBI4qovEXDigOYv2-M/viewform'>Midsemester Evaluations</a></div> -->
 <!--<div class='highlighter central'><a href='https://docs.google.com/forms/d/150rJ-P-9wlTcwxY2VvjzdXrHLvZmp5KEykqfun0wLUU/viewform'>Evaluations</a></div>  -->
 <!-- If you want to add a big red button, create new div with class 'highlighter central' -->

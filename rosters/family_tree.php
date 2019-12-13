@@ -63,7 +63,7 @@ if ($user == 'alpha') {
 <body>
 <div class="logo"><a href="home.php"><img src="img/torchbanner.jpg"></a></div>
 
-<div class="mainContent shadow">
+<div class="mainContent">
 	<div <?= $ERROR_STYLE ?>><?= $ERROR_MESSAGE?></div>
 	<div class="family-name" <?= $USER_STYLE ?>><?= $USER_NAME ?>'s Family Tree</div>
 	<div id="user_chart_div" class="treeContent" <?= $USER_STYLE ?>></div>
