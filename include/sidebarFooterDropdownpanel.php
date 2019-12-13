@@ -55,25 +55,13 @@ if ($session->isAdmin()) {
 				<li><a href="../admin/admin.php">Admin Center</a></li>
 				<li><a href="../admin/register.php">Add Member</a></li>
 				<li><a href="../admin/admin_manual.php">Website User Manual</a></li>
-			</ul>
-		</li>
-HERE;
-}
-?>
-<?php
-// If user is a webmaster, show Webmaster Tools
-// -- Nick Chen, Spring 2020
-if ($session->isWebmaster()) {
-	echo <<< HERE
-		<li>
-			<h5>Webmaster Tools</h5>
-			<ul>
 				<li><a href="../webmaster/webmaster_info.php">Webmaster Info</a></li>
 			</ul>
 		</li>
 HERE;
 }
 ?>
+
 <?php
 // If user is an officer, show Officer Tools
 if ($session->isOfficer()) {

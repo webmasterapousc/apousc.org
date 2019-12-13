@@ -110,7 +110,7 @@ if (!$session->isAdmin()) {
 	<h2>Administrative Center</h2>
     <div class="contentBox">
         <h4>Note to Webmaster/Admin</h4>
-        <p>User info can be edited from this page on an individual basis. However, batch user editing (for example, converting all pledges to actives at the end of the semester) could be more quickly accomplished by accessing the <a href="https://mysqladmin2.secureserver.net/m50/53/">phpMyAdmin</a> interface.</p>
+        <p>User info can be edited from this page on an individual basis. However, batch user editing (for example, converting all pledges to actives at the end of the semester) could be more quickly accomplished by accessing the <a href="../phpmyadmin">phpMyAdmin</a> interface.</p>
 	</div>
 	<h3>Users</h3>
 	<?php displayUsers(); ?>
