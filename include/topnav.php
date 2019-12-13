@@ -63,7 +63,7 @@ fputs($opener,$file_array[0]);
 class="current"<?php 
 
 } ?>><span>Home</span></a></li>
-			<li><a href="main" class="sub<?php if ($current_page == "about") { ?> 
+			<li><a href="../" class="sub<?php if ($current_page == "about") { ?> 
 
 current<?php } ?>"><span>About Us</a><!--[if gte IE 7]><!--></a><!--<![endif]-->
 				<ul>
