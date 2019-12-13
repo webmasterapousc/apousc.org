@@ -69,10 +69,10 @@ if ($session->isOfficer()) {
 		<li>
 			<h5>Officer Tools</h5>
 			<ul>
-				<li><a href="add_event.php">Add Event</a></li>
-				<li><a href="add_announcement.php">Add Announcement</a></li>
-				<!-- <li><a href="add_pic.php">Add Picture of the Week</a></li> -->
-				<!--<li><a href='add_poll.php'>Add Poll</a></li>-->
+				<li><a href="../officer/add_event.php">Add Event</a></li>
+				<li><a href="../officer/add_announcement.php">Add Announcement</a></li>
+				<!-- <li><a href="../officer/add_pic.php">Add Picture of the Week</a></li> -->
+				<!--<li><a href='../officer/add_poll.php'>Add Poll</a></li>-->
 			</ul>
 		</li>
 HERE;
@@ -87,15 +87,15 @@ HERE;
 		<!--<li><a href="election_documents.php"><strong>Candidate Documents</strong></a></li> -->
 		<!--Always Keep-->
 		</b><li><a href="https://docs.google.com/spreadsheets/d/1Cen1vf8hlJKBrGtgKpOFuSMMEcvC6tvGEKusJ0R20y8/edit?usp=sharing">Master Doc</a></li>
-		<li><a href="finance.php">Finance</a></li>
+		<li><a href="../members/finance.php">Finance</a></li>
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
-		<li><a href="announcements.php">Announcements</a></li>
+		<li><a href="../members/announcements.php">Announcements</a></li>
 		<li><a href="https://goo.gl/forms/OGDeNB6XsVrpZ5cM2">Anon Evaluation Form</a></li>
 		<li><a href="https://goo.gl/forms/Oqg2mQ0OL2uuEK003">Event Evaluation Form</a></li>
-		<li><a href="documents.php">Documents</a></li>
+		<li><a href="../members/documents.php">Documents</a></li>
 		<!--<li><a href="requirements.php">Requirements</a></li>-->
-		<li><a href="about_ak.php">About Us</a></li>
-		<li><a href="archives.php">Archives</a></li>
+		<li><a href="../members/about_ak.php">About Us</a></li>
+		<li><a href="../members/archives.php">Archives</a></li>
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
 		<!-- <li><li><a href='polls.php'>Polls</a></li>-->
 	</ul>
@@ -104,10 +104,10 @@ HERE;
 <li>
 	<h5>Rosters</h5>
 	<ul>
-		<li><a href="roster.php">All Members</a></li>
-		<li><a href="excomm_a.php">Executive Committee</a></li>
-		<li><a href="excomm_p.php">Pledge Ex Comm</a></li>
-		<li><a href="alumni.php">Alumni</a></li>
+		<li><a href="../members/roster.php">All Members</a></li>
+		<li><a href="../members/excomm_a.php">Executive Committee</a></li>
+		<li><a href="../members/excomm_p.php">Pledge Ex Comm</a></li>
+		<li><a href="../members/alumni.php">Alumni</a></li>
 		<!--<li><a href="https://airtable.com/shrl0bWZ6eINW28Ec" target="_blank">Alumni Networking Database</a></li>-->
 		<li><a href="family_tree.php?user=all">Family Trees</a></li>
 	</ul>
@@ -171,7 +171,7 @@ HERE;
 // Or else, if user is not logged in, show sign in form
 else {
 ?>
-	<form action="process.php" method="post" id="loginform" class="inField">
+	<form action="../members/process.php" method="post" id="loginform" class="inField">
 		<fieldset>
 			<h4>Member Login</h4>
 				<ol>
