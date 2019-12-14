@@ -600,7 +600,8 @@ class MySQLDB
 	function addNewAnnouncement($title, $body, $date)
 	{
 		$q = "INSERT INTO `" . TBL_ANNOUNCEMENTS . "` VALUES ('','$title','$date','$body')";
-		return mysql_query($q, $this->connection);
+		$result = mysql_query($q, $this->connection);
+		return $result;
 	}
 
 	/**
