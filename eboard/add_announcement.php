@@ -33,7 +33,7 @@ include_once("include/topnav.php");
 				echo ("\t\t\t<p>Announcement added successfully!</p>\n");
 			} else {
 			?>
-			<form action="../members/process.php" method="post">
+			<form action="process.php" method="post">
 				<fieldset>
 					<legend>Add Announcement</legend>
 					<?php
