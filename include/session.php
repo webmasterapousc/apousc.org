@@ -17,7 +17,6 @@ include("form.php");
 include_once("email_validator.php");
 include("constants.php");
 include("ereg-wrapper.php");
-include('fix_mysql.inc.php');
 class Session
 {
 	var $username; //Username given on sign-up
