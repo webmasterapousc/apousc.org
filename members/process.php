@@ -666,6 +666,8 @@ class Process
 		/* Announcement add attempt */
 		$retval = $session->addAnnouncement($_POST['txt_Title'], $_POST['txtarea_Body']);
 
+		file_put_contents('php://stderr', print_r("ERROR DEBUG: retval is " . $retval, TRUE));
+
 		/* Announcement Add Successful */
 		if ($retval == 0) {
 			$_SESSION['addannouncement'] = true;

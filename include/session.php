@@ -1441,7 +1441,7 @@ date_default_timezone_set('America/Los_Angeles');
 		date_default_timezone_set('America/Los_Angeles');
 		 $subtime = date("Y-m-d",time()); //Formats current time to the format YYYY-MM-DD
 		
-		
+		file_put_contents('php://stderr', print_r("ERROR DEBUG: subtitle is " . $subtitle . ", subbody is " . $subbody . ", subtime is " . $subtime, TRUE))
 		
 		
 		
