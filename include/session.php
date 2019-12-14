@@ -1431,7 +1431,7 @@ date_default_timezone_set('America/Los_Angeles');
 			if (@get_magic_quotes_gpc()) {
 				$subbody = stripslashes($subbody); // Removes magic_quotes_gpc slashes
 			}
-			$subbody = mysql_real_escape_string($subbody); // Prepends backslashes to special MySQL characters
+			//$subbody = mysql_real_escape_string($subbody); // Prepends backslashes to special MySQL characters
 			$subbody = (string) $subbody; // Force $subtitle to be a string
 		}
 		
