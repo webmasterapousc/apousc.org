@@ -192,7 +192,7 @@ class MySQLDB
 	{
 		$query=mysql_query("SELECT * FROM user_graduation WHERE username = '$username'");
 		$result=mysql_fetch_array($query);
-		if(mysql_num_rows($query)==0){$q = "INSERT INTO user_graduation (graduation_term, username) VALUES('$value,'$username')";
+		if(mysql_num_rows($query)==0){$q = "INSERT INTO user_graduation (graduation_term, username) VALUES($value,'$username')";
 	}
 		else {$q="UPDATE user_graduation SET graduation_term = $value WHERE username = '$username'";}
 		return mysql_query($q, $this->connection);
@@ -416,12 +416,9 @@ class MySQLDB
 	 * info into the database.
 	 * Returns true on success, false otherwise.
 	 */
-
 	function addNewEvent($name, $type, $desc, $start, $end, $hours, $max, $walk, $meet, $location, $address)
 	{
-		$q = "INSERT INTO " . TBL_EVENTS . " VALUES ('$name',$type,'$desc',$start,$end,$hours,$max,$walk,'$meet','$location',0,0,'$address')";
-		file_put_contents('php://stderr', print_r("\n\nERROR DEBUG: q is " . $q . "\n\n\n", TRUE));
-
+		$q = "INSERT INTO `" . TBL_EVENTS . "` VALUES (NULL,'$name',$type,'$desc','$start','$end',$hours,$max,$walk,'$meet','$location',0,0,'$address')";
 		return mysql_query($q, $this->connection);
 	}
 
@@ -602,10 +599,9 @@ class MySQLDB
 	 */
 	function addNewAnnouncement($title, $body, $date)
 	{
-		$q = "INSERT INTO " . TBL_ANNOUNCEMENTS . " VALUES (NULL, '$title','$date','$body')";
-		//file_put_contents('php://stderr', print_r("\n\nERROR DEBUG: q is " . $q . "\n\n\n", TRUE));
-
-		return mysql_query($q, $this->connection);
+		$q = "INSERT INTO `" . TBL_ANNOUNCEMENTS . "` VALUES (NULL,'$title','$date','$body')";
+		$result = mysql_query($q, $this->connection);
+		return $result;
 	}
 
 	/**
@@ -631,7 +627,7 @@ class MySQLDB
 	 */
 	function addNewComment($username, $eventid, $comment, $timestamp)
 	{
-		$q = "INSERT INTO `" . TBL_COMMENTS . "` VALUES ($username',$eventid,'$comment',$timestamp)";
+		$q = "INSERT INTO `" . TBL_COMMENTS . "` VALUES (NULL,'$username',$eventid,'$comment',$timestamp)";
 		return mysql_query($q, $this->connection);
 	}
 
@@ -640,7 +636,7 @@ class MySQLDB
 	 */
 	function addNewNomination($username, $position)
 	{
-		$q = "INSERT INTO `" . TBL_NOMINATIONS . "` VALUES ($username',$position,'','')";
+		$q = "INSERT INTO `" . TBL_NOMINATIONS . "` VALUES (NULL,'$username',$position,'','')";
 		return mysql_query($q, $this->connection);
 	}
 	/**
@@ -676,8 +672,8 @@ class MySQLDB
 	 */
 	function addNewPOTW($date, $title, $caption, $submitter, $filepath)
 	{
-		print "I reached here ok."; die; 
-		$q = "INSERT INTO `" . TBL_POTW . "` VALUES ($date','$title','$caption','$submitter','$filepath')";
+		print "I reached here ok."; die;
+		$q = "INSERT INTO `" . TBL_POTW . "` VALUES (NULL,'$date','$title','$caption','$submitter','$filepath')";
 		return mysql_query($q, $this->connection);
 	}
 
