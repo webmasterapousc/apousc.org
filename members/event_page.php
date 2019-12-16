@@ -206,7 +206,7 @@ else{
 					echo " <p class=\"right\">";
 					echo " <a href=\"process.php?subdeleteevent=1&amp;event=" . $req_event . "\" title=\"Delete Event\"onclick=\"if(confirm('This will delete the event.')); confirm('It cannot be undone.'); confirm('Are you really sure you want to do this?'); confirm('No turning back.'); confirm('Think about this. Some people really love ".$req_event_info['name'].".'); confirm('You know, I think Myrtle Turtle mentioned something about enjoying ".$eventType[$req_event_info['type']]." events. Maybe you should reconsider.'); confirm('This is your last chance. Are you sure you want to DELETE this event? This cannot be undone.'); return confirm('Just making sure.');\"> <img src=\"img/cancel.png\" height=\"18\" width=\"18\" alt=\"[Delete]\" /></a> ";
 					echo " <a href=\"mailto:apo@usc.edu?subject=" . $req_event_info['name'] . "&bcc=" . $comma_separated . "\" title=\"E-mail All Event Volunteers\"><img src=\"img/gmailedit.png\" height=\"20\" width=\"auto\" alt=\"[E-mail]\" style=\"margin-right:10px;\" /></a>";
-					echo "<a href=\"edit_event.php?eventid=" . $req_event . "\" title=\"Edit Event Information\"><img src=\"img/edit.png\" height=\"20\" width=\"20\" alt=\"[Edit]\" /></a></p>\n";
+					echo "<a href=\"../eboard/edit_event.php?eventid=" . $req_event . "\" title=\"Edit Event Information\"><img src=\"img/edit.png\" height=\"20\" width=\"20\" alt=\"[Edit]\" /></a></p>\n";
 					echo "<div class='slide1 right' style='cursor: pointer;'>Show Email Addresses</div>
 							<div class='view1'><br />".
 							$comma_separated2
