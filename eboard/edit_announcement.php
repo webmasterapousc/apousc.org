@@ -42,7 +42,7 @@ if (!$session->isOfficer()) {
 				echo ("\t\t\t<p>Announcement edited successfully!</p>\n");
 			}
 			?>
-			<form action="process.php" method="post">
+			<form action="../members/process.php" method="post">
 				<fieldset>
 					<legend>Edit Announcement</legend>
 					<?php

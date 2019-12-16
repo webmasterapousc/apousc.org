@@ -92,7 +92,7 @@ include_once("include/topnav.php");
 
 <?php
 echo "<div class='status'>";
-echo "<br /><div class='highlight' align=middle><a href='announcements.php'>Announcements</a></div><ul>";
+echo "<br /><div class='highlight' align=middle><a href='../information/announcements.php'>Announcements</a></div><ul>";
 
 $query = "SELECT * FROM announcements ORDER BY date DESC LIMIT 3";
 $result = mysql_query($query);

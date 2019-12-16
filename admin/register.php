@@ -65,7 +65,7 @@ include_once("include/topnav.php");
 				echo "<span style=\"color:#f00\">".$form->num_errors." error(s) found</span>";
 			}
 			?>
-			<form action="process.php" method="post">
+			<form action="../members/process.php" method="post">
 				<fieldset>
 					<legend>Register New User</legend>
 					<ol>
