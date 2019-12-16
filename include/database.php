@@ -26,7 +26,7 @@ class MySQLDB
 	function MySQLDB()
 	{
 		/* Make connection to database */
-		$this->connection = mysql_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysql_error());
+		$this->connection = mysql_connect(DB_SERVER, "neckchin", "root") or die(mysql_error());
 		mysql_select_db(DB_NAME, $this->connection) or die(mysql_error());
 		
 		/**
