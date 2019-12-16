@@ -42,7 +42,7 @@ define("TBL_USERS", "users");
 define("TBL_ACTIVE_USERS", "active_users");
 define("TBL_ACTIVE_GUESTS", "active_guests");
 define("TBL_BANNED_USERS", "banned_users");
-define("TBL_ANNOUNCEMENTS", "announcements(title,date,body)");
+define("TBL_ANNOUNCEMENTS", "announcements");
 define("TBL_EVENTS", "events(name,type,desc,start,end,hours,max,walk,meet,location,rush,pledge,address)");
 define("TBL_SIGNUPS", "signups");
 define("TBL_COMMENTS", "comments(username,eventid,comment,timestamp)");
