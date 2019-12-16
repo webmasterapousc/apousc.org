@@ -52,7 +52,7 @@ include_once("include/topnav.php");
 							$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
 							echo "\t\t\t\t\t<tr".$zebra.">\n";
 							echo "\t\t\t\t\t\t<td>$pos</td>\n";
-							echo "\t\t\t\t\t\t<td><a href=/userinfo_temp.php?user=$username . >$first $last</a></td>\n";
+							echo "\t\t\t\t\t\t<td><a href=../members/userinfo.php?user=$username . >$first $last</a></td>\n";
 							//($mail,$mail)
 							echo "\t\t\t\t\t\t<td>"$mail."</td>\n";
 							if ($session->logged_in) {

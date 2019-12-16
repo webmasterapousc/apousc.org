@@ -22,10 +22,8 @@ include_once("include/topnav.php");
 ##################################################
 ?>
 			<noscript><p>If you are reading this message, it means that you do not have JavaScript enabled. Unfortunately, the e-mail addresses on this page are being protected from spam harvesters using JavaScript, so please enable JavaScript, switch Internet browsers, or feel free to use our <a href="contact.php">contact form</a>.</p></noscript>
-
-			<!--<h3><a href='history_excomm.php'>View Past Executive Committees</a></h3>-->
 					<?php   
-					echo "<h3 style= \"margin-top : 0\"><a href='history_excomm.php' style= \"color:#890000\">View Past Executive Committees >></a></h3>";
+					echo "<h3 style= \"margin-top : 0\"><a href='excomm_past.php' style= \"color:#890000\">View All Past Executive Committees >></a></h3>";
 					echo "<h2>Active Executive Committee</h2>";
 					if(date("n")>=0&&date("n")<5){$current_semester=0;}else{$current_semester=1;}
 						$q = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = YEAR(CURRENT_TIMESTAMP) AND T.semester = '".$current_semester."'   " ; // Retrieve the officers for the current year (such as 2012) and current semester (such as 0, which means spring)

@@ -85,8 +85,8 @@ include_once("include/topnav.php");
 						if ($row['status'] == 0 || $row['status'] == 1 || $row['status'] == 2 || $row['status'] == 7) {	
 							$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
 							echo "<tr" . $zebra . ">\n";
-							echo "\t<td><a href=\"userinfo.php?user=" . $row['username'] . "\">" . $row['fname'] . "</a></td>\n";
-							echo "\t<td><a href=\"userinfo.php?user=" . $row['username'] . "\">" .  $row['lname'] . "</a></td>\n";
+							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" . $row['fname'] . "</a></td>\n";
+							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" .  $row['lname'] . "</a></td>\n";
 							echo "\t<td>" . $memberStatus[$row['status']] . "</td>\n";
 							//echo "\t<td>" . $families[$row['family']] . "</td>\n";
 							echo "\t<td>" . $pledgeClasses[$row['year'].$row['semester']] . "</td>\n";

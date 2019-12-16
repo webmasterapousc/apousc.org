@@ -55,7 +55,7 @@ if ($session->isAdmin()) {
 				<li><a href="../admin/admin.php">Admin Center</a></li>
 				<li><a href="../admin/register.php">Add Member</a></li>
 				<li><a href="../admin/admin_manual.php">Website User Manual</a></li>
-				<li><a href="../webmaster/webmaster_info.php">Webmaster Info</a></li>
+				<li><a href="../admin/webmaster_info.php">Webmaster Info</a></li>
 			</ul>
 		</li>
 HERE;
@@ -126,27 +126,9 @@ if ($session->status == ALUMNI_MEMBER || $session->isAdmin()) {
 HERE;
 }
 ?>
-
-<!-- <li>
-	<h5>Requirements</h5>
-	<ul>
-		<li><a href="https://docs.google.com/spreadsheets/d/1v1HzjQKBsPBJHAvV70KTJQBrk-bLguk1UCFRLvD8nCU/edit#gid=966780574" target="_blank">Master Doc</a></li> -->
-		<!-- <li><a href="req_a.php">Actives</a></li>
-		<li><a href="req_p.php">Pledges</a></li>
-		<li><a href="req_assoc.php">Associates</a></li> -->
-<!--
-		<li><a href="attend_ser.php">Service</a></li>
-		<li><a href="attend_fel.php">Fellowship</a></li>
-		<li><a href="attend_fun.php">Fundraising</a></li>
-		<li><a href="attend_int.php">Interchapter</a></li>
-		<li><a href="attend_fam.php">Family</a></li>
--->
-<!-- 	</ul>
-</li>
- -->
  
 <li>
-    <h5><a href="process.php">Log Out</a></h5>
+    <h5><a href="../members/process.php">Log Out</a></h5>
 </li>
  
 

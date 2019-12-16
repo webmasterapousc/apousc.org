@@ -39,21 +39,19 @@ include_once("include/topnav.php");
                 	<ul>
 
                 		<li><a href = "https://forms.gle/75MvMvQSqcWpSgv36" target = "_blank"> Lead Form </a></li>
-                		<li><a href = "docs/AlphaOmicronInterviewSheets.pdf" target = "_blank"> Blank Interview Sheets </a></li>
-                		<li><a href = "docs/Alpha-Omicron-Syllabus.docx-1.pdf" target = "_blank"> Alpha Omicron Syllabus </a></li>
-                		<li><a href = "docs/Alpha-Omicron-Enrichment-Points-and-Strikes.pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
+                		<li><a href = "https://drive.google.com/file/d/10ydVPO2SDNtRN2Qm1reGctIRPRrhDrBw/export?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
+                		<li><a href = "https://drive.google.com/file/d/1kBPXWm8lNFj9dTl36pkNpidgaxm7jB4n/export?format=pdf" target = "_blank"> Alpha Omicron Syllabus </a></li>
+                		<li><a href = "https://drive.google.com/file/d/1TzmfE78hs3lSIz19GTjHFwouAXbJr0tM/export?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
 
                 	</ul>
                 	
                 	<h3>Forms</h3>
 					<ul>
-					    <li><a href='https://goo.gl/forms/Ifx0WWwkXjrB4C303'>Diversity & Inclusion Event Reflection Form</a></li>
-						<li><a href='https://goo.gl/forms/WSKRJVfLLx9VMTWv2'>Anonymous Evaluations</a></li>
-						<li><a href='https://goo.gl/forms/qcs2n3Vayuoa5Aly1'>Event Evaluations</a></li>
-						<!--<li><a href='https://docs.google.com/forms/d/1ELFf8AvVKaxRHJET-XWvsYpuTG1F-e8odMcSBMUk5pQ/viewform?c=0&w=1'>Weekly Service Form</a></li>-->
-						<!--<li><a href="docs/Event Sign-In Sheet.pdf">Event Sign-In Sheet</a></li>-->
-						<li><a href="docs/Service Hours Log.pdf">Outside Service Hours Log</a></li>
-						<li><a href='https://docs.google.com/forms/d/e/1FAIpQLSftdqT-xgSpVWNHtkmo7T4_L4NHbxt3iZlROEMcPVoxzlGUnw/viewform'>Diversity and Inclusion Survey</a></li>
+					    <li><a href='https://goo.gl/forms/Ifx0WWwkXjrB4C303' target = "_blank">Diversity & Inclusion Event Reflection Form</a></li>
+						<li><a href='https://goo.gl/forms/WSKRJVfLLx9VMTWv2' target = "_blank">Anonymous Evaluations</a></li>
+						<li><a href='https://goo.gl/forms/qcs2n3Vayuoa5Aly1' target = "_blank">Event Evaluations</a></li>
+						<li><a href="https://drive.google.com/file/d/1lNKrfgsSEAuOeZdyZPvuFWw37KZqyM_v/export?format=pdf" target = "_blank">Outside Service Hours Log</a></li>
+						<li><a href='https://docs.google.com/forms/d/e/1FAIpQLSftdqT-xgSpVWNHtkmo7T4_L4NHbxt3iZlROEMcPVoxzlGUnw/viewform' target = "_blank">Diversity and Inclusion Survey</a></li>
 					</ul>
                 	
                 <h3>Requirements</h3>
@@ -68,57 +66,31 @@ include_once("include/topnav.php");
                 <h3>Academic Documents</h3>
 					<ul>
 						<li><a href="https://docs.google.com/spreadsheets/d/1T4rq8Lrn3aT7DWqzACcQPGi55NcQQBjDebeICYm2kYY/edit?usp=sharing">APO Rate My Professor</a></li>
-						<p style="margin-left: 40px"><a href="https://forms.gle/1XxgyWA1FUUc2TCm7">  Rate My Professor Submission Form</a></p>
-						<!--
-						Original Rate my Professor
-						https://docs.google.com/spreadsheet/ccc?key=0AigJIHhDKQW8dFA1RmlrRzJFbnZRVzRzMzFHY05fcFE&usp=sharing
-						-->
-						<li><a href="https://skydrive.live.com/">Test Bank</a> (<b>username:</b> membership.apousc@gmail.com <b>PW:</b> Forgetmenot)</li>
-						<p style="margin-left: 40px"><a href="https://forms.gle/Z5ZLmXJahH3hQo75A">  Test Bank Submission Form</a></p>
+						<p style="margin-left: 40px"><a href="https://forms.gle/1XxgyWA1FUUc2TCm7" target = "_blank">  Rate My Professor Submission Form</a></p>
+						<li><a href="https://skydrive.live.com/"  target = "_blank">Test Bank</a> (<b>username:</b> membership.apousc@gmail.com <b>PW:</b> Forgetmenot)</li>
+						<p style="margin-left: 40px"><a href="https://forms.gle/Z5ZLmXJahH3hQo75A" target = "_blank">  Test Bank Submission Form</a></p>
 					</ul>
 					
                 <h3>Reference Documents</h3>
 					<ul>
-						<!-- <li><a href="https://docs.google.com/spreadsheets/d/1EDrMQ5FyLnP7a4u2GfGDOieZcqIflkS84bChskD_7bo/edit?usp=sharing">Master Doc</a> (Spring 2015)</li> -->
-						<!--<li><a href="https://docs.google.com/spreadsheets/d/1S-tHyh8JoUO19f97kj2WdPlSkEohcEDoyG-TGrPnm7A/edit?usp=sharing">Retreat Auction</a> (Fall 2015)</li>-->
-						<!-- <li><a href="https://drive.google.com/folderview?id=0B0P6FwFOSi_kVVRheTJTWlRFSlE&usp=sharing">GBM Minutes</a></li>
-						<li><a href="https://drive.google.com/folderview?id=0B0P6FwFOSi_kcE5ONTU3QVRRVW8&usp=sharing">EBM Minutes</a></li> -->
-						<!--<li><a href="docs/GBMCalendarFall18.pdf" target = "_blank"> Fall 2018 GBM Calendar</a></li>-->
-						<!--li><a href="https://drive.google.com/folderview?id=0B0P6FwFOSi_kNGNRR2xsS2c2V1U&usp=sharing">Pledge Meeting Minutes</a></li-->
-						<!--<li><a href = "https://docs.google.com/spreadsheets/d/1YWOFZ_VaYEEfvDT5XW6IM_Notbvs1yQiw7QTiJf1bWA/edit?ts=57d77f12#gid=0" target ="_blank"> Chapter's Items </a></li>-->
 						<li><a href="docs/F18_DeclReq.pdf" target = "_blank">Declining Requirement Policy</a></li>
-						
-						<!--<li><a href="https://docs.google.com/spreadsheets/d/1a-QbkxXarq_28CEN1Sy9t_6vMumizxFyvYkeVm-QTww/edit#gid=1809411573" target = "_blank">Fall 2018 Ex Comm Budget</a></li>-->
-						<!--li><a href="docs/ExComm Goals Spring 2016.pdf">ExComm Goals</a> (Spring 2016)</li-->
 						<li><a href="https://docs.google.com/spreadsheets/d/127ov46_ZDQnMvgfN4MlC-XS2SOIWMHb6xNXJ-hFuL2k/edit?usp=sharing" target = "_blank">Past Semester Standings</a></li>
-						<li><a href="docs/Header & Footer.docx">Alpha Kappa Letterhead</a></li>
+						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/export?format=pdf">Alpha Kappa Letterhead</a></li>
 
 						<div class="slide1" style="cursor: pointer;"><li>Chapter Policies (Click to Show)</li></div>
 							<div class="view1">
 								<ul>
-									<!-- Updated Spring 2017 -->
-									<li><a href="docs/APOBylaws.pdf.docx">Bylaws</a></li>
-									<!-- <li><a href="docs/Edited Bylaws.docx">Proposed Edited Bylaws</a> (Updated 2013 Oct 23)</li> -->
+									<!-- Updated Spring 2019 -->
+									<li><a href="https://drive.google.com/file/d/1HfPh1ho2KUEfun0qRKE5rFh5H3gDrMWb/export?format=pdf" target = "_blank">Bylaws</a></li>
 									<!-- Updated Spring 2015 -->
-									<li><a href="docs/APOAKOfficer-Descriptions.pdf">Officer Descriptions</a> </li>
-									<!-- Updated 2015 July 6 -->
-									<li><a href="docs/Officer Election Policy (updated 7.6.15).pdf">Officer Election Policy</a></li>
-									<li><a href="docs/Driver Reimbursement Policy.pdf">Driver Reimbursement Policy</a></li>
+									<li><a href="https://drive.google.com/file/d/1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS/export?format=pdf" target = "_blank">Officer Descriptions</a> </li>
+									<!-- Updated Spring 2015 -->
+									<li><a href="https://drive.google.com/file/d/1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu/export?format=pdf" target = "_blank">Officer Election Policy</a></li>
+									<li><a href="https://drive.google.com/file/d/1OZJRnf2h5TdKSRN4--Hwiv8Cd32Lenie/export?format=pdf" target = "_blank">Driver Reimbursement Policy</a></li>
 								</ul>
 							</div>
-					</ul>
-
-				
+					</ul>			
 <br />
-				<!--h3>Pledging Documents</h3>
-					<ul>
-						<li><a href="https://docs.google.com/forms/d/1t9Q0kIhbEA-nPfEFTx-OwZbpGBYFHBx6_iBqlzIHEfU/viewform?usp=send_form" >Event Leader Form (Leads Form)</a></li>
-						<li><a href="docs/pledgingdocs/S16 Pledge Officer Descriptions.docx">Pledge Officer Descriptions</a> (Spring 2016)</li>
-						< <li><a href="docs/pledgingdocs/Blank Interview Sheet.pdf">Blank Interview Sheet</a></li> >
-						<li><a href="docs/pledgingdocs/AlphaThetaInterviewSheets.pdf">Blank Interview Sheet</a></li>
-						<li><a href="www.apo.org/Support/DownloadFile/188">National Pledge Manual</a> (2013&mdash;2014)</li>
-						<li><a href="docs/pledgingdocs/National Pledging Standards.pdf">National Pledging Standards</a></li>
-					</ul-->
 				<h3>National Documents</h3>
 					<ul>
 						<li><a href="docs/APOBylaws.pdf">Alpha Kappa Bylaws</a>(Updated January 27, 2019)</li>
@@ -126,29 +98,7 @@ include_once("include/topnav.php");
 						<li><a href="docs/style_guide.pdf">Style Guide</a> &mdash; official standards and guidelines on usage of APO terms, logos, typography, etc.</li>
 					</ul>
 				
-			<div class="slide3" style="cursor:pointer"><h3>Archived Documents (Click to Show)</h3></div>
-				<div class="view3">
-					<ul>
-						<?php if($session->status == 0) {echo "
-						";};
-						?>
-						<li><a href='https://www.cognitoforms.com/APOUSC1/ΑΦΩExpenseReimbursementForm'>Expense Reimbursement Form</a> (Fall 2017)</li>
-					    <li><a href="docs/Expense Report Submission Instructions.docx">Expense Report Submission Instructions</a> (Fall 2017)</li>
-						<li><a href="https://docs.google.com/spreadsheet/ccc?key=0Ah2fNhLOPSTydDQzTG1EZS02LTc2TXY3eUd2al93LWc">Web Site Changes</a> (Spring 2012)</li>
-						<li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHpQV3ZQZXhqRV82S3lGR0FvLThYRHc6MQ">Membership Survey</a> (Spring 2012)</li>
-						<li><a href="https://docs.google.com/spreadsheet/ccc?key=0ArFFADXkrZwjdEZ6Um9rVHdWUldYekY3bUJnUUdYQnc&hl=en_US">Retreat Auction</a> (Fall 2011)</li>
-						<li><a href="docs/APO Spring 2012 Payment Plan.docx">Payment Plan</a> (Spring 2012)</li>
-						<li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dF9uMm1YeFFaT25VSWpQc1JxTmFWQmc6MQ#gid=0">Mid Semester Ex Comm Survey</a> (Spring 2012)</li>
-						<li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dEM1Y0R0ZmdCQ2hEUXF5bUtkcG04Tnc6MQ">Retreat Auction Sign-Up Form</a> (Spring 2012)</li>
-						<li><a href="docs/Tommy's Application (Spring 2012).pdf">Tommy's Application</a> (Spring 2012)</li>
-						<?php if($session->status == 0) {echo "
-							<li><a href='https://docs.google.com/spreadsheet/viewform?formkey=dGJUNVZ6bzNudTUxWWp2a0ZSX3FtWHc6MQ'>Chapter Letter Order Form</a> (Spring 2012)</li>
-						";};
-						?>
-					</ul>
-				</div>
-			<p class="bottomNote">Note: <abbr title="Portable Document Format">PDF</abbr> files require the Adobe Reader from Adobe Systems, Incorporated. Adobe and the Adobe logo are trademarks of Adobe Systems, Incorporated. Click on the following link to download.</p>
-			<a href="http://get.adobe.com/reader/"><img src="img/get_adobe_reader.png" height="39" width="158" alt="Download Adobe Reader" /></a>
+			
 <?php
 	// If user is not logged in, display Restricted Area warning
 	} else {

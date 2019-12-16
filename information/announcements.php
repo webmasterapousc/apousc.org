@@ -46,7 +46,7 @@ include_once("include/topnav.php");
 					echo "\t\t\t\t".$body."\n";
 					echo "\t\t\t\t<p class=\"date\">".$date."</p>\n";
 					if($session->isOfficer()) {
-						echo "\t\t\t\t<a href=\"../eboard/edit_announcement.php?id=".$id."\" title=\"Edit Announcement\"><img src=\"img/edit_icon.gif\" height=\"20\" width=\"20\" alt=\"[Edit]\" /></a> <a href=\"process.php?subdeleteannouncement=1&amp;announcementid=".$id."\" title=\"Delete Announcement\" onclick=\"return confirm('Are you sure you want to delete this announcement?');\"><img src=\"img/minus.png\" height=\"20\" width=\"20\" alt=\"[Delete]\" /></a>\n";
+						echo "\t\t\t\t<a href=\"../eboard/edit_announcement.php?id=".$id."\" title=\"Edit Announcement\"><img src=\"img/edit_icon.gif\" height=\"20\" width=\"20\" alt=\"[Edit]\" /></a> <a href=\"../members/process.php?subdeleteannouncement=1&amp;announcementid=".$id."\" title=\"Delete Announcement\" onclick=\"return confirm('Are you sure you want to delete this announcement?');\"><img src=\"img/minus.png\" height=\"20\" width=\"20\" alt=\"[Delete]\" /></a>\n";
 					}
 					echo "\t\t\t</div>\n";
 				}
