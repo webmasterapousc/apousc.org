@@ -192,7 +192,7 @@ class MySQLDB
 	{
 		$query=mysql_query("SELECT * FROM user_graduation WHERE username = '$username'");
 		$result=mysql_fetch_array($query);
-		if(mysql_num_rows($query)==0){$q = "INSERT INTO user_graduation (graduation_term, username) VALUES($value,'$username')";
+		if(mysql_num_rows($query)==0){$q = "INSERT INTO user_graduation (graduation_term, username) VALUES('$value,'$username')";
 	}
 		else {$q="UPDATE user_graduation SET graduation_term = $value WHERE username = '$username'";}
 		return mysql_query($q, $this->connection);
@@ -418,7 +418,7 @@ class MySQLDB
 	 */
 	function addNewEvent($name, $type, $desc, $start, $end, $hours, $max, $walk, $meet, $location, $address)
 	{
-		$q = "INSERT INTO " . TBL_EVENTS . " VALUES ($name',$type,'$desc','$start','$end',$hours,$max,$walk,'$meet','$location',0,0,'$address')";
+		$q = "INSERT INTO " . TBL_EVENTS . " VALUES ('$name',$type,'$desc','$start','$end',$hours,$max,$walk,'$meet','$location',0,0,'$address')";
 		file_put_contents('php://stderr', print_r("\n\nERROR DEBUG: q is " . $q . "\n\n\n", TRUE));
 
 		return mysql_query($q, $this->connection);
