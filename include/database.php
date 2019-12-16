@@ -416,7 +416,6 @@ class MySQLDB
 	 * info into the database.
 	 * Returns true on success, false otherwise.
 	 */
-INSERT INTO `events` (`ID`, `name`, `type`, `desc`, `start`, `end`, `hours`, `max`, `walk`, `meet`, `location`, `rush`, `pledge`, `address`) VALUES (NULL, 'nick test', '8', 'boop', '2020-01-01 01:00:00', '2020-01-01 02:00:00', '1', '0', '0', 'bl', ' ', '0', '0', ' ');
 
 	function addNewEvent($name, $type, $desc, $start, $end, $hours, $max, $walk, $meet, $location, $address)
 	{
@@ -603,7 +602,7 @@ INSERT INTO `events` (`ID`, `name`, `type`, `desc`, `start`, `end`, `hours`, `ma
 	 */
 	function addNewAnnouncement($title, $body, $date)
 	{
-		$q = "INSERT INTO " . TBL_ANNOUNCEMENTS . " VALUES ('$title','$date','$body')";
+		$q = "INSERT INTO " . TBL_ANNOUNCEMENTS . " VALUES (NULL, '$title','$date','$body')";
 		//file_put_contents('php://stderr', print_r("\n\nERROR DEBUG: q is " . $q . "\n\n\n", TRUE));
 
 		return mysql_query($q, $this->connection);
