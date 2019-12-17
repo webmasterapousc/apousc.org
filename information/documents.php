@@ -39,9 +39,9 @@ include_once("include/topnav.php");
                 	<ul>
 
                 		<li><a href = "https://forms.gle/75MvMvQSqcWpSgv36" target = "_blank"> Lead Form </a></li>
-                		<li><a href = "https://drive.google.com/file/d/10ydVPO2SDNtRN2Qm1reGctIRPRrhDrBw/export?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
-                		<li><a href = "https://drive.google.com/file/d/1kBPXWm8lNFj9dTl36pkNpidgaxm7jB4n/export?format=pdf" target = "_blank"> Alpha Omicron Syllabus </a></li>
-                		<li><a href = "https://drive.google.com/file/d/1TzmfE78hs3lSIz19GTjHFwouAXbJr0tM/export?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
+                		<li><a href = "https://drive.google.com/file/d/10ydVPO2SDNtRN2Qm1reGctIRPRrhDrBw/preview?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
+                		<li><a href = "https://drive.google.com/file/d/1kBPXWm8lNFj9dTl36pkNpidgaxm7jB4n/preview?format=pdf" target = "_blank"> Alpha Omicron Syllabus </a></li>
+                		<li><a href = "https://drive.google.com/file/d/1TzmfE78hs3lSIz19GTjHFwouAXbJr0tM/preview?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
 
                 	</ul>
                 	
@@ -50,7 +50,7 @@ include_once("include/topnav.php");
 					    <li><a href='https://goo.gl/forms/Ifx0WWwkXjrB4C303' target = "_blank">Diversity & Inclusion Event Reflection Form</a></li>
 						<li><a href='https://goo.gl/forms/WSKRJVfLLx9VMTWv2' target = "_blank">Anonymous Evaluations</a></li>
 						<li><a href='https://goo.gl/forms/qcs2n3Vayuoa5Aly1' target = "_blank">Event Evaluations</a></li>
-						<li><a href="https://drive.google.com/file/d/1lNKrfgsSEAuOeZdyZPvuFWw37KZqyM_v/export?format=pdf" target = "_blank">Outside Service Hours Log</a></li>
+						<li><a href="https://drive.google.com/file/d/1lNKrfgsSEAuOeZdyZPvuFWw37KZqyM_v/preview?format=pdf" target = "_blank">Outside Service Hours Log</a></li>
 						<li><a href='https://docs.google.com/forms/d/e/1FAIpQLSftdqT-xgSpVWNHtkmo7T4_L4NHbxt3iZlROEMcPVoxzlGUnw/viewform' target = "_blank">Diversity and Inclusion Survey</a></li>
 					</ul>
                 	
@@ -75,18 +75,18 @@ include_once("include/topnav.php");
 					<ul>
 						<li><a href="docs/F18_DeclReq.pdf" target = "_blank">Declining Requirement Policy</a></li>
 						<li><a href="https://docs.google.com/spreadsheets/d/127ov46_ZDQnMvgfN4MlC-XS2SOIWMHb6xNXJ-hFuL2k/edit?usp=sharing" target = "_blank">Past Semester Standings</a></li>
-						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/export?format=pdf">Alpha Kappa Letterhead</a></li>
+						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/preview?format=pdf">Alpha Kappa Letterhead</a></li>
 
 						<div class="slide1" style="cursor: pointer;"><li>Chapter Policies (Click to Show)</li></div>
 							<div class="view1">
 								<ul>
 									<!-- Updated Spring 2019 -->
-									<li><a href="https://drive.google.com/file/d/1HfPh1ho2KUEfun0qRKE5rFh5H3gDrMWb/export?format=pdf" target = "_blank">Bylaws</a></li>
+									<li><a href="https://drive.google.com/file/d/1HfPh1ho2KUEfun0qRKE5rFh5H3gDrMWb/preview?format=pdf" target = "_blank">Bylaws</a></li>
 									<!-- Updated Spring 2015 -->
-									<li><a href="https://drive.google.com/file/d/1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS/export?format=pdf" target = "_blank">Officer Descriptions</a> </li>
+									<li><a href="https://drive.google.com/file/d/1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS/preview?format=pdf" target = "_blank">Officer Descriptions</a> </li>
 									<!-- Updated Spring 2015 -->
-									<li><a href="https://drive.google.com/file/d/1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu/export?format=pdf" target = "_blank">Officer Election Policy</a></li>
-									<li><a href="https://drive.google.com/file/d/1OZJRnf2h5TdKSRN4--Hwiv8Cd32Lenie/export?format=pdf" target = "_blank">Driver Reimbursement Policy</a></li>
+									<li><a href="https://drive.google.com/file/d/1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu/preview?format=pdf" target = "_blank">Officer Election Policy</a></li>
+									<li><a href="https://drive.google.com/file/d/1OZJRnf2h5TdKSRN4--Hwiv8Cd32Lenie/preview?format=pdf" target = "_blank">Driver Reimbursement Policy</a></li>
 								</ul>
 							</div>
 					</ul>			

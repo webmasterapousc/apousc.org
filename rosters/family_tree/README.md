@@ -1,7 +1,8 @@
-ymlink references
+This is the family tree folder. It contains files for generating the family tree page.
 
-1) start in this directory
-2) run these to create symlinks
+The only symlink required is include.
+
+Commands for creating/recreating the symlink
 sudo ln -s ../include include
 
 -Nick

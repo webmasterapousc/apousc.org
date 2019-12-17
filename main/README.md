@@ -1,17 +1,10 @@
+This folder contains all the files for the main site of APO that Michelle (Fall 2018) started. All the css/js/sass/html files should be kept separate from the "old" website's. 
 
-The folders here are symlink references to the main folders.
+The only symlink required is img. 
 
-It saves space!
+Command for creating/recreating the symlink
+sudo ln -s ../img img 
 
-IE to make a reference to css, fonts, img, js, sass
-
-1) start in this directory
-2) run these to create symlinks
-sudo ln -s ../css css
-sudo ln -s ../fonts fonts
-sudo ln -s ../img img
-sudo ln -s ../js js 
-sudo ln -s ../sass sass
-
+The plan is eventually to move all functionality over to this "main" version (or to another completely redesigned version).
 
 -Nick
