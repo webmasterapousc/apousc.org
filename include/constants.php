@@ -11,8 +11,44 @@
  *
  * Modified by: Brad Ramos (bradleyRamos@gmail.com)
  * Modified by : Nick Chen (nickchen@usc.edu)
- * Last Updated: January 2011
+ * Last Updated: January 2020
  */
+
+/**
+ * Define current officers
+ */
+define("CURRENT_PRESIDENT", "chan043"); //Justin Chang
+define("CURRENT_PLEDGE_MASTER", "carlosde"); //Carlos Delgado
+define("CURRENT_PLEDGE_UNCLE", "oha"); //Andrew Oh
+define("CURRENT_PLEDGE_AUNT", "doyeonk"); //Doyeon Kim
+define("CURRENT_VP_SERVICE", "changarn"); //Arnold Chang
+define("CURRENT_VP_FELLOWSHIP", "ali068"); //Andrew Li
+define("CURRENT_VP_MEMBERSHIP1", "huan508"); //Justine Huang
+define("CURRENT_VP_MEMBERSHIP2", "zhangkat"); //Katherine Zhang
+define("CURRENT_VP_FINANCE1", "badeshre"); //Kabish Shrestha
+define("CURRENT_VP_FINANCE2", "clarecho"); //Clare Cho
+define("CURRENT_RECRUITMENT_CHAIR1", "mvtruong"); //Michael Truong
+define("CURRENT_RECRUITMENT_CHAIR2", "shin760"); //David Shin
+define("CURRENT_INTERCHAPTER_CHAIR", "gdavid"); //Gabe Gino David
+define("CURRENT_SPECIAL_EVENTS", "jameslta"); //James Liu Tang
+define("CURRENT_ALUMNI_LIAISON", "boonbaic"); //Pann Boonbaichaiyapruck
+define("CURRENT_SERGEANT_AT_ARMS", "elliotch"); //Elliot Cha
+define("CURRENT_DIVERSITY_INCLUSION", "aaronval"); //Aaron Valencia
+define("CURRENT_CREATIVE_DIRECTOR", "yurikawa"); //Yuri Kawada
+define("CURRENT_HISTORIAN", "csu"); //Chris Su
+define("CURRENT_WEBMASTER", "nickchen"); //Nick Chen
+define("CURRENT_VP_COMMUNICATIONS", "buranasi"); //Mim Buranasiri
+define("CURRENT_PHILANTHROPY_CHAIR1", "saraheng"); //Sarah Eng
+define("CURRENT_PHILANTHROPY_CHAIR2", "anjelict"); //Anjelica Tan
+define("CURRENT_ALPHA_HEAD", "chaoe"); //Erica Chao
+define("CURRENT_PHI_HEAD", "myrachen");  //Myra Cheng
+define("CURRENT_OMEGA_HEAD", "ipeng"); //Ivan Peng
+define("CURRENT_PLEDGE_PRESIDENT", "admin");
+define("CURRENT_PLEDGE_VP_SERVICE", "admin");
+define("CURRENT_PLEDGE_VP_FELLOWSHIP", "admin");
+define("CURRENT_PLEDGE_FUNDRAISING_CHAIR", "admin");
+define("CURRENT_PLEDGE_INTERCHAPTER_CHAIR", "admin");
+define("CURRENT_FALL_FELLOWSHIP_CHAIR", "admin");
 
 /**
  * Database Constants - these constants are required
