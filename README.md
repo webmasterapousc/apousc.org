@@ -1,5 +1,7 @@
 # APOUSC
-Hello Webmaster. This is the home directory of the website's files!
+Hello Webmaster. This is the home directory of APO USC's website.
+
+REMEMBER TO NOT NEVER NEVER UPLOAD THE PEM FILE OR EXPOSE ANY LOGIN INFORMATION!!
 
 ## STRUCTURE
 ```.htaccess``` is a Apache config file. It's best to not mess with it unless you know what you're doing.
