@@ -14,6 +14,9 @@
  * Modified by: Brad Ramos (bradleyRamos@gmail.com)
  * Last Updated: November 2011
  */
+// Google Analytics
+include_once("include/analytics.php")
+
 // Initiate connection to database and user login session
 include("include/session.php");
 

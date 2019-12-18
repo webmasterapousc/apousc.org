@@ -1,5 +1,8 @@
 <?php
-	// Initiate connection to database and user login session
+// Google Analytics
+include_once("include/analytics.php")
+
+// Initiate connection to database and user login session
 include "include/session.php";
 
 	// Set values for page

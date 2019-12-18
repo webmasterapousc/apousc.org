@@ -9,6 +9,9 @@
  * Written by: Jpmaster77 a.k.a. The Grandmaster of C++ (GMC)
  * Last Updated: August 15, 2004
  */
+// Google Analytics
+include_once("include/analytics.php")
+
 include("../include/session.php");
 
 class AdminProcess

@@ -1,4 +1,7 @@
 <?php
+	// Google Analytics
+	include_once("include/analytics.php")
+
 	include("include/session.php");
 	$poll_name = $_POST['poll_name'];
 	$poll_type = $_POST['poll_type'];

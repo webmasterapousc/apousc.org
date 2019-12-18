@@ -15,7 +15,7 @@ include("database.php");
 include("mailer.php");
 include("form.php");
 include_once("email_validator.php");
-include("constants.php");
+include_once("constants.php");
 include("ereg-wrapper.php");
 class Session
 {
@@ -51,7 +51,10 @@ class Session
 	function startSession()
 	{
 		global $database; //The database connection
-		session_start(); //Tell PHP to start the session
+		//Tell PHP to start the session if it wasn't already started
+		if (!isset($_SESSION)) {
+		    session_start();
+		}
 
 		/* Determine if user is logged in */
 		$this->logged_in = $this->checkLogin();
@@ -1629,8 +1632,6 @@ date_default_timezone_set('America/Los_Angeles');
 		if ($form->num_errors > 0) {
 			return 1; // Errors with form
 		} else {
-			/* Use Akismet to filter out spam */
-			include("include/akismet.php");
 			// Load array with comment data
 			$comment = array(
 				'author'    => $subname,
