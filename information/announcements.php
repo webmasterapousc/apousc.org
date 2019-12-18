@@ -1,9 +1,9 @@
 <?php
 // Google Analytics
-include_once("include/analytics.php")
+include_once("include/analytics.php");
 
 // Initiate connection to database and user login session
-include("include/session.php");
+include_once("include/session.php");
 
 // Set values for page
 $page_title = "Announcements";

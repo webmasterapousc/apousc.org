@@ -11,7 +11,7 @@
  * Modified by: Brad Ramos (bradleyRamos@gmail.com)
  * Last Updated: January 2011
  */
-include("constants.php");
+include_once("constants.php");
 include_once('fix_mysql.inc.php');
 class MySQLDB
 {

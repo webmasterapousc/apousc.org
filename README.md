@@ -39,7 +39,7 @@ For example, if you wanted to make a symlink reference in html folder to a folde
 
 ```sudo ln -s /var/www/src /var/www/html/src```
 
-Symlinks are useful because it makes including files easier. In the above example, if we had a index.php in html that wanted to include a file from src without using symlinks, we would need to write ```include(../src/file)```. With a symlink, we could just write ```include(src/file)```.
+Symlinks are useful because it makes including files easier. In the above example, if we had a index.php in html that wanted to include a file from src without using symlinks, we would need to write ```include_once(../src/file)```. With a symlink, we could just write ```include_once(src/file)```.
 
 While it doesn't seem to save that much work in this example, it's very useful for linking directories that are several layers apart. 
 

@@ -13,7 +13,7 @@
  * Modified by: Brad Ramos (bradleyRamos@gmail.com)
  * Last Updated: November 2011
  */
-include("include/session.php");
+include_once("include/session.php");
 
 class Process
 {

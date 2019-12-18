@@ -11,12 +11,12 @@
  * Modified by: Brad Ramos (bradleyRamos@gmail.com)
  * Last Updated: November 2011
  */
-include("database.php");
-include("mailer.php");
-include("form.php");
+include_once("database.php");
+include_once("mailer.php");
+include_once("form.php");
 include_once("email_validator.php");
 include_once("constants.php");
-include("ereg-wrapper.php");
+include_once("ereg-wrapper.php");
 class Session
 {
 	var $username; //Username given on sign-up

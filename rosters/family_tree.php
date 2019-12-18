@@ -1,6 +1,6 @@
 <?php
 // Initiate connection to database and user login session
-include("include/session.php");
+include_once("include/session.php");
 $user = $_GET['user'];
 
 // escape special chars, etc.

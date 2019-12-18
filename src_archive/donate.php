@@ -1,6 +1,6 @@
 <?php
 // Initiate connection to database and user login session
-include("include/session.php");
+include_once("include/session.php");
 
 // Set values for page
 $page_title = "Help Us Give Back: Donating to Alpha Phi Omega";

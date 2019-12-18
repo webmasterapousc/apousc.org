@@ -1,6 +1,6 @@
 <?php 
 
-include("include/session.php");
+include_once("include/session.php");
 
 $page_title = "Alpha Kappa Budget";
 $current_page = "budget";

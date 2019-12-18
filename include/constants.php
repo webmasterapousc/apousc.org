@@ -43,12 +43,12 @@ define("CURRENT_PHILANTHROPY_CHAIR2", "anjelict"); //Anjelica Tan
 define("CURRENT_ALPHA_HEAD", "chaoe"); //Erica Chao
 define("CURRENT_PHI_HEAD", "myrachen");  //Myra Cheng
 define("CURRENT_OMEGA_HEAD", "ipeng"); //Ivan Peng
-define("CURRENT_PLEDGE_PRESIDENT", "admin");
-define("CURRENT_PLEDGE_VP_SERVICE", "admin");
-define("CURRENT_PLEDGE_VP_FELLOWSHIP", "admin");
-define("CURRENT_PLEDGE_FUNDRAISING_CHAIR", "admin");
-define("CURRENT_PLEDGE_INTERCHAPTER_CHAIR", "admin");
-define("CURRENT_FALL_FELLOWSHIP_CHAIR", "admin");
+define("CURRENT_PLEDGE_PRESIDENT", null);
+define("CURRENT_PLEDGE_VP_SERVICE", null);
+define("CURRENT_PLEDGE_VP_FELLOWSHIP", null);
+define("CURRENT_PLEDGE_FUNDRAISING_CHAIR", null);
+define("CURRENT_PLEDGE_INTERCHAPTER_CHAIR", null);
+define("CURRENT_FALL_FELLOWSHIP_CHAIR", null);
 
 /**
  * Database Constants - these constants are required
@@ -165,9 +165,9 @@ $memberStatus = array(
 	ASSOCIATE_MEMBER => "Associate",
 	INACTIVE_MEMBER => "Inactive",
 	ALUMNI_MEMBER => "Alumni",
-        FROZEN_MEMBER => "Frozen",
-		RUSHEE => "Rushee",
-		ABROAD => "Abroad"
+    FROZEN_MEMBER => "Frozen",
+	RUSHEE => "Rushee",
+	ABROAD => "Abroad"
 );
 
 /**
@@ -196,6 +196,7 @@ define("PLEDGE_AUNCLE", 20);
 define("ALPHA_HEAD", 21);
 define("PHI_HEAD", 22);
 define("OMEGA_HEAD", 23);
+
 define("PLEDGE_PRESIDENT", 24);
 define("PLEDGE_VP_SERVICE", 25);
 define("PLEDGE_VP_FELLOWSHIP", 26);
@@ -224,41 +225,17 @@ $officers = array(
 	PHILANTHROPY_CHAIR => "Philanthropy Co-Chair",
 	RUSH_CHAIR => "Rush Co-Chair",
 	EMERITUS => "Emeritus",
+    PLEDGE_AUNCLE => "Pledge Class Aunt / Uncle",
 	ALPHA_HEAD => "Alpha Family Head",
 	PHI_HEAD => "Phi Family Head",
 	OMEGA_HEAD => "Omega Family Head",
-        PLEDGE_AUNCLE => "Pledge Class Aunt / Uncle",
-        PLEDGE_PRESIDENT => "Pledge Class President",
-        PLEDGE_VP_SERVICE => "Pledge Class VP of Service",
-        PLEDGE_VP_FELLOWSHIP => "Pledge Class VP of Fellowship",
-        PLEDGE_FUNDRAISING_CHAIR => "Pledge Class Fundraising Chair",
-        PLEDGE_INTERCHAPTER_CHAIR => "Pledge Class Interchapter Chair",
+    PLEDGE_PRESIDENT => "Pledge Class President",
+    PLEDGE_VP_SERVICE => "Pledge Class VP of Service",
+    PLEDGE_VP_FELLOWSHIP => "Pledge Class VP of Fellowship",
+    PLEDGE_FUNDRAISING_CHAIR => "Pledge Class Fundraising Chair",
+    PLEDGE_INTERCHAPTER_CHAIR => "Pledge Class Interchapter Chair",
 	FALL_FELLOWSHIP_CHAIR => "Fall Fellowship Co-Chair"
 );
-
-
-/**
- * Define pledge officer positions
- */
-define("PLEDGE_PRESIDENT", 1);
-define("PLEDGE_VP_SERVICE", 2);
-define("PLEDGE_VP_FELLOWSHIP", 3);
-define("PLEDGE_SECRETARY", 4);
-define("PLEDGE_FUNDRAISING_CHAIR", 5);
-define("PLEDGE_INTERCHAPTER_CHAIR", 6);
-define("PLEDGE_HISTORIAN", 7);
-
-global $officers_pledge;
-$officers_pledge = array(
-        PLEDGE_PRESIDENT => "Pledge Class President",
-        PLEDGE_VP_SERVICE => "Pledge Class VP of Service",
-        PLEDGE_VP_FELLOWSHIP => "Pledge Class VP of Fellowship",
-        PLEDGE_SECRETARY => "Pledge Class Secretary",
-        PLEDGE_FUNDRAISING_CHAIR => "Pledge Class Fundraising Chair",
-        PLEDGE_INTERCHAPTER_CHAIR => "Pledge Class Interchapter Chair",
-        PLEDGE_HISTORIAN => "Pledge Class Historian"
-);
-
 
 /**
  * Define APO Families
@@ -336,18 +313,18 @@ $eventType = array(
 	2 => "Fundraising",
 	3 => "Interchapter",
 	4 => "Membership",
-        5 => "Other",
-        6 => "Alumni",
-        7 => "Philanthropy",
-        8 => "Publicity",
-        9 => "Special",
-        10 => "Alpha Family",
-        11 => "Phi Family",
-        12 => "Omega Family",
-        13 => "ICervice",
-        14 => "Pledge Membership",
-        15 => "Canceled",
-        16 => "Diversity & Inclusion"
+    5 => "Other",
+    6 => "Alumni",
+    7 => "Philanthropy",
+    8 => "Publicity",
+    9 => "Special",
+    10 => "Alpha Family",
+    11 => "Phi Family",
+    12 => "Omega Family",
+    13 => "ICervice",
+    14 => "Pledge Membership",
+    15 => "Canceled",
+    16 => "Diversity & Inclusion"
 );
 
 /**
@@ -355,53 +332,53 @@ $eventType = array(
  */
 global $pledgeClasses;
 $pledgeClasses = array(
-20000 => "Alpha",
-20011 => "Beta",
-20010 => "Gamma",
-20021 => "Delta",
-20020 => "Epsilon",
-20031 => "Zeta",
-20030 => "Eta",
-20041 => "Theta",
-20040 => "Iota",
-20051 => "Kappa",
-20050 => "Lambda",
-20061 => "Mu",
-20060 => "Nu",
-20071 => "Xi",
-20070 => "Omicron",
-20081 => "Pi",
-20080 => "Rho",
-20091 => "Sigma",
-20090 => "Tau",
-20101 => "Upsilon",
-20100 => "Phi",
-20111 => "Chi",
-20110 => "Psi",
-20121 => "Omega",
-20120 => "Alpha Alpha",
-20131 => "Alpha Beta",
-20130 => "Alpha Gamma",
-20141 => "Alpha Delta",
-20140 => "Alpha Epsilon",
-20151 => "Alpha Zeta",
-20150 => "Alpha Eta",
-20161 => "Alpha Theta",
-20160 => "Alpha Iota",
-20171 => "Alpha Kappa",
-20170 => "Alpha Lambda",
-20181 => "Alpha Mu",
-20180 => "Alpha Nu",
-20191 => "Alpha Xi",
-20190 => "Alpha Omicron",
-20201 => "Alpha Pi",
-20200 => "Alpha Rho",
-20211 => "Alpha Sigma",
-20210 => "Alpha Tau",
-20221 => "Alpha Upsilon",
-20220 => "Alpha Phi",
-20231 => "Alpha Chi",
-20230 => "Alpha Psi",
-20241 => "Alpha Omega"
+	20000 => "Alpha",
+	20011 => "Beta",
+	20010 => "Gamma",
+	20021 => "Delta",
+	20020 => "Epsilon",
+	20031 => "Zeta",
+	20030 => "Eta",
+	20041 => "Theta",
+	20040 => "Iota",
+	20051 => "Kappa",
+	20050 => "Lambda",
+	20061 => "Mu",
+	20060 => "Nu",
+	20071 => "Xi",
+	20070 => "Omicron",
+	20081 => "Pi",
+	20080 => "Rho",
+	20091 => "Sigma",
+	20090 => "Tau",
+	20101 => "Upsilon",
+	20100 => "Phi",
+	20111 => "Chi",
+	20110 => "Psi",
+	20121 => "Omega",
+	20120 => "Alpha Alpha",
+	20131 => "Alpha Beta",
+	20130 => "Alpha Gamma",
+	20141 => "Alpha Delta",
+	20140 => "Alpha Epsilon",
+	20151 => "Alpha Zeta",
+	20150 => "Alpha Eta",
+	20161 => "Alpha Theta",
+	20160 => "Alpha Iota",
+	20171 => "Alpha Kappa",
+	20170 => "Alpha Lambda",
+	20181 => "Alpha Mu",
+	20180 => "Alpha Nu",
+	20191 => "Alpha Xi",
+	20190 => "Alpha Omicron",
+	20201 => "Alpha Pi",
+	20200 => "Alpha Rho",
+	20211 => "Alpha Sigma",
+	20210 => "Alpha Tau",
+	20221 => "Alpha Upsilon",
+	20220 => "Alpha Phi",
+	20231 => "Alpha Chi",
+	20230 => "Alpha Psi",
+	20241 => "Alpha Omega"
 );
 ?>

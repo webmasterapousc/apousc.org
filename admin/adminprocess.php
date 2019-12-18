@@ -10,9 +10,9 @@
  * Last Updated: August 15, 2004
  */
 // Google Analytics
-include_once("include/analytics.php")
+include_once("include/analytics.php");
 
-include("../include/session.php");
+include_once("../include/session.php");
 
 class AdminProcess
 {

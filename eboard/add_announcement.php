@@ -1,6 +1,6 @@
 <?php
 // Google Analytics
-include_once("include/analytics.php")
+include_once("include/analytics.php");
 
 // Initiate connection to database and user login session
 include_once("include/session.php");

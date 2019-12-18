@@ -1,6 +1,6 @@
 <?php
 // Initiate connection to database and user login session
-include("include/session.php");
+include_once("include/session.php");
 
 // Set values for page
 $page_title = "Hit Administration";
@@ -42,199 +42,199 @@ for($y=12;$y<20;$y++){
 echo "</ul>";
 
 $url = "about_ak";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "about_apo";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "add_announcement";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "add_event";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "add_pic";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "admin";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "admin_manual";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "admin_useredit";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "adminprocess";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "ak_history";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "alumni";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "alumni_newsletter";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "announcements";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "attend";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "attend_fam";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "attend_fel";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "attend_fun";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "attend_int";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "attend_ser";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "beyond";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "calendar";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "calendar_form";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "contact";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "discover";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "documents";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "donate";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "edit_announcement";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "edit_event";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "error";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "event_page";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "events";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "excomm_a";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "excomm_p";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "forgotpass";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "gdform";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "history";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "history_ecomm";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "history_general";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "history_pledge";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "history_pledge_test";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "history_rush";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "hit_admin";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "index";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "join";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "nominations";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "officers_a";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "officers_p";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "pledge_info";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "recent_activity";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "register";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "req_a";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "req_assoc";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "req_p";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "requirements";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "requirements_a";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "requirements_assoc";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "requirements_p";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "resources";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "roster";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "useredit";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "userinfo";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "userinfo_mutual";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "videos";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "webformmailer";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 $url = "webmaster_info";
-include("hit_admin_entry.php");
+include_once("hit_admin_entry.php");
 
 echo "<br /><br /><strong>Note to the webmaster</strong>: If this list does not include all the pages on the web site, please cross-reference this page with the list of all files in the FTP directory and add new listings to this page using the existing syntax. Also, make sure that the current_page variable at the top of every page accurately reflects the actual name of that page on the server. For example, the current_page value for events.php should be \"events\". If the current_page value is inaccurate, hits for that page will be directed to the incorrect counter.";
 }
