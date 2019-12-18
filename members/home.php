@@ -115,24 +115,195 @@ include_once("include/convert_text.php");
 ?>
 
 
-<!--
-<div class='highlight' > <span src='http://www.apousc.posterous.com'><span></div> -->
-<!--Youtube channel-->
-<!--<h2 align=middle>APO Youtube Channel</h2>
-<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=apousc" width="550" height="470"></iframe>   -->
-
-<!--<iframe id="iframecode" onload="" scrolling="no" marginheight="0" frameborder="0" width="480" src="http://ytchannelembed.com/gallery.php?vids=3&amp;user=apousc&amp;row=3&amp;width=150&amp;hd=1&amp;margin_right=15&amp;desc=100&amp;desc_color=9E9E9E&amp;title=30&amp;title_color=000000&amp;views=1&amp;likes=1&amp;dislikes=1&amp;fav=1&amp;playlist=" style="height: 250px;"></iframe>-->
-
-<!--Flickr Stream-->
-<!--<h2>APO Flickr</h2>
-<object width="400" height="310" class=""> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F74876704%40N08%2Fshow%2F&page_show_back_url=%2Fphotos%2F74876704%40N08%2F&user_id=74876704@N08&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F74876704%40N08%2Fshow%2F&page_show_back_url=%2Fphotos%2F74876704%40N08%2F&user_id=74876704@N08&jump_to=" width="320" height="240"></embed></object> -->
-
-<!--Start of Events Sign Ups -->
-
+<!-- Start of Calendar -->
 
 <?php
+echo "</ul><br /><div class='highlight' align=middle><a href='../members/calendar.php'>Event Calendar</a></div>";
+if ($_GET["month"] == "") {
+	// Current date in x/x/xxxx format
+	$curday   = date(j);
+	$curmonth = date(n);
+	$curyear  = date(Y);
+} else {
+	$curmonth = htmlspecialchars($_GET["month"]);
+	$curyear  = htmlspecialchars($_GET["year"]);
+}
 
-echo "</ul><br /><div class='highlight' align=middle>Events</div><ul>";
+// Create month and year selection controls
+
+/* date settings */
+$month                = (int) ($_GET['month'] ? htmlspecialchars($_GET['month']) : date('m'));
+$year                 = (int) ($_GET['year'] ? htmlspecialchars($_GET['year']) : date('Y'));
+/* select month control */
+$select_month_control = '<li><select name="month" id="month">';
+for ($x = 1; $x <= 12; $x++) {
+	$select_month_control .= '<option value="' . $x . '"' . ($x != $month ? '' : ' selected="selected"') . '>' . date('F', mktime(0, 0, 0, $x, 1, $year)) . '</option>';
+}
+$select_month_control .= '</select>';
+/* select year control */
+$year_range          = 7;
+$select_year_control = '<select name="year" id="year">';
+for ($x = ($year - floor($year_range / 2)); $x <= ($year + floor($year_range / 2)); $x++) {
+	$select_year_control .= '<option value="' . $x . '"' . ($x != $year ? '' : ' selected="selected"') . '>' . $x . '</option>';
+}
+$select_year_control .= '</select>';
+/* bringing the controls together */
+$controls = '<form method="get" action="#"><ol>' . $select_month_control . $select_year_control . '<input type="submit" name="submit" value="Go" /></li></ol></form>';
+
+// Query the server for events on the date
+$q      = "SELECT * FROM `" . TBL_EVENTS . "` ORDER BY `start`";
+$result = $database->query($q);
+
+$count   = 0;
+$names   = array();
+$daylist = array();
+$ids     = array();
+
+if ($result) {
+	while ($row = mysql_fetch_array($result)) {
+		// Get variables
+		$id    = $row[0];
+		$name  = htmlspecialchars($row[1]);
+		$type  = $row[2];
+		$desc  = $row[3];
+		$start = $row[4];
+		$end   = $row[5];
+		
+		$calcmonth = ($start[5] * 10 + $start[6]);
+		$calcday   = ($start[8] * 10 + $start[9]);
+		
+		$Eyear = substr($start, 0, 4);
+		
+		if ($curmonth == $calcmonth && $Eyear == $curyear) {
+			$names[$count]   = $name;
+			$daylist[$count] = $calcday;
+			$ids[$count]     = $id;
+			$count++;
+		}
+	}
+}
+
+function return_startday($month, $year)
+{
+	$startday = date("l", mktime(0, 0, 0, $month, 1, $year));
+	return $startday;
+}
+
+function return_daysInMonth($month, $year)
+{
+	$daysCount = 0;
+	if ($month == 1 || $month == 3 || $month == 5 || $month == 7 || $month == 8 || $month == 10 || $month == 12) {
+		$daysCount = 31;
+	} else if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
+		$daysCount = 30;
+	} else {
+		if (date(L, mktime(0, 0, 0, 1, 1, $year))) {
+			$daysCount = 29;
+		} else {
+			$daysCount = 28;
+		}
+	}
+	return $daysCount;
+}
+
+$startday    = return_startday($curmonth, $curyear);
+$daysInMonth = return_daysInMonth($curmonth, $curyear);
+
+//setup prev. month
+if ($curmonth == 1) {
+	$prevmonth = 12;
+	$prevyear  = $curyear - 1;
+} else {
+	$prevmonth = $curmonth - 1;
+	$prevyear  = $curyear;
+}
+
+//setup nextmonth
+if ($curmonth == 12) {
+	$nextmonth = 1;
+	$nextyear  = $curyear + 1;
+} else {
+	$nextmonth = $curmonth + 1;
+	$nextyear  = $curyear;
+}
+?>
+<!--/This is where we define the table/-->
+<table class="calendar pretty" cellpadding="0" cellspacing="0" border="0">
+	<caption class="calendar-month"><span class="calendar-prev"><?php echo "<a href=\"calendar.php?month=".$prevmonth."&amp;year=".$prevyear."\">&laquo;&nbsp;".$monthsOfTheYear[$prevmonth]."</a>"; ?></span>&nbsp;<?php echo ($monthsOfTheYear[$curmonth]." ".$curyear); ?>&nbsp;<span class="calendar-next"><?php echo "<a href=\"calendar.php?month=".$nextmonth."&amp;year=".$nextyear."\">".$monthsOfTheYear[$nextmonth]."&nbsp;&raquo;</a>"; ?></span></caption>
+	<tr class="header-row"><th abbr="Sunday">Sun</th><th abbr="Monday">Mon</th><th abbr="Tuesday">Tue</th><th abbr="Wednesday">Wed</th><th abbr="Thursday">Thu</th><th abbr="Friday">Fri</th><th abbr="Saturday">Sat</th></tr>
+	<?php
+	echo ("<tr class=\"day-row\">");
+	// Print out blank spaces until we get to the start day
+	$day_iterator   = 1;
+	$dayOf_iterator = 0;
+	for ($i = 0; $i < 7; $i++) {
+		if (!strcmp($startday, $daysOfTheWeek[$i])) {
+			$dayOf_iterator++;
+			break;
+		} else {
+			echo ("<td class=\"calendar-day empty\">&nbsp;</td>");
+			$dayOf_iterator++;
+		}
+	}
+	
+	while ($day_iterator <= $daysInMonth) {
+		$curdate = strtotime($curyear."-".$curmonth."-".$day_iterator);
+		if (date("Y-m-d") === date("Y-m-d",$curdate)) {
+			echo "<td class=\"calendar-day today\">".$day_iterator."<br />";
+		} else {
+			echo ("<td class=\"calendar-day\">".$day_iterator."<br />");
+		}
+		// Code for adding the events
+		for ($i = 0; $i < $count; $i++) {
+			if ($day_iterator == $daylist[$i]) {
+				$eventname = $names[$i];
+				// Cut off event name after 20 characters to save space on calendar
+				$cutoff    = false;
+				if (strlen($eventname) > 15) {
+					$eventname = substr($eventname, 0, 15);
+					$cutoff    = true;
+				}
+				// Force event name to linewrap after 10 characters to maintain calendar shape
+				$eventname = wordwrap($eventname, 10, "<br />", true);
+				// Add elipsis if event name was cut off
+				if ($cutoff) {
+					$eventname .= "&hellip;";
+				}
+				echo ("<a href=\"event_page.php?eventid=".$ids[$i]."\" title=\"".$names[$i]."\">".$eventname."</a><br />");
+			}
+		}
+		echo ("</td>");
+		if ($dayOf_iterator % 7 == 0 && $day_iterator != $daysInMonth) {
+			echo "</tr>\n				<tr class=\"day-row\">";
+		} else if ($dayOf_iterator % 7 == 0) {
+			echo "</tr>";
+		}
+		$day_iterator++;
+		$dayOf_iterator++;
+	}
+	// Print out blank spaces for empty days at end of month
+	if (($dayOf_iterator - 1) % 7 != 0) {
+		while ($dayOf_iterator % 7 != 1) {
+			$dayOf_iterator++;
+			echo ("<td class=\"calendar-day empty\">&nbsp;</td>");
+		}
+	}
+	echo "</tr>\n";
+	?>
+</table>
+<?php echo $controls; ?>
+<div class="holder_line extra">
+	<p>You can subscribe to the events in this calendar using <a href="http://www.google.com/support/calendar/bin/answer.py?hl=en&answer=37100" rel="external">Google Calendar</a> or any other calendar program that accepts the APOUSC<code>.ics</code> iCalendar feed downloadable <a href="ical.php">here</a></p>
+</div>
+<hr>
+<!-- End of Calendar -->
+
+
+<!--Start of Events Sign Ups -->
+<?php
+
+#echo "</ul>;"
+echo "<br /><div class='highlight' align=middle>Events</div><ul>";
 $query = "SELECT U.username,U.fname,U.lname,E.ID,E.name,E.start,COUNT(S.username) as counter FROM events as E, signups as S, users as U WHERE UNIX_TIMESTAMP(E.end) <= UNIX_TIMESTAMP(NOW()) AND S.eventid = E.ID AND S.username = U.username GROUP BY E.ID ORDER BY start DESC LIMIT 3";
 $result = mysql_query($query);
 while ($row = mysql_fetch_array($result)){
