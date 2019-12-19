@@ -30,4 +30,9 @@ define("DB_NAME", "apousc5_main");
  * will need to be reset individually!
  */
 define("PASSWORD_SALT", "rZWkXf1tlHTJse00wrvBvLncE");
+
+/**
+ * Mailgun API Key
+ */
+define("MG_API_KEY", "5172aedcd25645dffeb9efd85f37c41b-f8b3d330-b271ecc0");
 ?>

@@ -56,6 +56,17 @@ define("CURRENT_PLEDGE_INTERCHAPTER_CHAIR", null);
 define("CURRENT_FALL_FELLOWSHIP_CHAIR", null);
 
 /**
+ * Mailgun API Key
+ */
+
+// located in secure_constants.php
+
+/**
+ * Mailgun API Base Url
+ */
+define("MG_BASE_URL", "https://api.mailgun.net/v3/mail.apousc.org");
+
+/**
  * Database Constants - these constants are required
  * in order for there to be a successful connection
  * to the MySQL database. Make sure the information is

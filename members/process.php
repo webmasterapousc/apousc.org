@@ -183,7 +183,7 @@ class Process
 		 * by mistake and therefore is redirected.
 		 */
 		else {
-			header("Location: home.php");
+			header("Location: " . $session->referrer);
 		}
 	}
 	
