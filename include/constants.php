@@ -17,7 +17,7 @@
 /**
  * Secure Constants should NEVER be exposed ANYWHERE. Don't add it to the repo
  */
-include_once(secure_constants.php);
+include("secure_constants.php");
 
 /**
  * Define current officers
