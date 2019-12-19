@@ -15,6 +15,11 @@
  */
 
 /**
+ * Secure Constants should NEVER be exposed ANYWHERE. Don't add it to the repo
+ */
+include_once(secure_constants.php);
+
+/**
  * Define current officers
  */
 define("CURRENT_PRESIDENT", "chan043"); //Justin Chang
@@ -56,10 +61,8 @@ define("CURRENT_FALL_FELLOWSHIP_CHAIR", null);
  * to the MySQL database. Make sure the information is
  * correct.
  */
-define("DB_SERVER", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "str0ngThec!rcl");
-define("DB_NAME", "apousc5_main");
+
+// located in secure_constants.php
 
 /**
  * Password Salt String
@@ -67,7 +70,8 @@ define("DB_NAME", "apousc5_main");
  * passwords to become invalid and everyone's password
  * will need to be reset individually!
  */
-define("PASSWORD_SALT", "rZWkXf1tlHTJse00wrvBvLncE");
+
+// located in secure_constants.php
 
 /**
  * Database Table Constants - these constants
