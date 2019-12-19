@@ -13,7 +13,7 @@
 	<meta name = "viewport" content = "width = device-width">
 	<link rel="home" title="Alpha Phi Omega - Alpha Kappa" href="http://www.apousc.com/" />
 	<link rel="shortcut icon" href="img/favicon.gif" type="image/gif" />
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="../css/styles.css" />
 	<!--[if lte IE 6]>
 	<link rel="stylesheet" href="css/ie.css" />
 	<![endif]-->

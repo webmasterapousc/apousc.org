@@ -11,6 +11,23 @@ include_once("include/header.php");
 
 // Below this PHP block, set page-specific JavaScript, CSS, and anything else for the <head>
 ##################################################
+//set variables
+if (isset($_GET['current_year']))
+  $current_year = $_GET['current_year'];
+else
+  $current_year=2020;
+if (isset($_GET['current_semester']))
+  $current_semester = $_GET['current_semester'];
+else
+  $current_semester=0;
+
+//connect to database
+$connect = mysqli_connect("localhost", "root", "str0ngThec!rcl", "apousc5_main");
+$message = '';
+
+
+$query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
+$result = mysqli_query($connect, $query);
 ?>
 
 <?php
@@ -21,54 +38,59 @@ include_once("include/topnav.php");
 // Below this PHP block, enter only the main HTML content of the page. All necessary layout, body, html, etc. tags are included in the PHP includes.
 ##################################################
 ?>
-			<h2>Active Executive Committee</h2>
-			<noscript><p>If you are reading this message, it means that you do not have JavaScript enabled. Unfortunately, the e-mail addresses on this page are being protected from spam harvesters using JavaScript, so please enable JavaScript, switch Internet browsers, or feel free to use our <a href="contact.php">contact form</a>.</p></noscript>
-			
-					<?php
-					$queryContainer=mysql_query("SELECT * FROM term");
-					$semester = 0; // initialization
-					while($rowContainer=mysql_fetch_array($queryContainer)){
-						$q = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank JOIN term as T ON O.term = T.term_id WHERE T.year = '".$rowContainer['year']."' AND T.semester = '".$rowContainer['semester']."'"; // Retrieve the officers for the current year (such as 2012) and current semester (such as 0, which means spring)
-						$result = mysql_query($q);
-						echo $rowContainer['term'];
-						echo"<table id='eventTable' cellspacing='0' class='pretty'>
-							<thead>
-						<tr>
-						<th scope='col'>Position</th>
-						<th scope='col'>Name</th>
-						<th scope='col'>E-mail</th>";
-						if ($session->logged_in) {echo "<th scope='col'>Phone Number</th>";}
-						echo "</tr>
-						</thead>
-						<tbody>";
-						$i = 0; // Counter used for alternating table row colors
-						while ($row = mysql_fetch_array($result)) {
-							$mail  = $row['email'];
-							$username = $row['username'];
-							$first = $row['fname'];
-							$last  = $row['lname'];
-							$pos   = $row['title'];
-							$phone = $row['phone'];
-							$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
-							echo "\t\t\t\t\t<tr".$zebra.">\n";
-							echo "\t\t\t\t\t\t<td>$pos</td>\n";
-							echo "\t\t\t\t\t\t<td><a href=../members/userinfo.php?user=$username . >$first $last</a></td>\n";
-							//($mail,$mail)
-							echo "\t\t\t\t\t\t<td>"$mail."</td>\n";
-							if ($session->logged_in) {
-								echo "\t\t\t\t\t\t<td>";
-									echo preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $phone);
-								echo "</td>\n";}
+			  <div>
+   <h2 align="center">
+    Currently Viewing Executive Committee
+    <?php
+      if ($current_semester ==0) echo "Spring ";
+      else echo "Fall ";
+      echo $current_year;
+    ?></a></h2>
+   <?php echo $message; ?>
 
-							echo "\t\t\t\t\t</tr>\n";
-							$i++;
-						}
-						echo "</tbody>
-			</table>";
-						if($semester=1){$semester=0;}else{$semester=1;} // switch semesters for the next iteration of the loop... 0 = spring semester while 1 = fall semester
-					}
-					?>
-				
+  
+   <!-- form for changing year/semester to view -->
+   <form id = 'tbChangeForm' name='tbChangeForm'  method="GET" action="excomm_past.php">
+    <h4>  
+      Change Query: year <input type="number" name = "current_year" id="current_year" min="2004" max="2030" value="<?php echo (int)($current_year); ?>">
+      semester <input type="number" name = "current_semester" id="current_semester" min="0" max= "1" value="<?php echo (int)($current_semester); ?>">
+      <input type="submit" value="submit">
+    </h4>
+   </form>
+   
+   <br />
+   <div>
+    <table id='eventTable' cellspacing='0' class='pretty'>
+      <thead>
+     <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <?php
+        if ($session->logged_in) {echo "<th scope='col'>Phone Number</th>";}
+      ?>
+     </tr>
+     <?php
+     $i=0;
+     while($row = mysqli_fetch_array($result))
+     {
+      $zebra = ($i % 2 == 1) ? ' class=\'zebra\'' : '';
+      $i++;
+      echo '
+      <tr '.$zebra.'>
+       <td>'.$row["title"].'</td>
+       <td>'.$row["fname"]." ".$row["lname"].'</td>
+       <td>'.$row["phone"].'</td>
+
+      </tr>
+      ';
+     }
+     ?>
+   </thead>
+    </table>
+   </div>
+
+  </div>
+
 <?php
 ##################################################
 // Load sidebar, footer, and dropdown stats panel
