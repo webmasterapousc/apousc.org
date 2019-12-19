@@ -22,7 +22,7 @@ else
   $current_semester=0;
 
 //connect to database
-$connect = mysqli_connect("localhost", $DB_USER, $DB_PASS, $DB_NAME);
+$connect = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 $message = '';
 
 
