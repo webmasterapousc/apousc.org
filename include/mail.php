@@ -1,8 +1,8 @@
 <?php
 # Include the Autoloader (see "Libraries" for install instructions)
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 use Mailgun\Mailgun;
-include_once 'include/constants.php';
+include_once 'constants.php';
 function sendMail($mail_to, $mail_subject, $mail_msg) {
 	// First, instantiate the SDK with your API credentials
 	$mg = Mailgun::create(MG_API_KEY); // For US servers
