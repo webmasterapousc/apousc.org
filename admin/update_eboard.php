@@ -11,7 +11,7 @@ else
   $current_semester=0;
 
 //index.php
-$connect = mysqli_connect("localhost", "root", "str0ngThec!rcl", "apousc5_main");
+$mysqli = mysqli_connect("localhost", "root", "str0ngThec!rcl", "apousc5_main");
 if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -30,65 +30,39 @@ if(isset($_POST["upload"]))
    $semester = null;
    $year = null;
    $term = null;
+   $data = fgetcsv($handle);
+   //get term from upload_year and upload_semester
+   $upload_year = $_POST['upload_year'];
+   $upload_semester = $_POST['upload_semester'];
+   
    while($data = fgetcsv($handle))
    {
     $position_id = $data[0];
-    //$position_name = mysqli_real_escape_string($connect, $data[1]); //unused here
     $officer_fname = $data[2];
     $officer_lname = $data[3];
-    // figure out term once
-    /**if ($term == null) {
-      // these two only needs to be set once since term same for all entries
-      $semester = $data[5];
-      $year = $data[4];
-      //query for the term from the year semester combination
-      $query = "
-      SELECT * 
-      FROM `term` as T 
-      WHERE T.year == $year AND T.semester == $semester
-      ";
-      //echo $query;
-      //get the term id
-      $result = mysqli_query($connect, $query);
-      //$value = $result->fetch_object();
-      $row= $result->fetch_array();//->term_id;
-      $term = $row['term_id'];
-      echo ($term . " " . $position_id . " " . $officer_fname . " " . $officer_lname);
 
-    }**/
-    $term = 20;
-    $query = "
-      SELECT * 
-      FROM `users` 
-      WHERE fname = '$officer_fname' AND lname = '$officer_lname'
-      ";
-    $result = mysqli_query($connect, $query);
-    echo ("Errorcode: ".$connect->errno);
+    if (empty($term)) {
+      $year = $data[4];
+      $semester = $data[5];
+      $ps = $mysqli->prepare("SELECT * FROM term WHERE year = ? AND semester = ?");
+      $ps->bind_param("ii", $year, $semester);
+      $ps->execute();
+      $result = $ps->get_result();
+      $row = $result->fetch_array();
+      $term = $row['term_id'];
+    }
+    
+    $ps = $mysqli->prepare("SELECT * FROM users WHERE fname = ? AND lname = ?");
+    $ps->bind_param("ss", $officer_fname, $officer_lname);
+    $ps->execute();
+    $result = $ps->get_result();
+
     $row = $result->fetch_array();
     $username = $row['username'];
-    $query= "
-    INSERT INTO `officer`(`username`, `term`, `position`) 
-    VALUES (
-      $username,
-      $term,
-      $position_id)
-    ";      
-    //echo $query;
 
-
-    mysqli_query($connect, $query);
-
-    // Might need to update users table with positions?
-    // If so, fix below (WARNING: QUERY IS NOT RIGHT)
-    /**
-    $query = "
-     UPDATE users 
-     SET product_category = '$product_category', 
-     product_name = '$product_name', 
-     product_price = '$product_price' 
-     WHERE product_id = '$product_id'
-    ";
-    mysqli_query($connect, $query);**/
+    $ps = $mysqli->prepare("INSERT INTO officer(username, term, position) VALUES (?, ?, ?)");
+    $ps->bind_param("sii", $username, $term, $position_id);
+    $ps->execute();
    }
    fclose($handle);
    header("location: update_eboard.php?updating=1");
@@ -110,21 +84,34 @@ if(isset($_GET["updating"]))
 }
 
 $query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
-$result = mysqli_query($connect, $query);
+$result = mysqli_query($mysqli, $query);
 ?>
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Update Mysql Database through Upload CSV File using PHP</title>
+  <title>APOUSC Admin Control Panel</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
  <body>
   <br />
+
   <div class="container">
-   <h2 align="center">Update Mysql Database through Upload CSV File using PHP</a></h2>
+   <h2 align="center">APOUSC Admin Control Panel</a></h2>
+   <p>Hello, welcome to the APOUSC Admin Control Panel. On this page, you'll be able to</p>
+   <ul>
+    <li>change all current pledges to actives</li>
+    <li>add new excomm</li>
+    <li>view current/past excomm<li>
+   </ul>
+  </div>
+
+  <div class="container">
+   <h3 align="center">Add Excomm</a></h3>
    <br />
+   <p> Please complete the csv template found in the google drive then upload it here to add new excomm</p>
+   <!-- form for changing year/semester to view -->
    <form method="post" enctype='multipart/form-data'>
     <p><label>Please Select File(Only CSV Formate)</label>
     <input type="file" name="uploaded_file" /></p>
@@ -134,7 +121,7 @@ $result = mysqli_query($connect, $query);
    <br />
    <?php echo $message; ?>
    <h3 align="center">
-   Currently Viewing Executive Committee
+   Viewing Executive Committee
     <?php
       if ($current_semester ==0) echo "Spring ";
       else echo "Fall ";
@@ -158,6 +145,7 @@ $result = mysqli_query($connect, $query);
       })
     }
   </script>
+
    <!-- form for changing year/semester to view -->
    <form id = 'tbChangeForm' name='tbChangeForm'  method="GET" action="update_eboard.php">
     <h4>  
