@@ -2,3 +2,4 @@
 .pem
 phpmyadmin
 test.php
+secure_constants.php
