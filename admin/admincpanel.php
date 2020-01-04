@@ -1,6 +1,19 @@
 
 <?php
-//temporary
+include_once("include/session.php");
+/**
+ * User not an administrator, redirect to main page
+ * automatically.
+ */
+if (!$session->isAdmin()) {
+  echo "<h2>Restricted Area</h2>\n";
+  echo "<p>Sorry, but this page is a restricted area. You must be logged in as the site administrator in order to gain access.</p>\n";
+} else {
+  /**
+   * Administrator is viewing page, so display all
+   * forms.
+   */
+
 if (isset($_GET['current_year']))
   $current_year = $_GET['current_year'];
 else
@@ -18,6 +31,16 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 $message = '';
 
+//cross
+if(isset($_POST["crossing"]))
+{
+  //update all pledges to actives by changing status from 1 to 0
+  $ps = $mysqli->prepare("UPDATE users SET `status` = 0 WHERE `status`=1");
+  $ps->execute();
+  header("location: admincpanel.php?crossing=1"); 
+}
+
+//upload
 if(isset($_POST["upload"]))
 {
  if($_FILES['uploaded_file']['name'])
@@ -65,7 +88,7 @@ if(isset($_POST["upload"]))
     $ps->execute();
    }
    fclose($handle);
-   header("location: update_eboard.php?updating=1");
+   header("location: admincpanel.php?updating=1");
   }
   else
   {
@@ -81,6 +104,10 @@ if(isset($_POST["upload"]))
 if(isset($_GET["updating"]))
 {
  $message = '<label class="text-success">Eboard Updating Done</label>';
+}
+if(isset($_GET["crossing"]))
+{
+ $message = '<label class="text-success">All Pledges Are Now Actives</label>';
 }
 
 $query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
@@ -98,22 +125,53 @@ $result = mysqli_query($mysqli, $query);
   <br />
 
   <div class="container">
-   <h2 align="center">APOUSC Admin Control Panel</a></h2>
+   <h2 align="center">ALL POWERFUL APOUSC ADMIN CONTROL PANEL</a></h2>
+   <img src="laughs.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 50%;">
+   <p></p>
    <p>Hello, welcome to the APOUSC Admin Control Panel. On this page, you'll be able to</p>
    <ul>
     <li>change all current pledges to actives</li>
+    <li>change graduating actives to alumni (TODO) </li>
     <li>add new excomm</li>
-    <li>view current/past excomm<li>
+    <li>view current/past excomm</li>
    </ul>
+  </div>
+
+  </div>
+
+  <div class="container"> 
+    <h3 align="center">Change Pledges to Actives</h3>
+    <p> Press the button to turn all pledges to actives! </p>
+    <!-- form for changing pledges to actives -->
+    <form method="post" enctype='multipart/form-data'>
+      <input type="submit" name="crossing" value="Cross their asses" class="btn btn-info" />
+   </form>
+  </div>
+
+  <div class="container">
+   <h3 align="center">Change Graduating Actives to Alumni (TODO)</a></h3>
+   <br />
+   <p> Please complete the csv template found in the google drive then upload it here to turn graduating Actives to Alumni</p>
+   <!-- form for graduating actives -->
+   <form method="post" enctype='multipart/form-data'>
+    <p><label>Please Select File(Only CSV Format)</label>
+    <input type="file" name="uploaded_file" /></p>
+    <br />
+    <input type="submit" name="upload" class="btn btn-info" value="Upload" />
+   </form>
+   <br />
   </div>
 
   <div class="container">
    <h3 align="center">Add Excomm</a></h3>
    <br />
    <p> Please complete the csv template found in the google drive then upload it here to add new excomm</p>
-   <!-- form for changing year/semester to view -->
+   <!-- form for adding excomm -->
    <form method="post" enctype='multipart/form-data'>
-    <p><label>Please Select File(Only CSV Formate)</label>
+    <p><label>Please Select File(Only CSV Format)</label>
     <input type="file" name="uploaded_file" /></p>
     <br />
     <input type="submit" name="upload" class="btn btn-info" value="Upload" />
@@ -126,14 +184,15 @@ $result = mysqli_query($mysqli, $query);
       if ($current_semester ==0) echo "Spring ";
       else echo "Fall ";
       echo $current_year;
-    ?></a></h3>
+    ?></a>
+   </h3>
 
   <!-- code for changing the table -->
   <script type="text/javascript"></script>
   <script>
     function doSearch() {
       $.ajax({
-        url: "update_eboard.php",
+        url: "admincpanel.php",
         data: {
           current_year: $("#current_year").val(),
           current_semester: $("#current_semester").val()
@@ -147,11 +206,11 @@ $result = mysqli_query($mysqli, $query);
   </script>
 
    <!-- form for changing year/semester to view -->
-   <form id = 'tbChangeForm' name='tbChangeForm'  method="GET" action="update_eboard.php">
+   <form id = 'tbChangeForm' name='tbChangeForm'  method="GET" action="admincpanel.php">
     <h4>  
       year <input type="number" name = "current_year" id="current_year" min="2004" max="2030" value="<?php echo (int)($current_year); ?>">
       semester <input type="number" name = "current_semester" id="current_semester" min="0" max= "1" value="<?php echo (int)($current_semester); ?>">
-      <input type="button" value="submit"   onclick="doSearch();">
+      <input type="button" value="submit" onclick="doSearch();">
     </h4>
    </form>
    
@@ -172,11 +231,16 @@ $result = mysqli_query($mysqli, $query);
       </tr>
       ';
      }
+   }
      ?>
     </table>
    </div>
   </div>
-  
+  <img src="sleepy.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 30%;">
+   <p></p>
  </body>
 </html>
 
