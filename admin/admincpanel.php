@@ -24,7 +24,7 @@ else
   $current_semester=0;
 
 //index.php
-$mysqli = mysqli_connect("localhost", "root", "str0ngThec!rcl", "apousc5_main");
+$mysqli = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -105,10 +105,6 @@ if(isset($_GET["updating"]))
 {
  $message = '<label class="text-success">Eboard Updating Done</label>';
 }
-if(isset($_GET["crossing"]))
-{
- $message = '<label class="text-success">All Pledges Are Now Actives</label>';
-}
 
 $query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
 $result = mysqli_query($mysqli, $query);
@@ -135,6 +131,7 @@ $result = mysqli_query($mysqli, $query);
    <ul>
     <li>change all current pledges to actives</li>
     <li>change graduating actives to alumni (TODO) </li>
+    <li>add new pledge excomm</li>
     <li>add new excomm</li>
     <li>view current/past excomm</li>
    </ul>
@@ -147,10 +144,17 @@ $result = mysqli_query($mysqli, $query);
     <p> Press the button to turn all pledges to actives! </p>
     <!-- form for changing pledges to actives -->
     <form method="post" enctype='multipart/form-data'>
-      <input type="submit" name="crossing" value="Cross their asses" class="btn btn-info" />
+      <input type="submit" name="crossing" value="Cross their asses" class="btn btn-info" onclick=
+    "confirm('Ya sure u wanna turn these pledges into actives?');
+      return confirm('Aight.');"/>
    </form>
   </div>
-
+<?php
+  if(isset($_GET["crossing"]))
+  {
+    echo '<div class="container"><label class="text-success">All Pledges Are Now Actives</label></div>';
+  }
+?>
   <div class="container">
    <h3 align="center">Change Graduating Actives to Alumni (TODO)</a></h3>
    <br />
@@ -166,15 +170,36 @@ $result = mysqli_query($mysqli, $query);
   </div>
 
   <div class="container">
-   <h3 align="center">Add Excomm</a></h3>
+   <h3 align="center">Add Pledge Excomm</a></h3>
    <br />
-   <p> Please complete the csv template found in the google drive then upload it here to add new excomm</p>
+   <p> Please complete the csv template found in the google drive then upload it here to add new Pledge Excomm</p>
    <!-- form for adding excomm -->
    <form method="post" enctype='multipart/form-data'>
     <p><label>Please Select File(Only CSV Format)</label>
     <input type="file" name="uploaded_file" /></p>
     <br />
-    <input type="submit" name="upload" class="btn btn-info" value="Upload" />
+    <input type="submit" name="upload" class="btn btn-info" value="Upload" onclick=
+    "confirm('Are you sure you want to add new PLEDGE excomm? This will be a pain in the ass to correct if something\'s wrong...');
+      confirm('YO! THIS IS PLEDGE EXCOMM!! NOT NORMAL EXCOMM!! That is what you\'re trying to add right?');
+      confirm('OK. You should check over each entry and make sure there are no mispellings');
+      return confirm('Last Chance to cancel.');"/>
+   </form>
+   </h3>
+  </div>
+
+  <div class="container">
+   <h3 align="center">Add Excomm</a></h3>
+   <br />
+   <p> Please complete the csv template found in the google drive then upload it here to add new Excomm</p>
+   <!-- form for adding excomm -->
+   <form method="post" enctype='multipart/form-data'>
+    <p><label>Please Select File(Only CSV Format)</label>
+    <input type="file" name="uploaded_file" /></p>
+    <br />
+    <input type="submit" name="upload" class="btn btn-info" value="Upload" onclick=
+    "confirm('Are you sure you want to add new excomm? This will be a pain in the ass to correct if something\'s wrong...');
+      confirm('OK. You should check over each entry and make sure there are no mispellings');
+      return confirm('Last Chance to cancel.');"/>
    </form>
    <br />
    <?php echo $message; ?>
