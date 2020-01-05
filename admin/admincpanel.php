@@ -264,7 +264,7 @@ $result = mysqli_query($mysqli, $query);
   <img src="sleepy.gif" style="display: block;
                                margin-left: auto;
                                margin-right: auto;
-                               width: 30%;">
+                               width: 40%;">
    <p></p>
  </body>
 </html>
