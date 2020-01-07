@@ -1,365 +1,539 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Service</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>USC Alpha Phi Omega</title>
 
-	<!-- Google Analytics integration -->
-	<!-- Implemented by Nick Spring 2020 -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154698500-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		<!-- Google Fonts -->	
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
-	  gtag('config', 'UA-154698500-1');
-	</script>
-	
-    <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+		<!-- Foundation -->	
+		<link rel="stylesheet" href="css/foundation.min.css" />
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.min.css" />
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css" />
 
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- Bxslider-->
+		<link rel="stylesheet" href="css/jquery.bxslider.css" />
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	
-		<!-- Favicon -->
-	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+		<!-- Magnific Popup-->
+		<link rel="stylesheet" href="css/magnific-popup.css" />
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+		<!-- OwlCarousel Assets -->
+		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/owl.transitions.css" />
+		<link rel="stylesheet" href="css/owl.theme.css" />
+
+		<!-- Odometer-->
+		<link rel="stylesheet" href="css/odometer-theme-default.css" />
+
+		<!-- Main Style -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Google Maps -->
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+		<script src="js/vendor/modernizr.js"></script>
 
 	</head>
-	<body>
-		
+
+	<body> 
+
+<!-- old body -->		
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation" style="margin-top:15px;">
-			<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2">
-							<div id="colorlib-logo" style="width:250px;">
-                            <a href="/"><img class="apologo" src="img/logo2.png" alt="" style="width:200px;"></a>
-                            </div>
-						</div>
-						<div class="col-md-10 text-right menu-1" style="line-height:45px;">
-							<ul>
-								<li class="active"><a href="about.html">About Us</a></li>
-								<li><a href="members.html">Members</a></li>
-                                <!--<li><a href="recruitment">Recruitment</a></li>-->
-                                <li><a href="keds.html">KEDS</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-								<li><a href=../members/home.php>Members Only</a></li>
+		<!-- Navigation -->
+		<div id="navigation-container" class="navigation-white sticky">
+			<nav class="navigation top-bar" data-topbar data-options="scrolltop:false; back_text:&larr;" role="navigation">
+				<ul class="title-area">
+					<!-- Logo -->
+					<li class="name">
+						<a href="index.html"><img class="logo" style="height:120%;" src="img/logo.png" alt="alpha phi omega" ></a>
+					</li>
+					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				</ul>
+				<!-- Menu section -->
+				<section class="top-bar-section">
+					<ul class="right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#about" data-scroll>about us</a></li>
+						<li><a href="index.html#recruitment" data-scroll>recruitment</a></li>
+						<li class="has-dropdown">
+							<a href="index.html#service" data-scroll>service</a>
+							<ul class="dropdown">
+								<li><a href="service.html#hfc">Hollywood Food Coalition</a></li>
+								<li><a href="service.html#ci">The Compton Initiative</a></li>
+								<li><a href="service.html#lafb">Los Angeles Food Bank</a></li>						
+								<li><a href="service.html#kfk">Kicks for Kids</a></li>
+								<li><a href="service.html#wec">Watt's Empowerment Center</a></li>
+								<li><a href="service.html#imp">IMPACTO</a></li>
+								<li><a href="service.html#hm">Homeless Ministry</a></li>
+								<li><a href="service.html#kchp">Kid City Hope Place</a></li>
+								<li><a href="service.html#sam">Share a Meal</a></li>
+								<li><a href="service.html#oooo">One on One Outreach</a></li>
+								<li><a href="service.html#larf">Los Angeles Rabbit Foundation</a></li>
+								<li><a href="service.html#32st">32nd Street Tutoring</a></li>
 							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-        
-
-		<section id="service" class="video-hero" style="height: 450px; background-image: url(img/cover-about.jpg);  background-size:cover; background-position: center center;background-attachment:fixed; margin-top:7vw;" data-section="service">
+						</li>
+						<li class="has-dropdown">
+							<a href="index.html#phil" data-scroll>Philanthropy</a>
+							<ul class="dropdown">
+								<li><a href="phil.html#keds">KEDS</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html#members" data-scroll>members</a></li>
+						<li><a href="index.html#contact" data-scroll>Contact</a></li>
+						<li><a href="http://www.apousc.org/members/home.php" class="button small round white">actives only</a> </li>
+					</ul>
+				</section>
+				<!-- end Menu section -->
+			</nav>
+		</div>
+		<!--/ end Navigation -->
+		<section id="home" class=" padding-v-large section slider-overlay video-hero" style="height: 450px; background-image: url(img/cover-service.jpg);  background-size:cover; background-position: center center;background-attachment:fixed; " data-section="home">
 		<div class="overlay"></div>
 			<div class="display-t display-t2 text-center">
 				<div class="display-tc display-tc2">
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
-							<!--<div class="animate-box">-->
-								<h2>Service</h2>
-							<!--</div>-->
+							<div>
+								<br>
+								<br>
+								<br>
+								<h1 style="font-style:italic; color:white;" class="medium-12 columns text-center animate">Service</h1>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- end overlay -->
 
-
-
-                
-<div class="colorlib-intro">
-				<div class="row">
-                    <div class="col-md-10  col-md-offset-1">
-                    <h2 class="text-center">Pursuing the mission of providing service to others.</h2>
-                        <p style="line-height:8pt;"><br><hr></p>
-                    </div>
-                    <div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
-                        <br>
-                                <p class="text-center">
-                                    Through participating in weekly service, fellowship, and membership events, all members of Alpha Phi Omega strengthen their commitment to the three cardinal principles. While our organization completes an average of 6,500 service hours per semester, the true measure of success is not just a number. Members develop strong connections with the people and communities they serve. Below are a few of the many organizations we partner with on a weekly basis.
-                                </p>
+		<section class="section padding-t-large">
+			<div class="row medium-10 text-center animate" data-animation="flipInX">
+					<h3>Below are a few of the many organizations we partner with on a normal basis.</h3>
+			</div>
+		</section>
+		<!-- Hollywood Food Coalition hfc -->
+		<section id="hfc" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Hollywood Food Coalition</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>Every night between 6:15 and 7:30, HFC (a broad-based grass-roots organization of 25 years, gathers to serve a hot, fresh, and nutritious meal to the homeless and hungry. While doing so, we get to know them as individuals and help them think better of themselves and not be shy about asking for help.
+							<br><br>"We have been serving those in need since 1987. The Hollywood Food Coalition provides a warm, nutritious meal along with access to basic daily needs, such as clothing, backpacks, sleeping bags, and hygiene items, as well as assistance with housing placement and referrals."
+							<br><br>Visit their site for more information <a href="https://hofoco.org/about-us/">here</a>.</p>
+						</div>
 					</div>
-                    
 				</div>
-                
-		</div>
-		
-		
-	<div class="section">
-		<div class="colorlib-about-two">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="work-flex">
-							<!--<div class="half animate-box">-->
-							<div class="half">
-								<div class="row">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2>Hollywood Food Coalition</h2>
-                                                <hr style="float:left;margin:0;">
-                                                <br>
-                                                <p style="font-size:10pt;">            <p>Every night between 6:15 and 7:30, HFC (a broad-based grass-roots organization of 25 years, gathers to serve a hot, fresh, and nutritious meal to the homeless and hungry. While doing so, we get to know them as individuals and help them think better of themselves and not be shy about asking for help.
-            <br><br>
-            "We have been serving those in need since 1987. The Hollywood Food Coalition provides a warm, nutritious meal along with access to basic daily needs, such as clothing, backpacks, sleeping bags, and hygiene items, as well as assistance with housing placement and referrals."
-            <br><br>
-            Visit their site for more information <strong><span class="about-emphasis"><a href="https://hofoco.org/about-us/">here</a></span></strong>.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-								<div class="half">
-								<div class="row no-gutters">
-									<div class="col-md-6">
-										<div class="work-img" style="background-image: url(img/index/hfc1.JPG);"></div>
-									</div>
-									<div class="col-md-6">
-										<div class="work-img" style="background-image: url(img/index/hfc3.JPG);"></div>
-									</div>
-								</div>
-							</div>
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/hfc1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/hfc2.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/hfc3.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/hfc4.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/hfc5.jpg">
 						</div>
 					</div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-        <br>
-
-    <div class="section">
-		<div class="colorlib-about-two">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="work-flex">
-							<!--<div class="half animate-box">-->
-							<div class="half">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="work-img" style="background-image: url(img/index/C3.jpg);"></div>
-									</div>
-								</div>
-							</div>
-							<!--<div class="half animate-box">-->
-							<div class="half">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2>The Compton Initiative</h2>
-                                                <hr style="float:left;margin:0;">
-                                                <br>
-                                                <p style="font-size:10pt;">            <p>The Compton Initiative aims to bring restoration and hope to the community of Compton. The workday includes painting, cleaning and building great relationships with other volunteers.
-            <br><br>
-            "The Compton Initiative is a non-profit organization founded in 2006 with a 40-year commitment to restore the City of Compton by painting homes, schools and churches on quarterly workdays in partnership with individual volunteers and other organizations.Starting with a small group of volunteers eager to show love and inspire hope, we’ve grown to thousands of caring workers of all ages and backgrounds in yellow shirts who serve across the city."
-            <br><br>
-            Visit their site for more information <strong><span class="about-emphasis"><a href="http://justdogood.org/">here</a></span></strong>.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-                    
 				</div>
-                
-            </div>
-        </div>
-	</div>
-	</div>
-			
-	<br>
-	<div class="section">
-		<div class="colorlib-about-two">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="work-flex">
-							<!--<div class="half animate-box">-->
-							<div class="half">
-								<div class="row">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2>Los Angeles Regional Food Bank</h2>
-                                                <hr style="float:left;margin:0;">
-                                                <br>
-                                                <p style="font-size:10pt;">            <p>The Los Angeles Regional Food Bank distributes 60 million pounds of food and product annually through a network of over 670 charitable agencies with more than 1,050 sites. The Food Bank is one of the largest organizations of its kind in the United States and it relies on the support of foundations, individual and corporate donors, agency support, government funding and volunteers. The Food Bank operates out of a 96,000 sq.ft. distribution center located in South Los Angeles.
-            <br><br>
-            "Since 1973, the Los Angeles Regional Food Bank has worked to mobilize resources in the community to alleviate hunger... Volunteers help us by boxing, sorting and gleaning food that is later distributed through our network of more than 600 agency partners to our neighbors in need."
-            <br><br>
-            Visit their site for more information <strong><span class="about-emphasis"><a href="https://www.lafoodbank.org/volunteer/">here</a></span></strong>.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-								<div class="half">
-								<div class="row no-gutters">
-									<div class="col-md-12">
-										<div class="work-img" style="background-image: url(img/index/fb3.JPG);"></div><br>
-									</div>
-								</div>
-							</div>
+			</div>
+		</section>
+		<!--/ end of hfc section -->
+
+		<!-- Compton Initiative ci -->
+		<section id="ci" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<img src="img/service/ci1.jpg">
+				</div>
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>The Compton Initiative</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>The Compton Initiative aims to bring restoration and hope to the community of Compton. The workday includes painting, cleaning and building great relationships with other volunteers. <br><br>"The Compton Initiative is a non-profit organization founded in 2006 with a 40-year commitment to restore the City of Compton by painting homes, schools and churches on quarterly workdays in partnership with individual volunteers and other organizations.Starting with a small group of volunteers eager to show love and inspire hope, we’ve grown to thousands of caring workers of all ages and backgrounds in yellow shirts who serve across the city."<br><br>Visit their site for more information <a href="http://justdogood.org/">here</a>.</p>
 						</div>
 					</div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-        
-
-
-<footer id="colorlib-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-                <p>
-				    <ul class="colorlib-social-icons">
-						<li><a href="https://www.facebook.com/apousc/"><i class="icon-facebook2"></i></a></li>
-						<li><a href="https://www.instagram.com/apousc/"><i class="icon-instagram"></i></a></li>
-						<li><a href="https://twitter.com/apousc?lang=en"><i class="icon-twitter2"></i></a></li>
-						<li><a href="https://www.youtube.com/user/apousc"><i class="icon-youtube"></i></a></li>
-					</ul>
-						
-                </p>
-				<p>
-								 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Made with <i class="icon-heart" aria-hidden="true"></i> by Alpha Phi Omega - University of Southern California. <br><br>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br> 
+				</div>
 				
-							</p>
+			</div>
+		</section>
+		<!--/ end of ci section -->
+
+		<!-- Los Angeles Food Bank lafb -->
+		<section id="lafb" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Los Angeles Food Bank</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>The Los Angeles Regional Food Bank distributes 60 million pounds of food and product annually through a network of over 670 charitable agencies with more than 1,050 sites. The Food Bank is one of the largest organizations of its kind in the United States and it relies on the support of foundations, individual and corporate donors, agency support, government funding and volunteers. The Food Bank operates out of a 96,000 sq.ft. distribution center located in South Los Angeles.<br><br>"Since 1973, the Los Angeles Regional Food Bank has worked to mobilize resources in the community to alleviate hunger... Volunteers help us by boxing, sorting and gleaning food that is later distributed through our network of more than 600 agency partners to our neighbors in need."<br><br>Visit their site for more information <a href="https://www.lafoodbank.org/volunteer/">here</a>.</p>
 						</div>
 					</div>
 				</div>
-<!--			</div>-->
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/lafb1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/lafb2.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/lafb3.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end of lafb section -->
+
+		<!-- Kicks for Kids kfk -->
+		<section id="kfk" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/kfk1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/kfk2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Kicks for Kids</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>Kicks for Kids is a service organization dedicated to promoting a healthy and active lifestyle for children with special needs in the greater Los Angeles area. With weekly soccer games and wholesome snacks, we aim to celebrate children traditionally marginalized from organized sports. We strive to establish meaningful bonds between children with developmental disabilities in the Los Angeles area and USC students from different walks of campus life.<br><br>Visit their site for more information <a href="http://www.kfknational.org/">here</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!--/ end of kfk section -->
+
+		<!-- Watt's Empowerment Center wec -->
+		<section id="wec" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Watt's Empowerment Center</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>The Watts Empowerment Center is committed to turning into a state-of-the-art facility where the youth, young adults and families in Watts Housing Projects can discover their purpose, while developing their talents with the help of top industry and business professionals. We work with the local youth in education and extracurricular activities in order to foster a mentor relationship to drive them to pursue higher education.<br><br>Visit their site for more information <a href="https://www.youthmentor.org/givehope">here</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/wec1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/wec2.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end wec section -->
+
+		<!-- IMPACTO imp -->
+		<section id="imp" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/imp1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/imp2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+				<h2>IMPACTO</h2>
+				<!-- section Content -->
+				<div class="row row-wide">
+					<div class="large-12 columns animate" data-animation="fadeInUp">
+						<!-- text -->
+						<p>IMPACTO is a youth development program which provides afterschool programming, academic case management, and summer camps to the local education schools, Dolores Mission School, Mendez High School, and Roosevelt High School. They provide after school educational guidance at the Aliso Pico Recreation Center where we bond with students through recreational activities and by assisting in school assignments and art and crafts.<br><br>Visit their site for more information <a href="https://www.proyectopastoral.org/impacto">here</a>.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!--/ end imp section -->
+
+		<!-- Homeless Ministry hm-->
+		<section id="hm" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Homeless Ministry</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>Homeless Ministry is organized under the USC Caruso Catholic Center to provide students the opportunity to serve those who are without homes on Skid Row through empowering outreach. Students meet in Newman Hall to head to the St. Vincent de Paul Cardinal Manning Center. The Cardinal Manning Center offers a comprehensive program for homeless men transitioning off the streets into housing through intensive case management services. Students will get to know the homeless through packing sack lunches, serving dinner, and bringing encouragement and friendship to patrons of the Cardinal Manning Center.<br><br>Visit their site for more information <a href="https://www.catholictrojan.org/Serve">here</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/hm1.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end hm section -->
+
+		<!-- Kid City Hope Place kchp -->
+		<section id="kchp" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/kchp1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/kchp2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Kid City Hope Place</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>Kid City works to encourage teens and young adults to find their voice, share their stories, and become self-empowered leaders. They work with volunteers, mentors and families to provide programs in leadership development, music and arts, college access, and college completion in a welcoming and supportive environment. Most participants at Kid City are first-generation college or college-bound students living in neighborhoods around downtown Los Angeles including South Central and Pico Union. Kid City recognizes the problem of educational inequity and severe economic hardship among the communities we serve. They strive to provide ways for students to access opportunities, explore their intellectual curiosity, and discover their ability to advocate for themselves and their communities. Image may contain: 2 people, people smiling, people sittingImage may contain: Madeline Kim, sitting, table and indoor<br><br>Visit their site for more information <a href="http://www.urbanfoundation.org/kid_city">here</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end of kchp section -->
+
+		<!-- Share a Meal sam-->
+		<section id="sam" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Share a Meal</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>Share A Meal is an organization of people giving back to the Los Angeles community. They come together with other service-minded individuals to serve the less fortunate, with no expectation of receiving anything in return. It is our mission to eradicate selfish living by incorporating selfless service into our daily routine. We meet on Fridays to create burritos on their very own Share A Meal food trucks to be distributed to the people experience homelessness in the Los Angeles community. They are able to collect a variety of items such as water bottles, socks, and hygiene kits that are distributed as well.<br><br>Visit their site for more information <a href="https://www.shareameal.net/">here</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/sam1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/sam2.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/sam3.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end of sam section -->
+
+		<!-- One on One Outreach oooo -->
+		<section id="oooo" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/oooo1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/oooo2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>One on One Outreach</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>One on One Outreach is a 100% volunteer organization that works to improve the lives of low-income families in a specific neighborhood in S. Central Los Angeles. Once a month, volunteers pack and deliver boxes of groceries to the families who live there. They give out turkeys and hams for Thanksgiving, and on Christmas Day they deliver hundreds of toys to the neighborhood kids. They also provide laptops to some of the families to allow these young students to be competitive in school and hopefully further their education.<br><br>Visit their site for more information <a href="https://oneononeoutreach.org/">here</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!--/ end of oooo section -->
+
+		<!-- Los Angeles Rabbit Foundation larf -->
+		<section id="larf" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>Los Angeles Rabbit Foundation</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>Los Angeles Rabbits Foundation works to help abandoned domestic rabbits by promoting spay and neuter, providing education on their care, volunteering in shelters and humane societies, and by fostering and rehabilitating rescued rabbits until such time as suitable permanent homes can be found. They set up adoption clinics in local pet supply stores where they allow potentially interested adoption clients to bond to the rabbits as well as have the rabbits become used to human interaction.<br><br>Visit their site for more information <a href="https://larabbits.org/">here</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/larf1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/larf2.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end of larf section -->
+
+		<!-- 32nd Street Tutoring 32st -->
+		<section id="32st" class="section padding-t-large">
+			<!-- Section Title -->
+			<div class="section-title row">
+				<div style="height:auto; width:fill;" class="large-8 medium-12 columns animate" data-animation="fadeInRight">
+					<div id="featured-carousel" class="single-carousel">
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/32st1.jpg">
+						</div>
+						<!-- Testimony Item -->
+						<div class="item">
+							<img src="img/service/32st2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+					<h2>32nd Street Tutoring</h2>
+					<!-- section Content -->
+					<div class="row row-wide">
+						<div class="large-12 columns animate" data-animation="fadeInUp">
+							<!-- text -->
+							<p>In 32nd Street Tutoring we work with Dr. Purcell, a 1st-Grade teacher at the 32nd Street School, as part of his passion project to build a strong educational foundation for the students of his class. Dr. Purcell firmly believes that the experience of students in their 1st year of elementary school is instrumental in building a good future in education for those students. We work one-on-one with the students on in-class assignments that help promote critical thinking and help reinforce what they learn in class.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ end of 32st section -->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+<!-- Footer -->
+		<footer id="footer" class="slider-overlay footer padding-v-medium">
+			<div class="row">
+				<div class="medium-12 text-center">
+					<div class="socials clearfix">
+						<ul class="inline-list">
+							<li><a href="#https://www.facebook.com/apousc"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="#https://www.instagram.com/apousc"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#https://www.youtube.com/user/apousc"><i class="fab fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<p class="copyright-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Made with <i class="fa fa-heart" aria-hidden="true"></i> by Alpha Phi Omega - University of Southern California. <br><br><br></p>
+				</div>
+			</div>
 		</footer>
-	</div>
+		<!--/ end Footer -->
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- YTPlayer -->
-	<script src="js/jquery.mb.YTPlayer.min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-
-
-<script>
-	var checkNavBar = function() {
-		if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
-			$(".navbar-fixed-top").css("background-color", "#244397"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-
-			$(document).on("click", "#collapse-toggle", function() {
-				var isExpanded = $('#collapse-toggle').attr("aria-expanded");
-				if (isExpanded) {
-					$(".navbar-fixed-top").css("background-color", "#111");
-				} else {
-					$(".navbar-fixed-top").css("background-color", "#111");
-				}
-		    // do some stuff to check if opening or closing
-			});		
-
-		} else {
-			if ($('#collapse-toggle').attr("aria-expanded") =="true") {
-				$(".navbar-fixed-top").css("background-color", "#052049");
-			} else {
-				$(".navbar-fixed-top").css("background-color", "transparent");
-			}			
-		
-			$(document).on("click", "#collapse-toggle", function() {
-				var isExpanded = $('#collapse-toggle').attr("aria-expanded");
-				console.log(isExpanded);
-				if (isExpanded =="true") {
-					$(".navbar-fixed-top").css("background-color", "#052049");
-				} else {
-					$(".navbar-fixed-top").css("background-color", "transparent");
-				}
-		    // do some stuff to check if opening or closing
-			});				
-		}
-
-	};
-
-	checkNavBar();
-	$(document).ready(function(){
-		$(window).scroll(checkNavBar);
-	});
-
-	</script>
-
-
-
-
-
+		<!-- Scripts -->
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/jquery.easing.min.js"></script>
+		<script src="js/vendor/jquery.bxslider.min.js"></script>
+		<script src="js/vendor/jquery.fittext.js"></script>
+		<script src="js/vendor/jquery.mixitup.min.js"></script>
+		<script src="js/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="js/vendor/jquery.matchHeight-min.js"></script>
+		<script src="js/vendor/jquery.vide.min.js"></script>
+		<script src="js/vendor/twitterFetcher_min.js"></script>
+		<script src="js/vendor/waypoints.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/odometer.min.js"></script>
+		<script src="js/vendor/skrollr.min.js"></script>
+		<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+		<script src="js/vendor/smoothscroll.min.js"></script>
+		<script src="js/vendor/retina.min.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
 
