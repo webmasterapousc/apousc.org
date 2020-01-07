@@ -1,0 +1,117 @@
+::-moz-selection{ color: #fff; background:#22a7f0; }
+::selection{ color: #fff;	background:#22a7f0; }
+::-webkit-selection{ color: #fff;	background:#22a7f0; }
+
+a{
+	color: #22a7f0;
+}
+a:hover, a:focus {
+	color: #0e89cd;
+}
+h1.text-brand,
+h2.text-brand,
+h3.text-brand,
+h4.text-brand,
+h5.text-brand,
+h6.text-brand,
+p.text-brand,
+.text-brand{
+	color: #22a7f0;
+}
+button, .button,
+button.brand, .button.brand{
+	background-color: #22a7f0;
+	border-color: #0e89cd;
+}
+button:hover, button:focus, .button:hover, .button:focus ,
+button.brand:hover, button.brand:focus, .button.brand:hover, .button.brand:focus {
+	background-color: #0e89cd;
+}
+button.ghost, .button.ghost {
+	background-color: transparent;
+}
+button.ghost.brand, .button.ghost.brand {
+	border-color: #22a7f0;
+    color: #22a7f0;
+}
+button.ghost.brand:hover, button.ghost.brand:focus, .button.ghost.brand:hover, .button.ghost.brand:focus {
+	background-color: #22a7f0;
+    color: #fff;
+}
+.spinner{
+	background-color: #22a7f0;
+}
+.background-gradient{
+	background: -webkit-linear-gradient(90deg, #0e89cd 10%, #22a7f0 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #0e89cd 10%, #22a7f0 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #0e89cd 10%, #22a7f0 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #0e89cd 10%, #22a7f0 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #0e89cd 10%, #22a7f0 90%); /* W3C */
+}
+.icon.brand{
+	color: #22a7f0;
+}
+.top-bar .top-bar-section ul li.active > a {
+	background: #22a7f0;
+}
+.top-bar-section ul li > a.button.brand {
+	background-color: #22a7f0;
+	border-color: #0e89cd;
+}
+.top-bar-section ul li > a.button.brand:hover, .top-bar-section ul li > a.button.brand:focus {
+	background-color: #0e89cd;
+}
+@media only screen and (min-width: 40.063em){
+	.top-bar .top-bar-section li.active:not(.has-form) a:not(.button) {
+		background: #22a7f0;
+	}
+}
+.navigation-white .top-bar .top-bar-section li.active:not(.has-form) a:not(.button) {
+	color: #22a7f0;
+}
+.section-title h2:after{
+	background: #22a7f0;
+}
+.subsection.brand{
+	background: #22a7f0;
+}
+.team-person .team-person-info{
+	background: rgb(34, 167, 240);
+	background: rgba(34, 167, 240, .95);
+}
+.skills-bar li span {
+    background: #22a7f0;
+}
+.service-block .service-item .service-icon{
+	color: #22a7f0;
+}
+.service-block .service-item:hover{
+	background: #22a7f0;
+}
+.statistic-block .statistic-item .statistic-icon{
+	color: #22a7f0;
+}
+.filter.active:after{
+	background: #22a7f0;
+}
+.pricing-table.brand .title{
+	background: #22a7f0;
+}
+.work-item a .work-info {
+	background: rgb(34, 167, 240);
+	background: rgba(34, 167, 240, .95);
+}
+.post .post-title a:hover{
+    color: #0e89cd;
+}
+.footer a:active,
+.footer a:hover{
+	color: #0e89cd;
+}
+
+.owl-theme .owl-controls .owl-page span{
+	background: #22a7f0;
+}
+.owl-theme .owl-controls .owl-buttons div{
+	color: #22a7f0;
+}
