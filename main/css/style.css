@@ -583,8 +583,8 @@ header.dark,
     width: 64px;
     height: 64px;
     background-color: #ffd700;
-    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
-    animation: rotateplane 1.2s infinite ease-in-out;
+    -webkit-animation: rotateplane 0.6s infinite ease-in-out;
+    animation: rotateplane 0.6s infinite ease-in-out;
 }
 /* Hide element before animation */
 .animate{
@@ -1862,4 +1862,3 @@ xkeyframes
     margin-left: 0; }
     .staff-entry .colorlib-social-icons li a {
       padding: 0; }
-
