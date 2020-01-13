@@ -92,9 +92,16 @@ if(isset($_POST["upload"]))
     $ps->execute();
 
     //update new eboard's positions
-    $ps = $mysqli->prepare("UPDATE users SET position = ? WHERE username = ?");
-    $ps->bind_param("is", $position_id, $username);
-    $ps->execute(); 
+    if ($position_id == 0) { //president is special
+      $ps = $mysqli->prepare("UPDATE users SET position = -1 WHERE username = ?");
+      $ps->bind_param("s", $username);
+      $ps->execute(); 
+    } else {
+      $ps = $mysqli->prepare("UPDATE users SET position = ? WHERE username = ?");
+      $ps->bind_param("is", $position_id, $username);
+      $ps->execute(); 
+    }
+    
 
    }
    fclose($handle);
