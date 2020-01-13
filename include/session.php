@@ -1693,7 +1693,7 @@ date_default_timezone_set('America/Los_Angeles');
 	 */
 	function isOfficer()
 	{
-		return (($this->position >= 1 && $this->position <= 33) || $this->isAdmin());
+		return (($this->position >= 1 && $this->position <= 33)|| $this->position == -1 || $this->isAdmin());
 	}
 	/**
 	 * isWebmaster - Returns true if currently logged in user is
