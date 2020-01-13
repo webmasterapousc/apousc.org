@@ -58,6 +58,10 @@ if(isset($_POST["upload"]))
    $upload_year = $_POST['upload_year'];
    $upload_semester = $_POST['upload_semester'];
    
+   //reset old eboard's positions
+   $ps = $mysqli->prepare("UPDATE users SET position = 0 WHERE position > 0");
+   $ps->execute();
+
    while($data = fgetcsv($handle))
    {
     $position_id = $data[0];
@@ -86,6 +90,12 @@ if(isset($_POST["upload"]))
     $ps = $mysqli->prepare("INSERT INTO officer(username, term, position) VALUES (?, ?, ?)");
     $ps->bind_param("sii", $username, $term, $position_id);
     $ps->execute();
+
+    //update new eboard's positions
+    $ps = $mysqli->prepare("UPDATE users SET position = ? WHERE username = ?");
+    $ps->bind_param("is", $position_id, $username);
+    $ps->execute(); 
+
    }
    fclose($handle);
    header("location: admincpanel.php?updating=1");

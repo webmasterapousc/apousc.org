@@ -1693,7 +1693,7 @@ date_default_timezone_set('America/Los_Angeles');
 	 */
 	function isOfficer()
 	{
-		return (($this->position >= 1 && $this->position <= 23) || $this->isAdmin());
+		return (($this->position >= 1 && $this->position <= 33) || $this->isAdmin());
 	}
 	/**
 	 * isWebmaster - Returns true if currently logged in user is
@@ -1702,7 +1702,7 @@ date_default_timezone_set('America/Los_Angeles');
 	 */
 	function isWebmaster()
 	{
-		return ($this->position >= 16 || $this->isAdmin());
+		return ($this->position == 16 || $this->isAdmin());
 	}
 	function isFakeOfficer() {
 		return $this->position == 99;
