@@ -221,10 +221,10 @@ else {
 		"timestamp" => "timestamp",
 		"fname" => "fname",
 		"lname" => "lname",
-		"drive" => "drive",
+		"drive" => "drive",	
 		"weight" => "weight",
 	);
-	$sortorder_default = "lname";
+	$sortorder_default = "timestamp";
 	if (isset($sortorders[$_GET["order"]])) {
 		$sortorder = $sortorders[$_GET["order"]];
 	} else {
@@ -836,7 +836,7 @@ if (
         /*************** ADD TO GOOGLE CALENDAR *********************/
 # Add to Google Calendar Button
 # Authors: Kevin Chen, Nick Chen
-        echo "<button type='submit' class='button'";
+        //echo "<button type='submit' class='button'";
 # get name, description, location of the event
 # convert the special characters to url-compatible
         $eventName = urlencode($req_event_info['name']);
@@ -848,8 +848,8 @@ if (
 # this includes characters T and Z in the string (\T, \Z)
         $eventStart = gmdate("Ymd\THis\Z", strtotime($eventStart));
         $eventEnd = gmdate("Ymd\THis\Z", strtotime($eventEnd));
-        echo "onclick=\"window.open('https://www.google.com/calendar/render?action=TEMPLATE&text=$eventName&dates=$eventStart/$eventEnd&details=$eventDesc&location=$eventLoc&sf=true&output=xml');
-        \">Add Event to Google Calendar";
+        echo "<a href=\"window.open('https://www.google.com/calendar/render?action=TEMPLATE&text=$eventName&dates=$eventStart/$eventEnd&details=$eventDesc&location=$eventLoc&sf=true&output=xml');
+        \">Click here to add event to Google Calendar</a>";
         echo "</button>";
         /*************** USER COMMENTS *********************/
 # Display the current list of comments
