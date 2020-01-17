@@ -487,73 +487,69 @@ if (mysql_num_rows($result) > 0) {
             echo (" <a href=\"userinfo.php?user=" . $row3['username'] . "\">" . $row3['lname'] . "</a></td>\n");
             echo ("\t\t\t\t\t\t<td>" . $driver . "</td>\n");
             echo ("\t\t\t\t\t\t<td>" . date("M j g:i a", $row3['timestamp']) . "</td>\n");
-            if ($session->isOfficer() || $session->isFakeOfficer()) {
-            	if (
-            		/*($session->position == 0) ||
-            		($session->position == 1 && $req_event_info['type'] == 7) ||
+            if (
+					($session->position == 1 && $req_event_info['type'] == 7) ||
 
-            		($session->position == 2 && $req_event_info['type'] == 0) ||
+					($session->position == 2 && $req_event_info['type'] == 0) ||
 
-            		($session->position == 3 && $req_event_info['type'] == 4) ||
-            		($session->position == 3 && $req_event_info['type'] == 10) ||
-            		($session->position == 3 && $req_event_info['type'] == 11) ||
-            		($session->position == 3 && $req_event_info['type'] == 12) ||
-            		($session->position == 3 && $req_event_info['type'] == 6) ||
+					($session->position == 3 && $req_event_info['type'] == 4) ||
+					($session->position == 3 && $req_event_info['type'] == 10) ||
+					($session->position == 3 && $req_event_info['type'] == 11) ||
+					($session->position == 3 && $req_event_info['type'] == 12) ||
+					($session->position == 3 && $req_event_info['type'] == 6) ||
 
-            		($session->position == 4 && $req_event_info['type'] == 1) ||
+					($session->position == 4 && $req_event_info['type'] == 1) ||
 
-            		($session->position == 5 && $req_event_info['type'] == 2) ||
+					($session->position == 5 && $req_event_info['type'] == 2) ||
 
-            		($session->position == 6 && $req_event_info['type'] == 8) ||
-            		($session->position == 7 && $req_event_info['type'] == 2) ||
+					($session->position == 6 && $req_event_info['type'] == 8) ||
+					($session->position == 7 && $req_event_info['type'] == 2) ||
 
-            		($session->position == 8 && $req_event_info['type'] == 3) ||
-            		($session->position == 8 && $req_event_info['type'] == 1) ||
+					($session->position == 8 && $req_event_info['type'] == 3) ||
+					($session->position == 8 && $req_event_info['type'] == 1) ||
 
-            		($session->position == 9 && $req_event_info['type'] == 3) ||
-            		($session->position == 9 && $req_event_info['type'] == 9) ||
-            		($session->position == 9 && $req_event_info['type'] == 13) ||
+					($session->position == 9 && $req_event_info['type'] == 3) ||
+					($session->position == 9 && $req_event_info['type'] == 9) ||
+					($session->position == 9 && $req_event_info['type'] == 13) ||
 
-            		($session->position == 10 && $req_event_info['type'] == 5) ||
-            		($session->position == 10 && $req_event_info['type'] == 9) ||
+					($session->position == 10 && $req_event_info['type'] == 5) ||
+					($session->position == 10 && $req_event_info['type'] == 9) ||
 
-            		($session->position == 11 && $req_event_info['type'] == 6) ||
-            		($session->position == 11 && $req_event_info['type'] == 8) ||
+					($session->position == 11 && $req_event_info['type'] == 6) ||
+					($session->position == 11 && $req_event_info['type'] == 8) ||
 
-            		($session->position == 12 && $req_event_info['type'] == 6) ||
+					($session->position == 12 && $req_event_info['type'] == 6) ||
 
-            		($session->position == 13 && $req_event_info['type'] == 2) ||
+					($session->position == 13 && $req_event_info['type'] == 2) ||
 
-            		($session->position == 15 && $req_event_info['type'] == 4) ||
+					($session->position == 15 && $req_event_info['type'] == 4) ||
 
-            		($session->position == 16) ||
+					($session->position == 16) ||
 
-            		($session->position == 17 && $req_event_info['type'] == "0") ||
-            		($session->position == 17 && $req_event_info['type'] == "7") ||
+					($session->position == 17 && $req_event_info['type'] == 0) ||
+					($session->position == 17 && $req_event_info['type'] == 7) ||
 
+					($session->position == 18) ||
 
-            		($session->position == 18) ||
+					($session->position == 19 && $req_event_info['type'] == 7) ||
+					($session->position == 19 && $req_event_info['type'] == 9) ||
 
-            		($session->position == 19 && $req_event_info['type'] == 7) ||
-            		($session->position == 19 && $req_event_info['type'] == 9) ||
+					($session->position == 20 && $req_event_info['type'] == 3) ||
+					($session->position == 20 && $req_event_info['type'] == 9) ||
+					($session->position == 20 && $req_event_info['type'] == 13) ||
 
-            		($session->position == 20 && $req_event_info['type'] == 3) ||
-            		($session->position == 20 && $req_event_info['type'] == 9) ||
-            		($session->position == 20 && $req_event_info['type'] == 13) ||
+					($session->position == 21 && $req_event_info['type'] == 7) ||
 
-            		($session->position == 21 && $req_event_info['type'] == 7) ||
+					($session->position == 22 && $req_event_info['type'] == 0) ||
 
-            		($session->position == 22 && $req_event_info['type'] == 0) ||
+					($session->position == 23 && $req_event_info['type'] == 1) ||
 
-            		($session->position == 23 && $req_event_info['type'] == 1) ||
+					($session->position == 24 && $req_event_info['type'] == 2) ||
 
-            		($session->position == 24 && $req_event_info['type'] == 2) ||
+					($session->position == 33 && $req_event_info['type'] == 16) ||
 
-            		($session->position == 33 && $req_event_info['type'] == 16) ||
-
-            		(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)*/
-            		($session->position >=0 && $session->position < 29) || $session->position == 33
-            	) {
+					(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)
+				) {
             		echo ("\t\t\t\t\t\t<td colspan=2>" . round($row3['weight'], 2)) . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
             		if ($req_event_info['type'] == 0) {
             			echo ("<a href=\"process.php?subflake=1&amp;event=" . $req_event . "&amp;user=" . $row3['username'] . "\" title=\"Flake\" onclick=\"return confirm('Are you sure you want to FLAKE " . $row3['fname'] . " " . $row3['lname'] . "?');\">-&frac12;</a>");
@@ -564,8 +560,6 @@ if (mysql_num_rows($result) > 0) {
             	);
             	} else {echo "\t\t\t\t\t\t<td>" . round($row['weight'], 2);}
             	;
-            }
-            ;
             echo ("\t\t\t\t\t</tr>\n");
             $j++;
         } //$row2 = mysql_fetch_array($result2)
