@@ -83,8 +83,8 @@ include_once("include/topnav.php");
 						<div class="slide1" style="cursor: pointer;"><li>Chapter Policies (Click to Show)</li></div>
 							<div class="view1">
 								<ul>
-									<!-- Updated Spring 2019 -->
-									<li><a href="https://drive.google.com/file/d/1HfPh1ho2KUEfun0qRKE5rFh5H3gDrMWb/preview?format=pdf" target = "_blank">Bylaws</a></li>
+									<!-- Updated Spring 2020 -->
+									<li><a href="https://drive.google.com/file/d/13ebg2IfQ2B013lQxT5ZO1FjwKA4g-4k9/preview?format=pdf" target = "_blank">Bylaws</a></li>
 									<!-- Updated Spring 2015 -->
 									<li><a href="https://drive.google.com/file/d/1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS/preview?format=pdf" target = "_blank">Officer Descriptions</a> </li>
 									<!-- Updated Spring 2015 -->
