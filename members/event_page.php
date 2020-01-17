@@ -487,7 +487,8 @@ if (mysql_num_rows($result) > 0) {
             echo (" <a href=\"userinfo.php?user=" . $row3['username'] . "\">" . $row3['lname'] . "</a></td>\n");
             echo ("\t\t\t\t\t\t<td>" . $driver . "</td>\n");
             echo ("\t\t\t\t\t\t<td>" . date("M j g:i a", $row3['timestamp']) . "</td>\n");
-            if (
+            if ($session->isOfficer() || $session->isFakeOfficer()) {
+            	if (
 					($session->position == 1 && $req_event_info['type'] == 7) ||
 
 					($session->position == 2 && $req_event_info['type'] == 0) ||
@@ -560,6 +561,8 @@ if (mysql_num_rows($result) > 0) {
             	);
             	} else {echo "\t\t\t\t\t\t<td>" . round($row['weight'], 2);}
             	;
+            }
+            ;
             echo ("\t\t\t\t\t</tr>\n");
             $j++;
         } //$row2 = mysql_fetch_array($result2)

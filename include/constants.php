@@ -43,8 +43,8 @@ define("CURRENT_CREATIVE_DIRECTOR", "yurikawa"); //Yuri Kawada
 define("CURRENT_HISTORIAN", "csu"); //Chris Su
 define("CURRENT_WEBMASTER", "nickchen"); //Nick Chen
 define("CURRENT_VP_COMMUNICATIONS", "buranasi"); //Mim Buranasiri
-define("CURRENT_PHILANTHROPY_CHAIR1", "saraheng"); //Sarah Eng
-define("CURRENT_PHILANTHROPY_CHAIR2", "anjelict"); //Anjelica Tan
+define("CURRENT_PHILANTROPY_CHAIR1", "saraheng"); //Sarah Eng
+define("CURRENT_PHILANTROPY_CHAIR2", "anjelict"); //Anjelica Tan
 define("CURRENT_ALPHA_HEAD", "chaoe"); //Erica Chao
 define("CURRENT_PHI_HEAD", "myrachen");  //Myra Cheng
 define("CURRENT_OMEGA_HEAD", "ipeng"); //Ivan Peng
