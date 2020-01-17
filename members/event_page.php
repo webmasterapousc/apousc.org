@@ -489,7 +489,7 @@ if (mysql_num_rows($result) > 0) {
             echo ("\t\t\t\t\t\t<td>" . date("M j g:i a", $row3['timestamp']) . "</td>\n");
             if ($session->isOfficer() || $session->isFakeOfficer()) {
             	if (
-            		($session->position == 0) ||
+            		/*($session->position == 0) ||
             		($session->position == 1 && $req_event_info['type'] == 7) ||
 
             		($session->position == 2 && $req_event_info['type'] == 0) ||
@@ -551,7 +551,8 @@ if (mysql_num_rows($result) > 0) {
 
             		($session->position == 33 && $req_event_info['type'] == 16) ||
 
-            		(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)
+            		(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)*/
+            		($session->position >=0 && $session->position < 29) || $session->position == 33
             	) {
             		echo ("\t\t\t\t\t\t<td colspan=2>" . round($row3['weight'], 2)) . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
             		if ($req_event_info['type'] == 0) {
