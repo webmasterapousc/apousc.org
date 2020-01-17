@@ -529,6 +529,8 @@ if (mysql_num_rows($result) > 0) {
             		($session->position == 16) ||
 
             		($session->position == 17 && $req_event_info['type'] == 0) ||
+            		($session->position == 17 && $req_event_info['type'] == 7) ||
+
 
             		($session->position == 18) ||
 
