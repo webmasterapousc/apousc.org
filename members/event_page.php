@@ -851,7 +851,6 @@ if (
         $eventEnd = gmdate("Ymd\THis\Z", strtotime($eventEnd));
         echo "<a href='https://www.google.com/calendar/render?action=TEMPLATE&text=$eventName&dates=$eventStart/$eventEnd&details=$eventDesc&location=$eventLoc&sf=true&output=xml');
         \">Click here to add event to Google Calendar</a>";
-        echo "</button>";
         /*************** USER COMMENTS *********************/
 # Display the current list of comments
 
