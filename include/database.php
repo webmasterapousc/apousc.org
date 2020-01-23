@@ -541,9 +541,6 @@ class MySQLDB
 	 */
 	function removeSignup($eventid, $username)
 	{
-		//delete
-		$q = "DELETE FROM `" . TBL_SIGNUPS . "` WHERE `username` = '$username' AND `eventid` = $eventid";
-		mysql_query($q, $this->connection);
 
 		/**
 		 * Nick's code for getting off waitlist email alerts
@@ -557,15 +554,11 @@ class MySQLDB
 		$event_max = $result->fetch_row()[0];
 		if ($event_max == 0) return; //no limit
 
-		//check number of signups
+		//check to see if user is in the waitlist
 		$param = "timestamp";	
 		$ps = $mysqli->prepare("SELECT * FROM signups WHERE eventid = ? ORDER BY timestamp ASC");
 		$ps->bind_param("i", $eventid); 
-		
 		$ps->execute();
-		$result = $ps->get_result();
-
-		//check to see if user is in the waitlist
 		$result2 = $ps->get_result();
 		$index = 0;
 		while( $row = mysqli_fetch_assoc( $result2)){
@@ -575,9 +568,21 @@ class MySQLDB
 		    	$index += 1;
 		    }
 		}
+
+		//delete
+		$q = "DELETE FROM `" . TBL_SIGNUPS . "` WHERE `username` = '$username' AND `eventid` = $eventid";
+		mysql_query($q, $this->connection);
+
+		//check number of signups
+		$ps = $mysqli->prepare("SELECT * FROM signups WHERE eventid = ? ORDER BY timestamp ASC");
+		$ps->bind_param("i", $eventid); 
+		
+		$ps->execute();
+		$result = $ps->get_result();
+
 		//if need be, email the person who's most recent on the waitlist
 		//signups order by timestamp, index of max
-		if ($index < $event_max && mysqli_num_rows($result) > $event_max) {
+		if ($index < ($event_max) && mysqli_num_rows($result) >= $event_max) {
 			$rows = mysqli_fetch_all($result);
 			$username = $rows[$event_max - 1][0];
 			//find email of user
@@ -600,7 +605,7 @@ class MySQLDB
 			$event_name = $result->fetch_row()[0];
 			//construct $mail_subject and $mail_msg
 			$mail_subject = "Congratulations! You're off the Waitlist";
-			$mail_msg = "Hi ".$fname.", you've been taken off the waitlist for event \"".$event_name."\". Please show up on time! Your attendance is expected.";
+			$mail_msg = "Hi ".$fname.", you've been taken off the waitlist for event \"".$event_name."\". Please show up on time! Your attendance is expected.\n\nWith Much Love, from Webdaddy #2";
 			//send email
 			sendMail($email, $mail_subject, $mail_msg);
 		}
