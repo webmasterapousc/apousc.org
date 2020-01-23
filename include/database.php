@@ -577,7 +577,7 @@ class MySQLDB
 		}
 		//if need be, email the person who's most recent on the waitlist
 		//signups order by timestamp, index of max
-		if ($index < $event_max && mysqli_num_rows($result) >= $event_max) {
+		if ($index < $event_max && mysqli_num_rows($result) > $event_max) {
 			$rows = mysqli_fetch_all($result);
 			$username = $rows[$event_max - 1][0];
 			//find email of user
