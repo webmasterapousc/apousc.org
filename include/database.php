@@ -552,7 +552,13 @@ class MySQLDB
 		$ps->execute();
 		$result = $ps->get_result();
 		$event_max = $result->fetch_row()[0];
-		if ($event_max == 0) return; //no limit
+		
+		//if no max, no need to check to send email
+		if ($event_max == 0) { 
+			$q = "DELETE FROM `" . TBL_SIGNUPS . "` WHERE `username` = '$username' AND `eventid` = $eventid";
+			mysql_query($q, $this->connection);
+			return;
+		}
 
 		//check to see if user is in the waitlist
 		$param = "timestamp";	
