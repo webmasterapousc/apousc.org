@@ -1,6 +1,6 @@
 <?php
 # Include the Autoloader (see "Libraries" for install instructions)
-require '../vendor/autoload.php';
+include_once '../vendor/autoload.php';
 use Mailgun\Mailgun;
 include_once 'constants.php';
 function sendMail($mail_to, $mail_subject, $mail_msg) {
