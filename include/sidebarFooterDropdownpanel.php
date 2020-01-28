@@ -87,7 +87,7 @@ HERE;
 		<!--<li><a href="nominations.php"><strong>Nominations</strong></a></li> -->
 		<!--<li><a href="election_documents.php"><strong>Candidate Documents</strong></a></li> -->
 		<!--Always Keep-->
-		</b><li><a href="https://docs.google.com/spreadsheets/d/1Cen1vf8hlJKBrGtgKpOFuSMMEcvC6tvGEKusJ0R20y8/edit?usp=sharing">Master Doc</a></li>
+		</b><li><a href="https://docs.google.com/spreadsheets/d/1DiLP_yJ2KndRrCE-FFzVUIVaZvF6SatMItTHsjIDBos/edit#gid=0">Master Doc</a></li>
 		<li><a href="../information/finance.php">Finance</a></li>
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
 		<li><a href="../information/announcements.php">Announcements</a></li>
