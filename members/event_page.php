@@ -149,13 +149,13 @@ if (($req_event_info['location'] != NULL) && ($req_event_info['location'] != '0'
 		?>
 		<?php
 # Information about who is driving to the event
-		$drivas = "SELECT SUM(nDrivers) as noDrivers, SUM(nAtt) as noAtt FROM (SELECT S.username, U.fname, U.lname, COUNT(S.username) AS nAtt, SUM(S.drive) as nDrivers, SUM(S.guest) as nGuest, S.lead, S.weight, S.timestamp FROM `" . TBL_SIGNUPS . "` AS S, `" . TBL_USERS . "` AS U WHERE S.eventid = '$req_event' AND S.username = U.username GROUP BY S.username, U.fname, U.lname, S.lead, S.weight, S.timestamp ORDER BY SUM(S.guest) ) R";
+		$drivas  = "SELECT SUM(`". TBL_SIGNUPS . "`.drive) as nDrivers, SUM(`". TBL_SIGNUPS . "`.guest) as nGuests, COUNT(`". TBL_SIGNUPS . "`.username) as nAtt FROM `". TBL_SIGNUPS . "` WHERE `". TBL_SIGNUPS . "`.eventid = $req_event";
 		$resultD = mysql_query($drivas);
 		$rowD = mysql_fetch_array($resultD);
-		if ($rowD[noDrivers] > 0 && $req_event_info['walk'] == 0) {
+		if ($rowD[nDrivers] > 0 && $req_event_info['walk'] == 0) {
 			echo "<hr><li>";
-			echo $rowD[noDrivers] . " rides for " . $rowD[noAtt] . " people";
-			if ($rowD[noAtt] > $rowD[noDrivers]) {
+			echo $rowD[nDrivers] . " rides for " . $rowD[nAtt] . " people";
+			if ($rowD[nAtt] > $rowD[nDrivers]) {
 				echo " &mdash; please sign up to drive!";
 			}
 			;

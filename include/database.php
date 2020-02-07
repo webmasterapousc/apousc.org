@@ -776,7 +776,7 @@ class MySQLDB
 	}
 
 	function getDriversAndAtt($eventid) {
-		$drivas  = "SELECT SUM(nDrivers) as noDrivers, SUM(nAtt) as noAtt FROM (SELECT S.username, U.fname, U.lname, COUNT(S.username) AS nAtt, SUM(S.drive) as nDrivers, SUM(S.guest) as nGuest, S.lead, S.weight, S.timestamp FROM `" . TBL_SIGNUPS . "` AS S, `" . TBL_USERS . "` AS U WHERE S.eventid = '$req_event' AND S.username = U.username GROUP BY S.username, U.fname, U.lname, S.lead, S.weight, S.timestamp ORDER BY SUM(S.guest) ) R";
+		$drivas  = "SELECT SUM(`". TBL_SIGNUPS . "`.drive) as nDrivers, SUM(`". TBL_SIGNUPS . "`.guest) as nGuests, COUNT(`". TBL_SIGNUPS . "`.username) as nAtt FROM `". TBL_SIGNUPS . "` WHERE `". TBL_SIGNUPS . "`.eventid = $req_event";
 		return mysql_query($drivas);
 	}
 
