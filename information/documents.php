@@ -43,7 +43,7 @@ include_once("include/topnav.php");
 
                 		<li><a href = "https://forms.gle/75MvMvQSqcWpSgv36" target = "_blank"> Lead Form </a></li>
                 		<li><a href = "https://drive.google.com/file/d/10ydVPO2SDNtRN2Qm1reGctIRPRrhDrBw/preview?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
-                		<li><a href = "https://drive.google.com/file/d/1kBPXWm8lNFj9dTl36pkNpidgaxm7jB4n/preview?format=pdf" target = "_blank"> Alpha Omicron Syllabus </a></li>
+                		<li><a href = "https://drive.google.com/file/d/1R3BGfeqEDDnIcHU9EKX3cdo6Nw0hi8LW/preview?format=pdf" target = "_blank"> Alpha Pi Syllabus </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1TzmfE78hs3lSIz19GTjHFwouAXbJr0tM/preview?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
 
                 	</ul>
@@ -94,12 +94,6 @@ include_once("include/topnav.php");
 							</div>
 					</ul>			
 <br />
-				<h3>National Documents</h3>
-					<ul>
-						<li><a href="docs/APOBylaws.pdf">Alpha Kappa Bylaws</a>(Updated January 27, 2019)</li>
-						<li><a href="docs/RM_Standard_Policy.pdf">Standard Policy of Risk Management</a> &mdash; national policy on hazing, discrimination, alcohol, etc.</li>
-						<li><a href="docs/style_guide.pdf">Style Guide</a> &mdash; official standards and guidelines on usage of APO terms, logos, typography, etc.</li>
-					</ul>
 				
 			
 <?php

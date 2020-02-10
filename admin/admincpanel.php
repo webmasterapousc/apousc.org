@@ -1,6 +1,7 @@
 
 <?php
 include_once("include/session.php");
+include_once("include/database.php");
 /**
  * User not an administrator, redirect to main page
  * automatically.
@@ -118,6 +119,80 @@ if(isset($_POST["upload"]))
  }
 }
 
+//uploadpledges
+if(isset($_POST["uploadpledges"]))
+{
+ if($_FILES['uploaded_file']['name'])
+ {
+  $filename = explode(".", $_FILES['uploaded_file']['name']);
+  //echo $_FILES['uploaded_file']['name'];
+  if(end($filename) == "csv")
+  {
+    $handle = fopen($_FILES['uploaded_file']['tmp_name'], "r");
+    // go through each row of the read csv
+    while($data = fgetcsv($handle))
+    {
+      $username = $data[0];
+      $password = $data[1];
+      $status = $data[2];
+      $email = $data[3];
+      $fname = $data[4];
+      $lname = $data[5];
+      $semester = $data[6];
+      $year = $data[7];
+      $timestamp = 0; // TOO LAZY TO FIND ACTUAL TIME STAMP, USERS WILL BE CREATED AT TIME 0
+
+      $position = 0;
+      $big = NULL;
+      $phone = $data[8]; //NULL;
+      $uscid = $data[9]; //NULL;
+      $address = NULL;
+      $shirtsize = $data[10]; //NULL;
+      $family = NULL;
+
+      $alumail = "n/a";
+      $userid = 0;
+      //add new user to database
+      $time = time();
+      /* If admin sign up, give admin user level */
+      if (strcasecmp($username, ADMIN_NAME) == 0) {
+        $ulevel = ADMIN_LEVEL;
+      } else {
+        $ulevel = USER_LEVEL;
+      }
+      //"INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `shirt_size`) VALUES ('abcd', 'abc', 1, 1, '1', '1', 1, 'ab', 'cd', 0, 2020, 'M' )"
+      $ps = $mysqli->prepare("INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `shirt_size`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+      $ps->bind_param("ssiississiis", $username, $password, $userid, $status, $email, $alumail, $time, $fname, $lname, $semester, $year, $shirtsize);
+      $ps->execute();
+      
+      //if (mysql_query($q, $this->connection)) {
+        //if ($this->configureDefaultUser($username)) {
+        //  return true;
+        //}
+      //}
+
+    }
+   
+   
+   
+    
+
+   }
+   fclose($handle);
+   header("location: admincpanel.php?updating=1");
+  }
+  else
+  {
+   $message = '<label class="text-danger">Please Select CSV File only</label>';
+  } 
+ }
+ else
+ {
+  $message = '<label class="text-danger">Please Select File</label>';
+ }
+}
+
 if(isset($_GET["updating"]))
 {
  $message = '<label class="text-success">Eboard Updating Done</label>';
@@ -185,6 +260,24 @@ $result = mysqli_query($mysqli, $query);
    </form>
    <br />
   </div>
+
+  <div class="container">
+   <h3 align="center">Add Pledges</a></h3>
+   <br />
+   <p> Please complete the csv template found in the google drive then upload it here to add new Pledges</p>
+   <!-- form for adding pledges -->
+   <form method="post" enctype='multipart/form-data'>
+    <p><label>Please Select File(Only CSV Format)</label>
+    <input type="file" name="uploaded_file" /></p>
+    <br />
+    <input type="submit" name="uploadpledges" class="btn btn-info" value="Upload" onclick=
+    "confirm('Are you sure you want to add new pledges? This will be a pain in the ass to correct if something\'s wrong...');
+      confirm('OK. You should check over each entry and make sure there are no mispellings');
+      return confirm('Last Chance to cancel.');"/>
+   </form>
+   <br />
+   <?php echo $message; ?>
+
 
   <div class="container">
    <h3 align="center">Add Pledge Excomm</a></h3>
@@ -273,7 +366,6 @@ $result = mysqli_query($mysqli, $query);
       </tr>
       ';
      }
-   }
      ?>
     </table>
    </div>

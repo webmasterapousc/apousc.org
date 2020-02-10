@@ -109,22 +109,7 @@ include_once("include/topnav.php");
 							<input type="text" name="txt_Lname" id="txt_Lname" maxlength="30" value="<?php echo $form->value("txt_Lname"); ?>" />
 							<?php echo $form->error("txt_Lname"); ?>
 						</li>
-						<li>
-							<!--<label for="sel_Family">Family</label>
-							<select name="sel_Family" id="sel_Family">
-								<option value="">Select one&hellip;</option>
-								<?php
-								for ($i=0; $i<count($families); $i++) {
-									// If page is reloaded with errors, remember which option was selected
-									$selected = "";
-									if ($form->value("sel_Family") != "" && $form->value("sel_Family") == $i) {
-										$selected = " selected=\"selected\"";
-									}
-									echo ("\t\t\t\t\t<option value=\"$i\"".$selected.">$families[$i]</option>\n");
-								}
-								?>
-							</select>   -->
-						</li>
+						
 						<li>
 							<fieldset>
 								<legend>Semester Entered</legend>
@@ -158,26 +143,7 @@ include_once("include/topnav.php");
 								?>
 							</select>
 						</li>
-						<li>
-							<!-- <label for="sel_Big">Big</label> 
-							<select name="sel_Big" id="sel_Big">
-								<option value="">Unknown</option>
-								<?php
-								$q = "SELECT * FROM `".TBL_USERS."` WHERE `status` <> ".PLEDGE_MEMBER." AND `username` <> \"admin\" ORDER BY `lname`";
-								$retval = $database->query($q);
-								$i = 0; // counter
-								while ($row = mysql_fetch_array($retval)) {
-									// If page is reloaded with errors, remember which option was selected
-									$selected = "";
-									if ($form->value("sel_Big") == $row[0]) {
-										$selected = " selected=\"selected\"";
-									}
-									echo ("\t\t\t\t\t<option value=\"$row[0]\"".$selected.">$row[8], $row[7] ($row[0])</option>\n");
-									$i++;
-								}
-								?>
-							</select> -->
-						</li>
+						
 						<li>
 							<label for="tel_Phone">Phone Number</label>
 							<input type="tel" name="tel_Phone" id="tel_Phone" maxlength="14" value="<?php echo $form->value("tel_Phone"); ?>" />
