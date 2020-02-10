@@ -140,7 +140,6 @@ if(isset($_POST["uploadpledges"]))
       $lname = $data[5];
       $semester = $data[6];
       $year = $data[7];
-      $timestamp = 0; // TOO LAZY TO FIND ACTUAL TIME STAMP, USERS WILL BE CREATED AT TIME 0
 
       $position = 0;
       $big = NULL;
@@ -150,8 +149,10 @@ if(isset($_POST["uploadpledges"]))
       $shirtsize = $data[10]; //NULL;
       $family = NULL;
 
-      $alumail = "n/a";
-      $userid = 0;
+      $alumail = "";
+      $userid =  md5(uniqid($username, true));
+      error_log("userid: ".$userid);
+
       //add new user to database
       $time = time();
       /* If admin sign up, give admin user level */
@@ -161,9 +162,9 @@ if(isset($_POST["uploadpledges"]))
         $ulevel = USER_LEVEL;
       }
       //"INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `shirt_size`) VALUES ('abcd', 'abc', 1, 1, '1', '1', 1, 'ab', 'cd', 0, 2020, 'M' )"
-      $ps = $mysqli->prepare("INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `shirt_size`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+      $ps = $mysqli->prepare("INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `phone`, `uscid`, `shirt_size`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-      $ps->bind_param("ssiississiis", $username, $password, $userid, $status, $email, $alumail, $time, $fname, $lname, $semester, $year, $shirtsize);
+      $ps->bind_param("sssississiisss", $username, $password, $userid, $status, $email, $alumail, $time, $fname, $lname, $semester, $year, $phone, $uscid, $shirtsize);
       $ps->execute();
       
       //if (mysql_query($q, $this->connection)) {
