@@ -43,7 +43,7 @@ include_once("include/topnav.php");
 
                 		<li><a href = "https://forms.gle/75MvMvQSqcWpSgv36" target = "_blank"> Lead Form </a></li>
                 		<li><a href = "https://drive.google.com/file/d/10ydVPO2SDNtRN2Qm1reGctIRPRrhDrBw/preview?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
-                		<li><a href = "https://drive.google.com/file/d/1R3BGfeqEDDnIcHU9EKX3cdo6Nw0hi8LW/preview?format=pdf" target = "_blank"> Alpha Pi Syllabus </a></li>
+                		<li><a href = "https://drive.google.com/file/d/1EvoK6dl5HQ4yPwsXTYqdhZVnzQOvoqc8/preview?format=pdf" target = "_blank"> Alpha Pi Syllabus </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1TzmfE78hs3lSIz19GTjHFwouAXbJr0tM/preview?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
 
                 	</ul>
