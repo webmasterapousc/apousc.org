@@ -154,7 +154,7 @@ else {
 	}
 	echo "</ul>\n";
 //commented out until pledges get bigs
-
+/**
 
 	echo "<h3>Family Line</h3>\n";
 	$username = $req_user_info['username'];
@@ -334,7 +334,7 @@ echo "</div>";
 		echo "</ul></li>\n";
 	} //mysql_num_rows($result) > 0
 	echo "</ul>\n"; 
-	
+	**/
 
 	/* If logged in user viewing own account or Officer, show private info */
 	if (strcmp($session->username, $req_user) == 0 || $session->isOfficer()) {
