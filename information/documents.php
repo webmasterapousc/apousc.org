@@ -41,7 +41,7 @@ include_once("include/topnav.php");
                 <h3> Pledge Documents </h3>
                 	<ul>
 
-                		<li><a href = "https://forms.gle/75MvMvQSqcWpSgv36" target = "_blank"> Lead Form </a></li>
+                		<li><a href = "https://docs.google.com/forms/d/e/1FAIpQLSeddzN3u2WXBybN7SEL1V_c1TdnOUGd0PR1xrSNxB1bQ41pkA/viewform?vc=0&c=0&w=1" target = "_blank"> Lead Form </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1EvoK6dl5HQ4yPwsXTYqdhZVnzQOvoqc8/preview?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1R3BGfeqEDDnIcHU9EKX3cdo6Nw0hi8LW/preview?format=pdf" target = "_blank"> Alpha Pi Syllabus </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1TzmfE78hs3lSIz19GTjHFwouAXbJr0tM/preview?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
