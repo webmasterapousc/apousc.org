@@ -48,11 +48,8 @@ include_once("include/topnav.php");
 			</div>
 			<h3>Requirements</h3>
 				<ul>
-					<li>Must submit a written request with appropriate reasons to <?php echo email_link("apo@usc.edu","apo@usc.edu"); ?>.</li>
-					<li>Complete 10 Service hours, from at least 3 events. No outside hours.</li>
-					<li>Earn 2 Fellowship points.</li>
-					<li>Earn 1 Fundraising point.</li>
-					<li>Earn 3 Membership points.</li>
+					<li>Must submit a written request with appropriate reasons to membership.apousc@gmail.com</li>
+					<li>Accrue 10 Service hours</li><li>other than service hours and gbm attendance, a total of 6 points coming from all other categories of requirements, with a limit of 3 for each category</li>
 					<li>Attend 3 General Body Meetings.</li>
 				</ul>
 			<h3>Expectations</h3>
@@ -62,7 +59,7 @@ include_once("include/topnav.php");
 				</ul>
 			<h3>Membership Policies</h3>
 				<ul>
-					<li>Members may only be Associate for a maximum of 2 semesters. To appeal for a 3rd semester of associate standing, a member must submit a written request with appropriate reasons to <?php echo email_link("apo@usc.edu","apo@usc.edu"); ?></li>
+					<li>Members may only be Associate for a maximum of 2 semesters. To appeal for a 3rd semester of associate standing, a member must submit a written request with appropriate reasons to membership.apousc@gmail.com</li>
 					<li>Members who do not pay dues or do not complete their requirements will be listed as Inactive.</li>
 					<li>If a member is Inactive for 2 consecutive semesters, said member will be removed from the chapter roster.</li>
 					<li>If a member does not finish their requirements, said member must complete a Probationary Program the following semester of 5 additional service hours.</li>
