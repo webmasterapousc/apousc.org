@@ -33,7 +33,7 @@ include_once("include/topnav.php");
 
                 <h3>Fall 2019 Information</h3>
                 <ul>
-                    <li><a href='https://docs.google.com/spreadsheets/d/1uQ_zekInS4GVA2L8VD3xvH77R8yDvB7bnTGABysEAb0/edit?usp=sharing'>Budget</a></li>
+                    <li><a href='https://docs.google.com/spreadsheets/d/1o3LOmUChGxSRILlPCeNK2OertuMHmrQjFfw9-JjTyfM/edit#gid=1809411573'>Budget</a></li>
                     <li>Venmo: @apoakusc</li>
                     <li>Email: <a href="mailto:finance.apousc@gmail.com">finance.apousc@gmail.com</a></li>
                 </ul>
