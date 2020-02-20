@@ -96,7 +96,7 @@ HERE;
 		<li><a href="https://goo.gl/forms/Oqg2mQ0OL2uuEK003">Event Evaluation Form</a></li>
 		<li><a href="../information/documents.php">Documents</a></li>
 		<!--<li><a href="requirements.php">Requirements</a></li>-->
-		<li><a href="../information/archives.php">Archives</a></li>
+		<!-- <li><a href="../information/archives.php">Archives</a></li> -->
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
 		<!-- <li><li><a href='polls.php'>Polls</a></li>-->
 		<li><a href="../information/support_systems.php">Support Systems</a></li>
