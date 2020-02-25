@@ -36,7 +36,7 @@ include_once("include/topnav.php");
 				<tbody>
 					<?php
 						//Increment the term value over time.
-            $q = "SELECT * FROM officer as O JOIN officer_position as P ON O.position = P.rank JOIN users as U ON O.username = U.username WHERE O.position >20 && O.position <29 AND term = 19";
+            $q = "SELECT * FROM officer as O JOIN officer_position as P ON O.position = P.rank JOIN users as U ON O.username = U.username WHERE O.position >20 && O.position <29 AND term = 20";
 						$result = mysql_query($q);
 						$i = 0; // Counter used for alternating table row colors
 						while ($row = mysql_fetch_array($result)) {
