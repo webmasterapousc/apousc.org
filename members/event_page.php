@@ -692,7 +692,7 @@ echo "<span class='topContent'><span id='eventDetails'>";
             } //$session->status == PLEDGE_MEMBER
             echo "<li><button type='submit' class='button'";
             if ($rowD['nAtt'] >= $req_event_info['max'] && $req_event_info['max'] != 0) {
-            	echo " onclick=\"return confirm('This event is currently full. If you sign up you will be added to the waitlist. You must be prepared to attend in the case that current attendees drop, or the cap is increased.');\">Sign Up for Wailitst";} else {
+            	echo " onclick=\"return confirm('This event is currently full. If you sign up you will be added to the waitlist. You must be prepared to attend in the case that current attendees drop, or the cap is increased.');\">Sign Up for Wailist";} else {
             		echo ">Sign Up!";
             	}
             	;

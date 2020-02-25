@@ -29,9 +29,9 @@ include_once("include/topnav.php");
 ?>
 <br />
 			<h2>Finance</h2>
-			<p>If you don't see what you're looking for, just contact Angela Chuang or Matthew Lee!</p>
+			<p>If you don't see what you're looking for, just contact Clare Cho or Kabish Shrestha!</p>
 
-                <h3>Fall 2019 Information</h3>
+                <h3>Spring 2020 Information</h3>
                 <ul>
                     <li><a href='https://docs.google.com/spreadsheets/d/1o3LOmUChGxSRILlPCeNK2OertuMHmrQjFfw9-JjTyfM/edit#gid=1809411573'>Budget</a></li>
                     <li>Venmo: @apoakusc</li>
@@ -39,31 +39,39 @@ include_once("include/topnav.php");
                 </ul>
                 
                 <h3>Dues</h3>
-                <p>Please contact Matthew and Angela if you need additional financial accommodations for our payment plans.</p>
-                <h4>Actives: $150</h4>
-                <p>Payment Plan</p>
+                <p>Please contact Clare and Kabish if you need additional financial accommodations for our payment plans.</p>
+                <h4>Actives: $150 regular, $135 early</h4>
+                <h4>Associates: $55 regular, $49 early</h4>
+                <h4>Pledges: $325 regular, n/a early</h4>
+                <p>Actives Payment Plan (Regular)</p>	
                 <ul>
-                    <li>Sep 23 - $65</li>
-                	<li><strong>Oct 21 - $30</strong></li>
-                    <li>Nov 18 - $55</li>
+                    <li>Monday, February 10: $70</li>
+                	<li>Monday, March 2: $40</li>
+                    <li>Monday, March 30: $40</li>
             	</ul>
-
-                <h4>Pledges: $350</h4>
-                <p>Payment Plan</p>
+            	<p>Actives Payment Plan (Early)</p>	
                 <ul>
-                    <li>Sep 30 - $130</li>
-                	<li><strong>Oct 28 - $90</strong></li>
-                    <li>Nov 11 - $70</li>
-                    <li>Nov 21 - $60</li>
+                    <li>Monday, before February 10: $65</li>
+                	<li>Monday, February 24: $35</li>
+                    <li>Monday, March 23: $35</li>
             	</ul>
-                
-                <h4>Associates: $55</h4>
-				
+            	<p>Associates Payment Plan (Regular)</p>	
+                <ul>
+                    <li>Monday, February 10: $25</li>
+                	<li>Monday, March 2: $15</li>
+                    <li>Monday, March 30: $10</li>
+            	</ul>
+            	<p>Associates Payment Plan (Early)</p>	
+                <ul>
+                    <li>Monday, before February 10: $23</li>
+                	<li>Monday, February 24: $13</li>
+                    <li>Monday, March 23: $13</li>
+            	</ul>
 				<p>*If you do not pay your dues and do not communicate with the VPs, we will have to freeze your account until the matter is resolved.</p>
 				
 				<h3>Reimbursements</h3>
 				
-				<p>In order to get reimbursed, please send your receipts to Matthew Lee, Angela Chuang, or finance.apousc@gmail.com.</p>
+				<p>In order to get reimbursed, please send your receipts to Clare Cho, Kabish Shrestha, or finance.apousc@gmail.com.</p>
 				
 <br />
 				
