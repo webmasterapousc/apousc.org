@@ -58,7 +58,7 @@ include_once("include/topnav.php");
 				$positionz[7] = "Interchapter Chair";
 			?>
 			<div class="contentBox">
-				<p>Please review the <a href="https://drive.google.com/open?id=1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS">Officer Descriptions</a>, <a href="docs/APOAKBylawsRevisions.pdf">Bylaws</a>, and <a href="https://drive.google.com/open?id=1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu">Officer Election Policy</a> for procedures regarding elections and for a list of each position's responsibilities. If you wish to decline your nomination, please click "[Decline]" next to your name, or email <a href="mailto:webmaster.apousc@gmail.com">webmaster.apousc@gmail.com</a> so that the website administrator may decline on your behalf. <br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://drive.google.com/file/d/1zpMpEGoVXuSzIfU1Hq_vs0oWMxYzOiAm/view">E-Board Application</a> by 11:59 PM on Sunday, April 19. </strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://drive.google.com/file/d/1-k3-TuauI_ia4aNGHKXb_QixCMzZCsbK/view">A-Board Application </a> by 11:59 PM on Monday, May 4.</strong></p> 
+				<p>Please review the <a href="https://drive.google.com/open?id=1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS">Officer Descriptions</a>, <a href="https://drive.google.com/open?id=13ebg2IfQ2B013lQxT5ZO1FjwKA4g-4k9">Bylaws</a>, and <a href="https://drive.google.com/open?id=1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu">Officer Election Policy</a> for procedures regarding elections and for a list of each position's responsibilities. If you wish to decline your nomination, please click "[Decline]" next to your name, or email <a href="mailto:webmaster.apousc@gmail.com">webmaster.apousc@gmail.com</a> so that the website administrator may decline on your behalf. <br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://drive.google.com/file/d/1zpMpEGoVXuSzIfU1Hq_vs0oWMxYzOiAm/view">E-Board Application</a> by 11:59 PM on Sunday, April 19. </strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://drive.google.com/file/d/1-k3-TuauI_ia4aNGHKXb_QixCMzZCsbK/view">A-Board Application </a> by 11:59 PM on Monday, May 4.</strong></p> 
 				
 			</div>
 			<form action="process.php" method="post">
@@ -175,7 +175,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=1\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -210,7 +210,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=2\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -245,7 +245,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=3\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -280,7 +280,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=4\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -315,7 +315,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=5\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -350,7 +350,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=6\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -385,7 +385,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=7\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -420,7 +420,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=8\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
