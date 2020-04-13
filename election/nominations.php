@@ -136,8 +136,12 @@ include_once("include/topnav.php");
 							echo ("</td><td>");
 							if ($declined) {
 								echo ("Declined");
-							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+							} else if ($row['second'] == 0 ) {
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -168,7 +172,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=1\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -199,7 +207,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=2\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -230,7 +242,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=3\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -261,7 +277,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=4\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -292,7 +312,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=5\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -323,7 +347,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=6\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -354,7 +382,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=7\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
@@ -385,7 +417,11 @@ include_once("include/topnav.php");
 							if ($declined) {
 								echo ("Declined");
 							} else if ($row['second'] == 0) {
-								echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=7\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								if (strcmp($session->username,$row['name']) == 0) {
+									echo ("Not seconded");
+								} else {
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+								}
 							} else {
 								echo ("Seconded");
 							}
