@@ -140,7 +140,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -175,7 +175,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -210,7 +210,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -245,7 +245,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -280,7 +280,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -315,7 +315,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -350,7 +350,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -385,7 +385,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
@@ -420,7 +420,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"if (return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=0\" title=\"Second Nomination\" onclick=\"return confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
