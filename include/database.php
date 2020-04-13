@@ -710,8 +710,12 @@ class MySQLDB
 	 */
 	function addNewNomination($username, $position)
 	{
-		$q = "INSERT INTO `" . TBL_NOMINATIONS . "` VALUES (NULL,'$username',$position,'','')";
-		return mysql_query($q, $this->connection);
+		$q = 
+		$ps = $mysqli->prepare("INSERT INTO ? VALUES (NULL,?,?,'','')";);
+		$ps->bind_param("ssi", TBL_NOMINATIONS, $username, $position);
+		$ps->execute();
+		$result = $ps->get_result();
+		return $result;
 	}
 	/**
 	 * checkNomination
