@@ -111,7 +111,7 @@ else {
 	echo "</li>\n";
 	echo "<li><strong>Status</strong>: " . $memberStatus[$req_user_info['status']] . "</li>\n";
 // Comment out until pledges get families
-/*
+
 	echo "<li><strong>Family</strong>: ";
 	if ($req_user_info['family'] !== NULL && is_numeric($req_user_info['family'])) {
 		echo $families[$req_user_info['family']];
@@ -120,7 +120,7 @@ else {
 		echo "Unknown";
 	}
 	echo "</li>\n";
-	*/
+	
 	// end comment  about families
 
 	echo "<li><strong>Pledge Semester</strong>: ";
@@ -154,7 +154,6 @@ else {
 	}
 	echo "</ul>\n";
 //commented out until pledges get bigs
-/**
 
 	echo "<h3>Family Line</h3>\n";
 	$username = $req_user_info['username'];
@@ -334,7 +333,6 @@ echo "</div>";
 		echo "</ul></li>\n";
 	} //mysql_num_rows($result) > 0
 	echo "</ul>\n"; 
-	**/
 
 	/* If logged in user viewing own account or Officer, show private info */
 	if (strcmp($session->username, $req_user) == 0 || $session->isOfficer()) {
