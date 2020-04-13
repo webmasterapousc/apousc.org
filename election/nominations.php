@@ -410,7 +410,7 @@ include_once("include/topnav.php");
 							echo ("<tr".$zebra."><td".$declinedOut.">".$nominee_info['fname']." ".$nominee_info['lname']." (".$nominee_info['username'].")");
 							if (strcmp($session->username,$row['name']) == 0 || $session->isAdmin()) {
 								if ($row['decline'] == 0) {
-									echo (" [<a href=\"process.php?subdeclinenomination=1&amp;user=".$row['name']."&amp;position=8\" title=\"Decline Nomination\" onclick=\"return confirm('Are you sure you want to decline this nomination?');\">Decline</a>]");
+									echo (" [<a href=\"process.php?subdeclinenomination=1&amp;user=".$row['name']."&amp;position=7\" title=\"Decline Nomination\" onclick=\"return confirm('Are you sure you want to decline this nomination?');\">Decline</a>]");
 								}
 							}
 							echo ("</td><td>");
@@ -420,7 +420,7 @@ include_once("include/topnav.php");
 								if (strcmp($session->username,$row['name']) == 0) {
 									echo ("Not seconded");
 								} else {
-									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=8\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+									echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=7\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
 								}
 							} else {
 								echo ("Seconded");
