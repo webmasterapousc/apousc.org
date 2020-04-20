@@ -46,121 +46,51 @@ include_once("include/topnav.php");
           
            <h3>President</h3>
           	<ul>    
-           <li><b>Justin Chang</b></li>
-            <ul><a href = "docs/election/spring20/president/jc_app.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/president/jc_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/president/jc_schedule.png"> Schedule </a></ul>
+           <li><b>Hansuh Lee</b></li>
+            <ul><a href = "docs/election/fall20/president/hl_application.pdf"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/president/hl_resume.pdf"> Resume NOT SUBMITTED</a></ul>
+            <ul><a href = "docs/election/fall20/president/hl_schedule.png"> Schedule NOT SUBMITTED</a></ul>
 
             </ul>
 
           <h3>Pledgemaster</h3>
 
-            <ul>
-              
-            <li><b>Carlos Delgado</b></li>
-            <ul><a href = "docs/election/spring20/pledgemaster/cd_app.pdf"> Application</a></ul>
-            <ul><a href = "docs/election/spring20/pledgemaster/cd_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/pledgemaster/cd_schedule.jpg"> Schedule </a></ul>
-            
-            <li><b>Andrew Oh</b></li>
-            <ul><a href = "docs/election/spring20/pledgemaster/ao_app.docx"> Application</a></ul>
-            <ul><a href = "docs/election/spring20/pledgemaster/ao_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/pledgemaster/ao_schedule.docx"> Schedule </a></ul>
-            
-            </ul>
-
           <h3>VP of Service</h3>
 			    <ul>
 			        
-			<li><b>Arnold Chang</b></li>
-            <ul><a href = "docs/election/spring20/service/ac_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/service/ac_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/service/ac_schedule.png"> Schedule </a></ul>
-
-            <li><b>Sarah Eng</b></li>
-            <ul><a href = "docs/election/spring20/service/se_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/service/se_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/service/se_schedule.png"> Schedule </a></ul>
-            
+			     <li><b>Samantha Lei</b></li>
+            <ul><a href = "docs/election/fall20/service/sl_application.docx"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/service/sl_resume.docx"> Resume </a></ul>
+            <ul><a href = "docs/election/fall20/service/sl_schedule.png"> Schedule </a></ul>
              </ul>
 
           <h3>Co-VP of Membership</h3>
 			    <ul>
-
-            <li><b>Matthew Ayala</b></li>
-            <ul><a href = "docs/election/spring20/membership/ma_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/membership/ma_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/membership/ma_schedule.png"> Schedule </a></ul>
-            
-            <li><b>Justine Huang</b></li>
-            <ul><a href = "docs/election/spring20/membership/jh_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/membership/jh_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/membership/jh_schedule.png"> Schedule </a></ul>
-
-            <li><b>James Tang</b></li>
-            <ul><a href = "docs/election/spring20/membership/jt_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/membership/jt_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/membership/jt_schedule.pdf"> Schedule </a></ul>
-            
-            <li><b>Katherine Zhang</b></li>
-            <ul><a href = "docs/election/spring20/membership/kz_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/membership/kz_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/membership/kz_schedule.png"> Schedule </a></ul>
 
             </ul>
 
           <h3>VP of Fellowship</h3>
 			  <ul>
              
-             <li><b>Jun Kim</b></li>
-            <ul><a href = "docs/election/spring20/fellowship/jk_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/fellowship/jk_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/fellowship/jk_schedule.png"> Schedule </a></ul>
+             <li><b>Naomi Lin</b></li>
+            <ul><a href = "docs/election/fall20/fellowship/nl_application.pdf"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/fellowship/nl_resume.pdf"> Resume </a></ul>
+            <ul><a href = "docs/election/fall20/fellowship/nl_schedule.png"> Schedule </a></ul>
 
-            <li><b>Andrew Li</b></li>
-            <ul><a href = "docs/election/spring20/fellowship/al_app.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/fellowship/al_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/fellowship/al_schedule.jpg"> Schedule </a></ul>
-            
-            <li><b>Neen Virameteekul</b></li>
-            <ul><a href = "docs/election/spring20/fellowship/nv_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/fellowship/nv_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/fellowship/nv_schedule.png"> Schedule </a></ul>
-            
               </ul>
 
           <h3>Co-VP of Finance</h3>
 		    <ul>
 		        
-		    <li><b>Clare Cho</b></li>
-            <ul><a href = "docs/election/spring20/finance/cc_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/finance/cc_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/finance/cc_schedule.png"> Schedule </a></ul>
-			         
-			<li><b>Kabish Shrestha</b></li>
-            <ul><a href = "docs/election/spring20/finance/ks_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/finance/ks_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/finance/ks_schedule.png"> Schedule </a></ul>
-            
            </ul>
 
           <h3>VP of Communications</h3>
             <ul>
                 
-            <li><b>Mim Buranasiri</b></li>
-            <ul><a href = "docs/election/spring20/communications/mb_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/communications/mb_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/communications/mb_schedule.pdf"> Schedule </a></ul>
-    
             </ul>
                   
           <h3>Interchapter Chair</h3>
           	<ul>
-
-          	<li><b>Gabriel David</b></li>
-            <ul><a href = "docs/election/spring20/ic/gd_app.docx"> Application </a></ul>
-            <ul><a href = "docs/election/spring20/ic/gd_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/spring20/ic/gd_schedule.jpeg"> Schedule </a></ul>
 
             </ul>
     
