@@ -54,7 +54,13 @@ include_once("include/topnav.php");
             </ul>
 
           <h3>Pledgemaster</h3>
+          <ul>    
+           <li><b>James Liu Tang</b></li>
+            <ul><a href = "docs/election/fall20/pledgemaster/jt_application.docx"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/pledgemaster/jt_resume.docx"> Resume</a></ul>
+            <ul><a href = "docs/election/fall20/pledgemaster/jt_schedule.pdf"> Schedule</a></ul>
 
+            </ul>
           <h3>VP of Service</h3>
 			    <ul>
 			        
@@ -66,7 +72,7 @@ include_once("include/topnav.php");
 
           <h3>Co-VP of Membership</h3>
 			    <ul>
-            <li><b>Andrew LI</b></li>
+            <li><b>Andrew Li</b></li>
             <ul><a href = "docs/election/fall20/membership/al_application.pdf"> Application </a></ul>
             <ul><a href = "docs/election/fall20/membership/al_resume.docx"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/membership/al_schedule.pdf"> Schedule </a></ul>
@@ -74,6 +80,17 @@ include_once("include/topnav.php");
             <ul><a href = "docs/election/fall20/membership/ec_application.pdf"> Application </a></ul>
             <ul><a href = "docs/election/fall20/membership/ec_resume.pdf"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/membership/ec_schedule.pdf"> Schedule </a></ul>
+
+            </ul>
+             <ul>
+            <li><b>Jessica Dai</b></li>
+            <ul><a href = "docs/election/fall20/membership/jd_application.pdf"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/membership/jd_resume.pdf"> Resume </a></ul>
+            <ul><a href = "docs/election/fall20/membership/jd_schedule.png"> Schedule </a></ul>
+            <li><b>Anjelica Tan</b></li>
+            <ul><a href = "docs/election/fall20/membership/at_application.pdf"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/membership/at_resume.pdf"> Resume </a></ul>
+            <ul><a href = "docs/election/fall20/membership/at_schedule.png"> Schedule </a></ul>
 
             </ul>
 

@@ -28,7 +28,7 @@ if ($session->status == FROZEN_MEMBER) {
 
  <div class='highlighter central'>
 
-     <!--<li><a href="../election/nominations.php">Nominations</a></li>-->
+     <li><a href="../election/nominations.php">Nominations</a></li>
      <li><a href="../election/election_documents.php">Candidate Documents</a></li>
 </div>
 		<li>
@@ -84,7 +84,7 @@ HERE;
 	<h5>Information</h5>
 	<ul>
 		<!--Only needed during Officer Nominations period -->
-		<!--<li><a href="../election/nominations.php"><strong>Nominations</strong></a></li>-->
+		<li><a href="../election/nominations.php"><strong>Nominations</strong></a></li>
 		<li><a href="../election/election_documents.php"><strong>Candidate Documents</strong></a></li> 
 		<!--Always Keep-->
 		</b><li><a href="https://docs.google.com/spreadsheets/d/1DiLP_yJ2KndRrCE-FFzVUIVaZvF6SatMItTHsjIDBos/edit#gid=0">Master Doc</a></li>
