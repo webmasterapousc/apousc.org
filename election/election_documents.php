@@ -67,10 +67,6 @@ include_once("include/topnav.php");
             <ul><a href = "docs/election/fall20/service/sl_application.docx"> Application </a></ul>
             <ul><a href = "docs/election/fall20/service/sl_resume.docx"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/service/sl_schedule.png"> Schedule </a></ul>
-            <li><b>Arnold Chang</b></li>
-            <ul><a href = "docs/election/fall20/president/ac_application.docx"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/president/ac_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/president/ac_schedule.png"> Schedule </a></ul>
              </ul>
 
           <h3>Co-VP of Membership</h3>
