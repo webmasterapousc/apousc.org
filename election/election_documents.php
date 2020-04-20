@@ -45,12 +45,7 @@ include_once("include/topnav.php");
 			<h2>Candidate Documents</h2>
           
            <h3>President</h3>
-          	<ul>    
-           <li><b>Hansuh Lee</b></li>
-            <ul><a href = "docs/election/fall20/president/hl_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/president/hl_resume.pdf"> Resume NOT SUBMITTED</a></ul>
-            <ul><a href = "docs/election/fall20/president/hl_schedule.png"> Schedule NOT SUBMITTED</a></ul>
-
+          	<ul> 
             </ul>
 
           <h3>Pledgemaster</h3>
