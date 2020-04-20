@@ -66,6 +66,14 @@ include_once("include/topnav.php");
 
           <h3>Co-VP of Membership</h3>
 			    <ul>
+            <li><b>Andrew LI</b></li>
+            <ul><a href = "docs/election/fall20/membership/al_application.pdf"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/membership/al_resume.docx"> Resume </a></ul>
+            <ul><a href = "docs/election/fall20/membership/al_schedule.pdf"> Schedule </a></ul>
+            <li><b>Elliot Cha</b></li>
+            <ul><a href = "docs/election/fall20/membership/ec_application.pdf"> Application </a></ul>
+            <ul><a href = "docs/election/fall20/membership/ec_resume.pdf"> Resume </a></ul>
+            <ul><a href = "docs/election/fall20/membership/ec_schedule.pdf"> Schedule </a></ul>
 
             </ul>
 
@@ -91,6 +99,10 @@ include_once("include/topnav.php");
                   
           <h3>Interchapter Chair</h3>
           	<ul>
+              <li><b>Justin Chang</b></li>
+              <ul><a href = "docs/election/fall20/ic/jc_application.pdf"> Application </a></ul>
+              <ul><a href = "docs/election/fall20/ic/jc_resume.pdf"> Resume </a></ul>
+              <ul><a href = "docs/election/fall20/ic/jc_schedule.png"> Schedule </a></ul>
 
             </ul>
     
