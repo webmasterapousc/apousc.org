@@ -104,9 +104,14 @@ include_once("include/topnav.php");
               </ul>
 
           <h3>Co-VP of Finance</h3>
-		    <ul>
-		        
-           </ul>
+		        <ul>
+		          <li><b>Matthew Ayala</b></li>
+                <ul><a href = "docs/election/fall20/finance/ma_application.docx"> Application </a></ul>
+                <ul><a href = "docs/election/fall20/finance/ma_resume.pdf"> Resume </a></ul>
+                <ul><a href = "docs/election/fall20/finance/ma_schedule.png"> Schedule </a></ul>
+
+              </ul>
+            </ul>
 
           <h3>VP of Communications</h3>
             <ul>
