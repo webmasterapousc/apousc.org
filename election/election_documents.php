@@ -119,11 +119,15 @@ include_once("include/topnav.php");
 
           <h3>VP of Communications</h3>
             <ul>
-              <li>
                 <li><b>Jessica Woon</b></li>
-                <ul><a href = "docs/election/fall20/finance/jw_application.docx"> Application </a></ul>
-                <ul><a href = "docs/election/fall20/finance/jw_resume.docx"> Resume </a></ul>
-                <ul><a href = "docs/election/fall20/finance/jw_schedule.png"> Schedule </a></ul>
+                <ul><a href = "docs/election/fall20/communications/jw_application.docx"> Application </a></ul>
+                <ul><a href = "docs/election/fall20/communications/jw_resume.docx"> Resume </a></ul>
+                <ul><a href = "docs/election/fall20/communications/jw_schedule.png"> Schedule </a></ul>
+
+                <li><b>Madeline Kim</b></li>
+                <ul><a href = "docs/election/fall20/communications/mk_application.docx"> Application </a></ul>
+                <ul><a href = "docs/election/fall20/communications/mk_resume.docx"> Resume </a></ul>
+                <ul><a href = "docs/election/fall20/communications/mk_schedule.png"> Schedule </a></ul>
 
               </ul>
             </ul>
