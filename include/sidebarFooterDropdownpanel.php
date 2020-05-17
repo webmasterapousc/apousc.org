@@ -53,11 +53,11 @@ if ($session->isAdmin()) {
 			<h5>Admin Tools</h5>
 			<ul>
 				<li><a href="../admin/admincpanel.php">Admin Control Panel</a></li>
-				<li><a href="../admin/add_biglittle.php">Add Bigs and Littles</a></li>
-				<li><a href="../admin/add_excomm.php">Add Excomm</a></li>
-				<li><a href="../admin/add_pledge_excomm.php">Add Pledge Excomm</a></li>
-				<li><a href="../admin/add_pledges.php">Add Pledges</a></li>
-				<li><a href="../admin/cross_pledges.php">Cross Pledges</a></li>
+				<li><a href="../admin/csv_tools/add_biglittle.php">Add Bigs and Littles</a></li>
+				<li><a href="../admin/csv_tools/add_excomm.php">Add Excomm</a></li>
+				<li><a href="../admin/csv_tools/add_pledge_excomm.php">Add Pledge Excomm</a></li>
+				<li><a href="../admin/csv_tools/add_pledges.php">Add Pledges</a></li>
+				<li><a href="../admin/csv_tools/cross_pledges.php">Cross Pledges</a></li>
 				<li><a href="../admin/admin.php">Admin Center</a></li>
 				<li><a href="../admin/register.php">Add Member</a></li>
 				<li><a href="../admin/admin_manual.php">Website User Manual</a></li>
