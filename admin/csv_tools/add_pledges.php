@@ -38,7 +38,7 @@ if(isset($_POST["crossing"]))
   //update all pledges to actives by changing status from 1 to 0
   $ps = $mysqli->prepare("UPDATE users SET `status` = 0 WHERE `status`=1");
   $ps->execute();
-  header("location: admincpanel.php?crossing=1"); 
+  header("location: add_pledges.php?crossing=1"); 
 }
 
 //upload
@@ -106,7 +106,7 @@ if(isset($_POST["upload"]))
 
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_pledges.php?updating=1");
   }
   else
   {
@@ -181,7 +181,7 @@ if(isset($_POST["uploadpledges"]))
 
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_pledges.php?updating=1");
   }
   else
   {
@@ -196,7 +196,7 @@ if(isset($_POST["uploadpledges"]))
 
 if(isset($_GET["updating"]))
 {
- $message = '<label class="text-success">Eboard Updating Done</label>';
+ $message = '<label class="text-success">Adding Pledges Done</label>';
 }
 
 $query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
@@ -236,24 +236,10 @@ $result = mysqli_query($mysqli, $query);
    </form>
    <br />
    <?php echo $message; ?>
-
-  <!-- code for changing the table -->
-  <script type="text/javascript"></script>
-  <script>
-    function doSearch() {
-      $.ajax({
-        url: "admincpanel.php",
-        data: {
-          current_year: $("#current_year").val(),
-          current_semester: $("#current_semester").val()
-        },
-        success: function(result) {
-          $("html").empty();
-          $("html").append(result);
-        }
-      })
-    }
-  </script>
+<img src="sleepy.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 40%;">
  </body>
 </html>
 

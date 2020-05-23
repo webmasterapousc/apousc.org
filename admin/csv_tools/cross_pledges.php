@@ -97,7 +97,7 @@ if(isset($_POST["upload"]))
 
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: cross_pledges.php?crossing=1");
   }
   else
   {
@@ -167,7 +167,7 @@ if(isset($_POST["uploadpledges"]))
     }
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: cross_pledges.php?updating=1");
   }
   else
   {
@@ -182,7 +182,7 @@ if(isset($_POST["uploadpledges"]))
 
 if(isset($_GET["updating"]))
 {
- $message = '<label class="text-success">Eboard Updating Done</label>';
+ $message = '<label class="text-success">Crossing Pledges Done</label>';
 }
 
 $query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
@@ -216,6 +216,9 @@ $result = mysqli_query($mysqli, $query);
     echo '<div class="container"><label class="text-success">All Pledges Are Now Actives</label></div>';
   }
 ?>
-  
+  <img src="sleepy.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 40%;">
  </body>
 </html>

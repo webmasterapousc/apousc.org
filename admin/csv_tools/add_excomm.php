@@ -97,7 +97,7 @@ if(isset($_POST["upload"]))
 
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_excomm.php?updating=1");
   }
   else
   {
@@ -165,14 +165,9 @@ if(isset($_POST["uploadpledges"]))
       //}
 
     }
-   
-   
-   
-    
-
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_excomm.php?updating=1");
   }
   else
   {
@@ -204,13 +199,6 @@ $result = mysqli_query($mysqli, $query);
  <body>
   <br />
   </div>
-
-<?php
-  if(isset($_GET["crossing"]))
-  {
-    echo '<div class="container"><label class="text-success">All Pledges Are Now Actives</label></div>';
-  }
-?>
   <div class="container">
    <h3 align="center">Add Excomm</a></h3>
    <br />
@@ -241,7 +229,7 @@ $result = mysqli_query($mysqli, $query);
   <script>
     function doSearch() {
       $.ajax({
-        url: "admincpanel.php",
+        url: "add_excomm.php",
         data: {
           current_year: $("#current_year").val(),
           current_semester: $("#current_semester").val()
@@ -255,7 +243,7 @@ $result = mysqli_query($mysqli, $query);
   </script>
 
    <!-- form for changing year/semester to view -->
-   <form id = 'tbChangeForm' name='tbChangeForm'  method="GET" action="admincpanel.php">
+   <form id = 'tbChangeForm' name='tbChangeForm'  method="GET" action="add_excomm.php">
     <h4>  
       year <input type="number" name = "current_year" id="current_year" min="2004" max="2030" value="<?php echo (int)($current_year); ?>">
       semester <input type="number" name = "current_semester" id="current_semester" min="0" max= "1" value="<?php echo (int)($current_semester); ?>">
@@ -284,6 +272,10 @@ $result = mysqli_query($mysqli, $query);
     </table>
    </div>
   </div>
+  <img src="sleepy.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 40%;">
  </body>
 </html>
 

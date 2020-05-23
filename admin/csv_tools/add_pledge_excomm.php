@@ -97,7 +97,7 @@ if(isset($_POST["upload"]))
 
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_pledge_excomm.php?updating=1");
   }
   else
   {
@@ -118,61 +118,9 @@ if(isset($_POST["uploadpledges"]))
   $filename = explode(".", $_FILES['uploaded_file']['name']);
   //echo $_FILES['uploaded_file']['name'];
   if(end($filename) == "csv")
-  {
-    $handle = fopen($_FILES['uploaded_file']['tmp_name'], "r");
-    // go through each row of the read csv
-    while($data = fgetcsv($handle))
-    {
-      $username = $data[0];
-      $password = $data[1];
-      $status = $data[2];
-      $email = $data[3];
-      $fname = $data[4];
-      $lname = $data[5];
-      $semester = $data[6];
-      $year = $data[7];
-
-      $position = 0;
-      $big = NULL;
-      $phone = $data[8]; //NULL;
-      $uscid = $data[9]; //NULL;
-      $address = NULL;
-      $shirtsize = $data[10]; //NULL;
-      $family = NULL;
-
-      $alumail = "";
-      $userid =  md5(uniqid($username, true));
-      error_log("userid: ".$userid);
-
-      //add new user to database
-      $time = time();
-      /* If admin sign up, give admin user level */
-      if (strcasecmp($username, ADMIN_NAME) == 0) {
-        $ulevel = ADMIN_LEVEL;
-      } else {
-        $ulevel = USER_LEVEL;
-      }
-      //"INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `shirt_size`) VALUES ('abcd', 'abc', 1, 1, '1', '1', 1, 'ab', 'cd', 0, 2020, 'M' )"
-      $ps = $mysqli->prepare("INSERT INTO `users`(`username`, `password`, `userid`, `status`, `email`, `alumail`, `timestamp`, `fname`, `lname`, `semester`, `year`, `phone`, `uscid`, `shirt_size`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-
-      $ps->bind_param("sssississiisss", $username, $password, $userid, $status, $email, $alumail, $time, $fname, $lname, $semester, $year, $phone, $uscid, $shirtsize);
-      $ps->execute();
-      
-      //if (mysql_query($q, $this->connection)) {
-        //if ($this->configureDefaultUser($username)) {
-        //  return true;
-        //}
-      //}
-
-    }
-   
-   
-   
-    
-
-   }
+  {}
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_pledge_excomm.php?updating=1");
   }
   else
   {
@@ -187,11 +135,8 @@ if(isset($_POST["uploadpledges"]))
 
 if(isset($_GET["updating"]))
 {
- $message = '<label class="text-success">Eboard Updating Done</label>';
+ $message = '<label class="text-success">adding pledge excomm done</label>';
 }
-
-$query = "SELECT * FROM officer as O JOIN users as U ON U.username = O.username JOIN officer_position as P ON O.position = P.rank  JOIN term as T ON O.term = T.term_id WHERE((O.position >=0 && O.position<=20) || (O.position >=29 && O.position<=33)) AND T.year = '".$current_year."' AND T.semester = '".$current_semester."'   " ;;
-$result = mysqli_query($mysqli, $query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -229,25 +174,12 @@ $result = mysqli_query($mysqli, $query);
    </h3>
   </div>
 
-  <!-- code for changing the table -->
-  <script type="text/javascript"></script>
-  <script>
-    function doSearch() {
-      $.ajax({
-        url: "admincpanel.php",
-        data: {
-          current_year: $("#current_year").val(),
-          current_semester: $("#current_semester").val()
-        },
-        success: function(result) {
-          $("html").empty();
-          $("html").append(result);
-        }
-      })
-    }
-  </script>
 
   </div>
+  <img src="sleepy.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 40%;">
  </body>
 </html>
 

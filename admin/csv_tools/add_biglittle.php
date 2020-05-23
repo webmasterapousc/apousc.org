@@ -51,10 +51,11 @@ if(isset($_POST["addbiglittle"]))
       $ps = $mysqli->prepare("update `users` set `big` = ?, `family` = ? where `username` = ?;");
       $ps->bind_param("sis", $big_un, $fam_num, $little_un);
       $ps->execute();
+
     }
    }
    fclose($handle);
-   header("location: admincpanel.php?updating=1");
+   header("location: add_biglittle.php?updating=1");
   }
   else
   {
@@ -97,12 +98,16 @@ $result = mysqli_query($mysqli, $query);
     <input type="file" name="uploaded_file" /></p>
     <br />
     <input type="submit" name="addbiglittle" class="btn btn-info" value="Upload" onclick=
-    "confirm('Are you sure you want to add new pledges? This will be a pain in the ass to correct if something\'s wrong...');
+    "confirm('Are you sure you want to pair up these bigs and littles? This will be a pain in the ass to correct if something\'s wrong...');
       confirm('OK. You should check over each entry and make sure there are no mispellings');
       return confirm('Last Chance to cancel.');"/>
    </form>
    <br />
    <?php echo $message; ?>
+   <img src="sleepy.gif" style="display: block;
+                               margin-left: auto;
+                               margin-right: auto;
+                               width: 40%;">
  </body>
 </html>
 
