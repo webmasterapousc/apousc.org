@@ -56,6 +56,7 @@ include_once("include/topnav.php");
 				$positionz[5] = "VP of Finance";
 				$positionz[6] = "VP of Communications";
 				$positionz[7] = "Interchapter Chair";
+				$positionz[8] = "Diversity and Inclusion Chair";
 			?>
 			<div class="contentBox">
 				<p>Please review the <a href="https://drive.google.com/file/d/1boIJrEb5CTK81SMorV8RGWvcFKMkJ59g/view?usp=sharing">Officer Descriptions</a>, <a href="https://drive.google.com/open?id=13ebg2IfQ2B013lQxT5ZO1FjwKA4g-4k9">Bylaws</a>, and <a href="https://drive.google.com/open?id=1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu">Officer Election Policy</a> for procedures regarding elections and for a list of each position's responsibilities. If you wish to decline your nomination, please click "[Decline]" next to your name, or email <a href="mailto:webmaster.apousc@gmail.com">webmaster.apousc@gmail.com</a> so that the website administrator may decline on your behalf. <br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://drive.google.com/file/d/1LEu8h8FG_kEgBcLw9ZUZ_EV86tZ-WN8d/view?usp=sharing">E-Board Application</a> by 11:59 PM on Sunday, October 4. </strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://drive.google.com/file/d/1iNasU68zo-C2SlTOOF3r6XM12ax2Ak-2/view?usp=sharing">A-Board Application </a> by 11:59 PM on Monday, October 19.</strong></p> 
@@ -429,6 +430,41 @@ include_once("include/topnav.php");
 							$i++;
 						}
 						?>
+			<tr class="thead">
+				<td>Diversity and Inclusion Chair</td>
+				<td></td>
+			</tr>
+				<?php
+				$q = "SELECT * FROM `" . TBL_NOMINATIONS . "` WHERE `position` = 8 ORDER BY decline, name";
+				$retval = $database->query($q);
+				$i = 0; // Counter used for alternating table row colors
+				while ($row = mysql_fetch_array($retval)) {
+					$nominee_info = $database->getUserInfo($row['name']);
+					$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
+					$declined = $row['decline'] > 0;
+					$declinedOut = ($declined) ? " class=\"declined\"" : "";
+					echo ("<tr".$zebra."><td".$declinedOut.">".$nominee_info['fname']." ".$nominee_info['lname']." (".$nominee_info['username'].")");
+					if (strcmp($session->username,$row['name']) == 0 || $session->isAdmin()) {
+						if ($row['decline'] == 0) {
+							echo (" [<a href=\"process.php?subdeclinenomination=1&amp;user=".$row['name']."&amp;position=8\" title=\"Decline Nomination\" onclick=\"return confirm('Are you sure you want to decline this nomination?');\">Decline</a>]");
+						}
+					}
+					echo ("</td><td>");
+					if ($declined) {
+						echo ("Declined");
+					} else if ($row['second'] == 0) {
+						if (strcmp($session->username,$row['name']) == 0) {
+							echo ("Not seconded");
+						} else {
+							echo ("<a href=\"process.php?subsecondnomination=1&amp;user=".$row['name']."&amp;position=8\" title=\"Second Nomination\" onclick=\"return confirm confirm('Are you sure you want to second this nomination?');\">Second Now</a>");
+						}
+					} else {
+						echo ("Seconded");
+					}
+					echo ("</td></tr>");
+					$i++;
+				}
+				?>
 				</tbody>
 			</table>
 <?php
