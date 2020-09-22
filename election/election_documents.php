@@ -45,32 +45,32 @@ include_once("include/topnav.php");
 			<h2>Candidate Documents</h2>
           
            <h3>President</h3>
-          	<ul> 
+<!--           	<ul> 
             <li><b>Arnold Chang</b></li>
             <ul><a href = "docs/election/fall20/president/ac_application.pdf"> Application </a></ul>
             <ul><a href = "docs/election/fall20/president/ac_resume.pdf"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/president/ac_schedule.png"> Schedule </a></ul>
-            </ul>
+            </ul> -->
 
           <h3>Pledgemaster</h3>
-          <ul>    
+<!--           <ul>    
            <li><b>James Liu Tang</b></li>
             <ul><a href = "docs/election/fall20/pledgemaster/jt_application.docx"> Application </a></ul>
             <ul><a href = "docs/election/fall20/pledgemaster/jt_resume.docx"> Resume</a></ul>
             <ul><a href = "docs/election/fall20/pledgemaster/jt_schedule.pdf"> Schedule</a></ul>
 
-            </ul>
+            </ul> -->
           <h3>VP of Service</h3>
-			    <ul>
+<!-- 			    <ul>
 			        
 			     <li><b>Samantha Lei</b></li>
             <ul><a href = "docs/election/fall20/service/sl_application.docx"> Application </a></ul>
             <ul><a href = "docs/election/fall20/service/sl_resume.docx"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/service/sl_schedule.png"> Schedule </a></ul>
-             </ul>
+             </ul> -->
 
           <h3>Co-VP of Membership</h3>
-			    <ul>
+<!-- 			    <ul>
             <li><b>Andrew Li</b></li>
             <ul><a href = "docs/election/fall20/membership/al_application.pdf"> Application </a></ul>
             <ul><a href = "docs/election/fall20/membership/al_resume.docx"> Resume </a></ul>
@@ -91,20 +91,20 @@ include_once("include/topnav.php");
             <ul><a href = "docs/election/fall20/membership/at_resume.pdf"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/membership/at_schedule.png"> Schedule </a></ul>
 
-            </ul>
+            </ul> -->
 
           <h3>VP of Fellowship</h3>
-			  <ul>
+<!-- 			  <ul>
              
              <li><b>Naomi Lin</b></li>
             <ul><a href = "docs/election/fall20/fellowship/nl_application.pdf"> Application </a></ul>
             <ul><a href = "docs/election/fall20/fellowship/nl_resume.pdf"> Resume </a></ul>
             <ul><a href = "docs/election/fall20/fellowship/nl_schedule.png"> Schedule </a></ul>
 
-              </ul>
+              </ul> -->
 
           <h3>Co-VP of Finance</h3>
-		        <ul>
+<!-- 		        <ul>
 		          <li><b>Matthew Ayala</b></li>
                 <ul><a href = "docs/election/fall20/finance/ma_application.docx"> Application </a></ul>
                 <ul><a href = "docs/election/fall20/finance/ma_resume.pdf"> Resume </a></ul>
@@ -115,10 +115,10 @@ include_once("include/topnav.php");
                 <ul><a href = "docs/election/fall20/finance/ec_schedule.png"> Schedule </a></ul>
 
               </ul>
-            </ul>
+            </ul> -->
 
           <h3>VP of Communications</h3>
-            <ul>
+<!--             <ul>
                 <li><b>Jessica Woon</b></li>
                 <ul><a href = "docs/election/fall20/communications/jw_application.docx"> Application </a></ul>
                 <ul><a href = "docs/election/fall20/communications/jw_resume.docx"> Resume </a></ul>
@@ -130,16 +130,18 @@ include_once("include/topnav.php");
                 <ul><a href = "docs/election/fall20/communications/mk_schedule.png"> Schedule </a></ul>
 
               </ul>
-            </ul>
+            </ul> -->
                   
           <h3>Interchapter Chair</h3>
-          	<ul>
+<!--           	<ul>
               <li><b>Justin Chang</b></li>
               <ul><a href = "docs/election/fall20/ic/jc_application.pdf"> Application </a></ul>
               <ul><a href = "docs/election/fall20/ic/jc_resume.pdf"> Resume </a></ul>
               <ul><a href = "docs/election/fall20/ic/jc_schedule.png"> Schedule </a></ul>
 
-            </ul>
+            </ul> -->
+
+<h3>Diversity and Inclusion Chair</h3>
     
 			<p class="bottomNote">Note: <abbr title="Portable Document Format">PDF</abbr> files require the Adobe Reader from Adobe Systems, Incorporated. Adobe and the Adobe logo are trademarks of Adobe Systems, Incorporated. Click on the following link to download.</p>
 			<a href="http://get.adobe.com/reader/"><img src="img/get_adobe_reader.png" height="39" width="158" alt="Download Adobe Reader" /></a>
