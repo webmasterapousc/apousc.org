@@ -45,12 +45,17 @@ include_once("include/topnav.php");
 			<h2>Candidate Documents</h2>
           
            <h3>President</h3>
-<!--           	<ul> 
-            <li><b>Arnold Chang</b></li>
-            <ul><a href = "docs/election/fall20/president/ac_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/president/ac_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/president/ac_schedule.png"> Schedule </a></ul>
-            </ul> -->
+		<ul> 
+            <li><b>Anjelica Tan</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1fjQ03Oev-p4Ke-9qx7qGFpVa3orZWmXz/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Resume </a></ul>
+            </ul>
+            
+          <ul> 
+            <li><b>James Liu Tang</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1XHx7ZRQdV7uUxXVF5SP5JL9ch8uuN9pO/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1XsA-7oQuFvChV7gpvzRtbqqu6RzQAaLB/view?usp=sharing"> Resume </a></ul>
+            </ul>
 
           <h3>Pledgemaster</h3>
 <!--           <ul>    
@@ -61,37 +66,21 @@ include_once("include/topnav.php");
 
             </ul> -->
           <h3>VP of Service</h3>
-<!-- 			    <ul>
-			        
-			     <li><b>Samantha Lei</b></li>
-            <ul><a href = "docs/election/fall20/service/sl_application.docx"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/service/sl_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/service/sl_schedule.png"> Schedule </a></ul>
-             </ul> -->
+	<ul><li><b>Cynthia Li</b></li>
+            <ul><a href = "https://drive.google.com/file/d/19p4UBk8R3_AvBSMWg6aq4qkBn6vbFbO_/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1t_-YrCoioG4WP_kuN13gQpNFIeZIyPrg/view?usp=sharing"> Resume </a></ul>
+             </ul> 
 
           <h3>Co-VP of Membership</h3>
-<!-- 			    <ul>
-            <li><b>Andrew Li</b></li>
-            <ul><a href = "docs/election/fall20/membership/al_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/membership/al_resume.docx"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/membership/al_schedule.pdf"> Schedule </a></ul>
-            <li><b>Elliot Cha</b></li>
-            <ul><a href = "docs/election/fall20/membership/ec_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/membership/ec_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/membership/ec_schedule.pdf"> Schedule </a></ul>
+	<ul>
+            <li><b>Naomi Lin</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1lwxHF1P4F--wXtkA-0mCq9xzRXUnW2Bl/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1E3oqEgHy-BOdhiCE7gRV7NSZQzlDiHF6/view?usp=sharing"> Resume </a></ul>
+            <li><b>Joshua Zhu</b></li>
+            <ul><a href = "https://drive.google.com/file/d/19AGS_Z3Hbrg0SBDdDh6sNFdZBHzm8Ew_/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1WxLGyazPLn525lWQE1eMYZIL-Ps80lVR/view?usp=sharing"> Resume </a></ul>
 
             </ul>
-             <ul>
-            <li><b>Jessica Dai</b></li>
-            <ul><a href = "docs/election/fall20/membership/jd_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/membership/jd_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/membership/jd_schedule.png"> Schedule </a></ul>
-            <li><b>Anjelica Tan</b></li>
-            <ul><a href = "docs/election/fall20/membership/at_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/membership/at_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/membership/at_schedule.png"> Schedule </a></ul>
-
-            </ul> -->
 
           <h3>VP of Fellowship</h3>
 <!-- 			  <ul>
@@ -118,19 +107,12 @@ include_once("include/topnav.php");
             </ul> -->
 
           <h3>VP of Communications</h3>
-<!--             <ul>
-                <li><b>Jessica Woon</b></li>
-                <ul><a href = "docs/election/fall20/communications/jw_application.docx"> Application </a></ul>
-                <ul><a href = "docs/election/fall20/communications/jw_resume.docx"> Resume </a></ul>
-                <ul><a href = "docs/election/fall20/communications/jw_schedule.png"> Schedule </a></ul>
-
-                <li><b>Madeline Kim</b></li>
-                <ul><a href = "docs/election/fall20/communications/mk_application.docx"> Application </a></ul>
-                <ul><a href = "docs/election/fall20/communications/mk_resume.docx"> Resume </a></ul>
-                <ul><a href = "docs/election/fall20/communications/mk_schedule.png"> Schedule </a></ul>
-
+		<ul>
+                <li><b>Shania Wang</b></li>
+                <ul><a href = "https://drive.google.com/file/d/1lIEUozGSWaHEygV_BN3WcK5VJX6xBB-B/view?usp=sharing"> Application </a></ul>
+                <ul><a href = "https://drive.google.com/file/d/1HWPtnrvGcxRtoahsiXhqm1bqLqvcCSZ9/view?usp=sharing"> Resume </a></ul>
               </ul>
-            </ul> -->
+            
                   
           <h3>Interchapter Chair</h3>
 <!--           	<ul>
@@ -142,6 +124,11 @@ include_once("include/topnav.php");
             </ul> -->
 
 <h3>Diversity and Inclusion Chair</h3>
+		<ul>
+              <li><b>Jun Kim</b></li>
+              <ul><a href = "https://drive.google.com/file/d/1IKhFLgPhiUuHIJR84R0oLhN9qsDfWCt_/view?usp=sharing"> Application </a></ul>
+              <ul><a href = "https://drive.google.com/file/d/1TzfbIcSnDH3oyRAnlii8_2tJ_vSkbW7d/view?usp=sharing"> Resume </a></ul>
+            </ul>
     
 			<p class="bottomNote">Note: <abbr title="Portable Document Format">PDF</abbr> files require the Adobe Reader from Adobe Systems, Incorporated. Adobe and the Adobe logo are trademarks of Adobe Systems, Incorporated. Click on the following link to download.</p>
 			<a href="http://get.adobe.com/reader/"><img src="img/get_adobe_reader.png" height="39" width="158" alt="Download Adobe Reader" /></a>
