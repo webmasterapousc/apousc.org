@@ -93,18 +93,15 @@ include_once("include/topnav.php");
               </ul> -->
 
           <h3>Co-VP of Finance</h3>
-<!-- 		        <ul>
-		          <li><b>Matthew Ayala</b></li>
-                <ul><a href = "docs/election/fall20/finance/ma_application.docx"> Application </a></ul>
-                <ul><a href = "docs/election/fall20/finance/ma_resume.pdf"> Resume </a></ul>
-                <ul><a href = "docs/election/fall20/finance/ma_schedule.png"> Schedule </a></ul>
-                <li><b>Emily Chen</b></li>
-                <ul><a href = "docs/election/fall20/finance/ec_application.docx"> Application </a></ul>
-                <ul><a href = "docs/election/fall20/finance/ec_resume.docx"> Resume </a></ul>
-                <ul><a href = "docs/election/fall20/finance/ec_schedule.png"> Schedule </a></ul>
-
+ 		        <ul>
+		          <li><b>Felicia Tejawinata</b></li>
+                <ul><a href = "https://drive.google.com/file/d/1y3imK-_r_fqTzokucpnrq5bcf-KwhejV/view?usp=sharing"> Application </a></ul>
+                <ul><a href = "https://drive.google.com/file/d/1Rs9MGj904qA7Gr79fnuC8BV-ju9poen-/view?usp=sharing"> Resume </a></ul>
+                <li><b>Lindsey Yu</b></li>
+                <ul><a href = "https://drive.google.com/file/d/1Rs9MGj904qA7Gr79fnuC8BV-ju9poen-/view?usp=sharing"> Application </a></ul>
+                <ul><a href = "https://drive.google.com/file/d/1rXCT-zkvsZ-inx4I9IH7kAIkrKoeVgcU/view?usp=sharing"> Resume </a></ul>
               </ul>
-            </ul> -->
+            </ul> 
 
           <h3>VP of Communications</h3>
 		<ul>
@@ -115,13 +112,11 @@ include_once("include/topnav.php");
             
                   
           <h3>Interchapter Chair</h3>
-<!--           	<ul>
-              <li><b>Justin Chang</b></li>
-              <ul><a href = "docs/election/fall20/ic/jc_application.pdf"> Application </a></ul>
-              <ul><a href = "docs/election/fall20/ic/jc_resume.pdf"> Resume </a></ul>
-              <ul><a href = "docs/election/fall20/ic/jc_schedule.png"> Schedule </a></ul>
-
-            </ul> -->
+           	<ul>
+              <li><b>Lillian Ye</b></li>
+              <ul><a href = "https://drive.google.com/file/d/1ChkuSaZOFJ1TGCF0BjSYJaPSI0wdwG8o/view?usp=sharing"> Application </a></ul>
+              <ul><a href = "https://drive.google.com/file/d/1tcAMbM98OWiqi37fbA6tmFiV1eJ2mLRo/view?usp=sharing"> Resume </a></ul>
+            </ul> 
 
 <h3>Diversity and Inclusion Chair</h3>
 		<ul>
