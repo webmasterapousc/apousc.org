@@ -98,7 +98,7 @@ include_once("include/topnav.php");
                 <ul><a href = "https://drive.google.com/file/d/1y3imK-_r_fqTzokucpnrq5bcf-KwhejV/view?usp=sharing"> Application </a></ul>
                 <ul><a href = "https://drive.google.com/file/d/1Rs9MGj904qA7Gr79fnuC8BV-ju9poen-/view?usp=sharing"> Resume </a></ul>
                 <li><b>Lindsey Yu</b></li>
-                <ul><a href = "https://drive.google.com/file/d/1Rs9MGj904qA7Gr79fnuC8BV-ju9poen-/view?usp=sharing"> Application </a></ul>
+                <ul><a href = "https://drive.google.com/file/d/1tcC7GIqU59jAmwKUmuO3o3pY7sg0Dl9G/view?usp=sharing"> Application </a></ul>
                 <ul><a href = "https://drive.google.com/file/d/1rXCT-zkvsZ-inx4I9IH7kAIkrKoeVgcU/view?usp=sharing"> Resume </a></ul>
               </ul>
             </ul> 
