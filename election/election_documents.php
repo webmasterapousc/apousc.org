@@ -83,14 +83,13 @@ include_once("include/topnav.php");
             </ul>
 
           <h3>VP of Fellowship</h3>
-<!-- 			  <ul>
+			  <ul>
              
-             <li><b>Naomi Lin</b></li>
-            <ul><a href = "docs/election/fall20/fellowship/nl_application.pdf"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/fellowship/nl_resume.pdf"> Resume </a></ul>
-            <ul><a href = "docs/election/fall20/fellowship/nl_schedule.png"> Schedule </a></ul>
+             <li><b>Anne Gao</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1tiC1YcrFogP-MWH_uUe7q7If8NrOm5v2/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1PiL1EfA6QoucmJz3XPHj2UeMs77Mqk5Y/view?usp=sharing"> Resume </a></ul>
 
-              </ul> -->
+              </ul>
 
           <h3>Co-VP of Finance</h3>
  		        <ul>
