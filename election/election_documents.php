@@ -58,13 +58,12 @@ include_once("include/topnav.php");
             </ul>
 
           <h3>Pledgemaster</h3>
-<!--           <ul>    
-           <li><b>James Liu Tang</b></li>
-            <ul><a href = "docs/election/fall20/pledgemaster/jt_application.docx"> Application </a></ul>
-            <ul><a href = "docs/election/fall20/pledgemaster/jt_resume.docx"> Resume</a></ul>
-            <ul><a href = "docs/election/fall20/pledgemaster/jt_schedule.pdf"> Schedule</a></ul>
+           <ul>    
+           <li><b>Justin Chang</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1Ii78DwrgXD3uzFGCcj1JIZ6Y4KjeDm_5/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/14MEP0q9VOUBzM8WpRsEsWddfVoGNDP2w/view?usp=sharing"> Resume</a></ul>
 
-            </ul> -->
+            </ul> 
           <h3>VP of Service</h3>
 	<ul><li><b>Cynthia Li</b></li>
             <ul><a href = "https://drive.google.com/file/d/19p4UBk8R3_AvBSMWg6aq4qkBn6vbFbO_/view?usp=sharing"> Application </a></ul>
