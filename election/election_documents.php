@@ -46,7 +46,7 @@ include_once("include/topnav.php");
           
            <h3>President</h3>
 		<ul> 
-            <li><b>Anjel Tan</b></li>
+            <li><b>Anjelica Tan</b></li>
             <ul><a href = "https://drive.google.com/file/d/1fjQ03Oev-p4Ke-9qx7qGFpVa3orZWmXz/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Resume </a></ul>
             </ul>
