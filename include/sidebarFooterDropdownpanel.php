@@ -92,7 +92,7 @@ HERE;
 		<li><a href="../election/nominations.php"><strong>Nominations</strong></a></li>
 		<li><a href="../election/election_documents.php"><strong>Candidate Documents</strong></a></li> 
 		<!--Always Keep-->
-		</b><li><a href="https://docs.google.com/spreadsheets/d/1DiLP_yJ2KndRrCE-FFzVUIVaZvF6SatMItTHsjIDBos/edit#gid=0">Master Doc</a></li>
+		</b><li><a href="https://docs.google.com/spreadsheets/d/1TG97SIIQFumIAWo5SEQAretQbvu1ahjOHoHLSt5_pTA/edit#gid=0">Master Doc</a></li>
 		<li><a href="https://www.facebook.com/APO-Compliments-Spring-2020-115121043370901/">APO Compliments</a></li>
 		<li><a href="../information/finance.php">Finance</a></li>
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
