@@ -28,8 +28,8 @@ if ($session->status == FROZEN_MEMBER) {
 
  <div class='highlighter central'>
 
-     <li><a href="../election/nominations.php">Nominations</a></li>
-     <li><a href="../election/election_documents.php">Candidate Documents</a></li>
+<!--      <li><a href="../election/nominations.php">Nominations</a></li> -->
+<!--      <li><a href="../election/election_documents.php">Candidate Documents</a></li> -->
 </div>
 		<li>
 		<?php
