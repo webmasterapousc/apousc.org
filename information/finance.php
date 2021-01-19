@@ -40,36 +40,34 @@ include_once("include/topnav.php");
                 
                 <h3>Dues</h3>
                 <p>Please contact Lindsey Yu or Felicia Tejawinata if you need additional financial accommodations for our payment plans.</p>
-                <b>
-			<h4>Actives: $150 regular, $135 early</h4>
-                	<h4>Associates: $55 regular, $49 early</h4>
-			<h4>New Members: $325 regular, n/a early</h4>
-		</b>
-		<b><p>Actives Payment Plan (Regular)</p></b>	
+		<h4><b>Actives: $150 regular, $135 early</b></h4>
+                <h4><b>Associates: $55 regular, $49 early</b></h4>
+		<h4><b>New Members: $325 regular, n/a early</b></h4>
+		<p><b>Actives Payment Plan (Regular)</b></p>	
                 <ul>
                     <li>Monday, February 10: $70</li>
                 	<li>Monday, March 2: $40</li>
                     <li>Monday, March 30: $40</li>
             	</ul>
-            	<b><p>Actives Payment Plan (Early)</p></b>	
+            	<p><b>Actives Payment Plan (Early)</b></p>	
                 <ul>
                     <li>Monday, before February 10: $65</li>
                 	<li>Monday, February 24: $35</li>
                     <li>Monday, March 23: $35</li>
             	</ul>
-            	<b><p>Associates Payment Plan (Regular)</p></b>	
+            	<p><b>Associates Payment Plan (Regular)</b></p>	
                 <ul>
                     <li>Monday, February 10: $25</li>
                 	<li>Monday, March 2: $15</li>
                     <li>Monday, March 30: $10</li>
             	</ul>
-            	<b><p>Associates Payment Plan (Early)</p></b>	
+            	<p><b>Associates Payment Plan (Early)</b></p>	
                 <ul>
                     <li>Monday, before February 10: $23</li>
                 	<li>Monday, February 24: $13</li>
                     <li>Monday, March 23: $13</li>
             	</ul>
-				<b><p>*If you do not pay your dues and do not communicate with the VPs, we will have to freeze your account until the matter is resolved.</p></b>
+				<p><b>*If you do not pay your dues and do not communicate with the VPs, we will have to freeze your account until the matter is resolved.</b></p>
 				
 				<h3>Reimbursements</h3>
 				
