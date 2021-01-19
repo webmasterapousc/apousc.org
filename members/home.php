@@ -303,7 +303,7 @@ if ($curmonth == 12) {
 <?php
 
 #echo "</ul>;"
-echo "<br /><div class='highlight' align=middle>Events</div><ul>";
+echo "<br /><div class='highlight' align=middle>Events, Sign Ups, Comments</div><ul>";
 $query = "SELECT U.username,U.fname,U.lname,E.ID,E.name,E.start,COUNT(S.username) as counter FROM events as E, signups as S, users as U WHERE UNIX_TIMESTAMP(E.end) <= UNIX_TIMESTAMP(NOW()) AND S.eventid = E.ID AND S.username = U.username GROUP BY E.ID ORDER BY start DESC LIMIT 3";
 $result = mysql_query($query);
 while ($row = mysql_fetch_array($result)){
@@ -317,7 +317,7 @@ while ($row = mysql_fetch_array($result)){
 	    echo "</strong></li><hr>";
 }
 
-echo "</ul><br /><div class='highlight' align=middle>Comments</div><ul>";
+// echo "</ul><br /><div class='highlight' align=middle>Comments</div><ul>";
 $query = "SELECT C.timestamp, C.comment, C.eventid, C.username, U.fname, U.lname, E.name FROM comments as C, users as U, events as E WHERE C.timestamp + 21600 >= UNIX_TIMESTAMP(NOW()) AND C.username = U.username AND C.eventid = E.ID ORDER BY timestamp DESC LIMIT 10";
 $result = mysql_query($query);
 while($row = mysql_fetch_array($result)){
@@ -332,7 +332,7 @@ while($row = mysql_fetch_array($result)){
 }
 
 
-echo "</ul><br /><div class='highlight' align=middle>Signups</div><ul>";
+// echo "</ul><br /><div class='highlight' align=middle>Signups</div><ul>";
 $query = "SELECT * FROM signups AS S, users as U, events as E WHERE S.timestamp + 43200 >= UNIX_TIMESTAMP(NOW()) AND U.username = S.username AND E.ID = S.eventid ORDER BY UNIX_TIMESTAMP(S.timestamp) + 43200 DESC LIMIT 7";
 $result = mysql_query($query);
 while ($row = mysql_fetch_array($result)){
