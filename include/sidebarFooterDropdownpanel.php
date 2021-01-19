@@ -114,7 +114,7 @@ HERE;
 	<ul>
 		<li><a href="../rosters/roster.php">All Members</a></li>
 		<li><a href="../rosters/excomm_a.php">Executive Committee</a></li>
-		<li><a href="../rosters/excomm_p.php">New Member Ex Comm</a></li>
+<!-- 		<li><a href="../rosters/excomm_p.php">New Member Ex Comm</a></li> -->
 		<li><a href="../rosters/alumni.php">Alumni</a></li>
 		<!--<li><a href="https://airtable.com/shrl0bWZ6eINW28Ec" target="_blank">Alumni Networking Database</a></li>-->
 		<li><a href="../rosters/family_tree.php?user=all">Family Trees</a></li>
@@ -145,9 +145,10 @@ HERE;
 	<ul id="social">
 		<li class="icon top">
 		<a href="https://instagram.com/apousc/" rel="external" title="Check out our #insta"><img src="img/instagram2019.png" height="32" width="32" alt="Instagram" /></a>
-		<a href="http://twitter.com/apousc/" rel="external" title="Follow us on Twitter"><img src="img/twitter2019.png" height="32" width="32" alt="Twitter" /></a>
 		<a href="https://www.facebook.com/apousc/" rel="external" title="Join us on Facebook"><img src="img/facebook2019.png" height="32" width="32" alt="Facebook" /></a>
-		<!--<a href="https://www.google.com/calendar/embed?src=j2gk9k44u7q6qfegvnjs20f5pvj9qflg%40import.calendar.google.com&ctz=America/Los_Angeles" rel="external" title="View our Google Calendar"><img src="img/google.png" height="32" width="32" alt="Google Calendar" /></a>-->
+		<a href="https://discord.gg/wDMPyPCT" rel="external" title="Join our Discord"><img src="img/DiscordLogo2021.png" height="32" width="32" alt="Discord" /></a>
+			<a href="http://twitter.com/apousc/" rel="external" title="Follow us on Twitter"><img src="img/twitter2019.png" height="32" width="32" alt="Twitter" /></a>
+			<!--<a href="https://www.google.com/calendar/embed?src=j2gk9k44u7q6qfegvnjs20f5pvj9qflg%40import.calendar.google.com&ctz=America/Los_Angeles" rel="external" title="View our Google Calendar"><img src="img/google.png" height="32" width="32" alt="Google Calendar" /></a>-->
 		<a href="http://www.youtube.com/user/apousc/" rel="external" title="Check out our YouTube channel"><img src="../img/youtube2019.png" height="32" width="32" alt="YouTube" /></a>
 	    <a href="http://www.apousc.org/main/" rel="external" title="View our official website"><img src="../img/APOlogo2019.png" height="32" width="32" alt="Website" /></a>
 		</li>
@@ -199,9 +200,10 @@ if ($form->num_errors > 0) {
 	<ul id="social">
 		<li class="icon top">
 		<a href="https://instagram.com/apousc/" rel="external" title="Check out our #insta"><img src="img/instagram2019.png" height="32" width="32" alt="Instagram" /></a>
-		<a href="http://twitter.com/apousc/" rel="external" title="Follow us on Twitter"><img src="img/twitter2019.png" height="32" width="32" alt="Twitter" /></a>
 		<a href="https://www.facebook.com/apousc/" rel="external" title="Join us on Facebook"><img src="img/facebook2019.png" height="32" width="32" alt="Facebook" /></a>
-		<!--<a href="https://www.google.com/calendar/embed?src=j2gk9k44u7q6qfegvnjs20f5pvj9qflg%40import.calendar.google.com&ctz=America/Los_Angeles" rel="external" title="View our Google Calendar"><img src="img/google.png" height="32" width="32" alt="Google Calendar" /></a>-->
+		<a href="https://discord.gg/wDMPyPCT" rel="external" title="Join our Discord"><img src="img/DiscordLogo2021.png" height="32" width="32" alt="Discord" /></a>
+			<a href="http://twitter.com/apousc/" rel="external" title="Follow us on Twitter"><img src="img/twitter2019.png" height="32" width="32" alt="Twitter" /></a>
+			<!--<a href="https://www.google.com/calendar/embed?src=j2gk9k44u7q6qfegvnjs20f5pvj9qflg%40import.calendar.google.com&ctz=America/Los_Angeles" rel="external" title="View our Google Calendar"><img src="img/google.png" height="32" width="32" alt="Google Calendar" /></a>-->
 		<a href="http://www.youtube.com/user/apousc/" rel="external" title="Check out our YouTube channel"><img src="../img/youtube2019.png" height="32" width="32" alt="YouTube" /></a>
 	    <a href="http://www.apousc.org/main/" rel="external" title="View our official website"><img src="../img/APOlogo2019.png" height="32" width="32" alt="Website" /></a>
 		</li>
