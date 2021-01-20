@@ -31,8 +31,6 @@ include_once("include/topnav.php");
 			<h2>Forms</h2>
 			<p>If you don't see what you're looking for, just contact an officer!</p>
 			<p>If you want to upload or update a document on this page feel free to contact webmaster.apousc@gmail.com!</p>                	
-      
-      <h3>Forms</h3>
 					<ul>
 						<li><a href="https://goo.gl/forms/OGDeNB6XsVrpZ5cM2">Anon Evaluation Form</a></li>
 		        <li><a href="https://goo.gl/forms/Oqg2mQ0OL2uuEK003">Event Evaluation Form</a></li>
