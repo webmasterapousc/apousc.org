@@ -53,7 +53,7 @@ include_once("include/topnav.php");
 			<p>View the requirements for various types of members in Alpha Phi Omega.</p>
 			<ul>
 						<li><a href="requirements_a.php">Actives</a></li>
-						<li><a href="requirements_p.php">Pledges</a></li>
+						<li><a href="requirements_p.php">New Members</a></li>
 						<li><a href="requirements_assoc.php">Associates</a></li>
 			</ul>
                 	
