@@ -462,7 +462,7 @@ if (!$session->isAdmin() && !$session->isOfficer()) {
 						</li>
 						<li>
 							<label for="txt_Meet_Location">Location where people should meet</label>
-							<input type="text" id="txt_Meet_Location" name="txt_Meet_Location" size="50" value="BL" />
+							<input type="text" id="txt_Meet_Location" name="txt_Meet_Location" size="50" <!--value="BL"--!> />
 							<?php echo $form->error("txt_Meet_Location"); ?>
 						</li>
 						<li>
