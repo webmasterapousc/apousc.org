@@ -38,7 +38,7 @@ include_once("include/topnav.php");
                         <li><a href="docs/Spring 2015 Appointed Officer Application.docx">Spring 2015 Appointed Officer Application</a></li>
                     </ul> -->
                 
-                <h3> Pledge Documents </h3>
+                <h3> New Member Documents </h3>
                 	<ul>
 
                 		<li><a href = "https://docs.google.com/forms/d/e/1FAIpQLSeddzN3u2WXBybN7SEL1V_c1TdnOUGd0PR1xrSNxB1bQ41pkA/viewform?vc=0&c=0&w=1" target = "_blank"> Lead Form </a></li>
@@ -47,16 +47,7 @@ include_once("include/topnav.php");
                 		<li><a href = "https://drive.google.com/file/d/1b5YOGHgOC53KTs1uY7-7b__caCzI33qvbJ3qEMAlsXs/preview?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
 
                 	</ul>
-                	
-                	<h3>Forms</h3>
-					<ul>
-					    <li><a href='https://goo.gl/forms/Ifx0WWwkXjrB4C303' target = "_blank">Diversity & Inclusion Event Reflection Form</a></li>
-						<li><a href='https://goo.gl/forms/WSKRJVfLLx9VMTWv2' target = "_blank">Anonymous Evaluations</a></li>
-						<li><a href='https://goo.gl/forms/qcs2n3Vayuoa5Aly1' target = "_blank">Event Evaluations</a></li>
-						<li><a href="https://drive.google.com/file/d/1lNKrfgsSEAuOeZdyZPvuFWw37KZqyM_v/preview?format=pdf" target = "_blank">Outside Service Hours Log</a></li>
-						<li><a href='https://docs.google.com/forms/d/e/1FAIpQLSftdqT-xgSpVWNHtkmo7T4_L4NHbxt3iZlROEMcPVoxzlGUnw/viewform' target = "_blank">Diversity and Inclusion Survey</a></li>
-					</ul>
-                	
+
                 <h3>Requirements</h3>
 
 			<p>View the requirements for various types of members in Alpha Phi Omega.</p>
@@ -66,14 +57,6 @@ include_once("include/topnav.php");
 						<li><a href="requirements_assoc.php">Associates</a></li>
 			</ul>
                 	
-                <h3>Academic Documents</h3>
-					<ul>
-						<li><a href="https://docs.google.com/spreadsheets/d/1T4rq8Lrn3aT7DWqzACcQPGi55NcQQBjDebeICYm2kYY/edit?usp=sharing">APO Rate My Professor</a></li>
-						<p style="margin-left: 40px"><a href="https://forms.gle/1XxgyWA1FUUc2TCm7" target = "_blank">  Rate My Professor Submission Form</a></p>
-						<li><a href="https://skydrive.live.com/"  target = "_blank">Test Bank</a> (<b>username:</b> membership.apousc@gmail.com <b>PW:</b> Forgetmenot)</li>
-						<p style="margin-left: 40px"><a href="https://forms.gle/Z5ZLmXJahH3hQo75A" target = "_blank">  Test Bank Submission Form</a></p>
-					</ul>
-					
                 <h3>Reference Documents</h3>
 					<ul>
 						<li><a href="docs/F18_DeclReq.pdf" target = "_blank">Declining Requirement Policy</a></li>
