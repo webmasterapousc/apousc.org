@@ -97,9 +97,11 @@ HERE;
 		<li><a href="../information/finance.php">Finance</a></li>
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
 		<li><a href="../information/announcements.php">Announcements</a></li>
-		<li><a href="https://goo.gl/forms/OGDeNB6XsVrpZ5cM2">Anon Evaluation Form</a></li>
-		<li><a href="https://goo.gl/forms/Oqg2mQ0OL2uuEK003">Event Evaluation Form</a></li>
+<!-- 		<li><a href="https://goo.gl/forms/OGDeNB6XsVrpZ5cM2">Anon Evaluation Form</a></li>
+		<li><a href="https://goo.gl/forms/Oqg2mQ0OL2uuEK003">Event Evaluation Form</a></li> -->
 		<li><a href="../information/documents.php">Documents</a></li>
+		<li><a href="../information/forms.php">Forms</a></li>
+		<li><a href="../information/academic_resources.php">Academic Resources</a></li>
 		<!--<li><a href="requirements.php">Requirements</a></li>-->
 		<!-- <li><a href="../information/archives.php">Archives</a></li> -->
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
