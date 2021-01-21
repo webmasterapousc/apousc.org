@@ -200,7 +200,7 @@ if ($form->num_errors > 0) {
 		<li class="icon top">
 		<a href="https://instagram.com/apousc/" rel="external" title="Check out our #insta"><img src="img/instagram2019.png" height="32" width="32" alt="Instagram" /></a>
 		<a href="https://www.facebook.com/apousc/" rel="external" title="Join us on Facebook"><img src="img/facebook2019.png" height="32" width="32" alt="Facebook" /></a>
-		<a href="https://www.google.com/" rel="external" title="Join our Discord"><img src="img/DiscordLogo2021.png" height="32" width="32" alt="Discord" /></a>
+		<a href="https://discord.com/invite/TB5HAeSsW5" rel="external" title="Join our Discord"><img src="img/DiscordLogo2021.png" height="32" width="32" alt="Discord" /></a>
 			<a href="http://twitter.com/apousc/" rel="external" title="Follow us on Twitter"><img src="img/twitter2019.png" height="32" width="32" alt="Twitter" /></a>
 			<!--<a href="https://www.google.com/calendar/embed?src=j2gk9k44u7q6qfegvnjs20f5pvj9qflg%40import.calendar.google.com&ctz=America/Los_Angeles" rel="external" title="View our Google Calendar"><img src="img/google.png" height="32" width="32" alt="Google Calendar" /></a>-->
 		<a href="http://www.youtube.com/user/apousc/" rel="external" title="Check out our YouTube channel"><img src="../img/youtube2019.png" height="32" width="32" alt="YouTube" /></a>
