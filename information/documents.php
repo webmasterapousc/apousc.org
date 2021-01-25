@@ -64,7 +64,7 @@ include_once("include/topnav.php");
 						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/preview?format=pdf">Alpha Kappa Letterhead</a></li>
 
 <!-- 						<div class="slide1" style="cursor: pointer;"><li>Chapter Policies (Click to Show)</li></div> -->
-						<div><li>Chapter Policies (Click to Show)</li></div>
+						<div><li>Chapter Policies</li></div>
 <!-- 							<div class="view1"> -->
 								<div>
 								<ul>
