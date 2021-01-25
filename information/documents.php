@@ -63,10 +63,10 @@ include_once("include/topnav.php");
 						<li><a href="https://docs.google.com/spreadsheets/d/127ov46_ZDQnMvgfN4MlC-XS2SOIWMHb6xNXJ-hFuL2k/edit?usp=sharing" target = "_blank">Past Semester Standings</a></li>
 						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/preview?format=pdf">Alpha Kappa Letterhead</a></li>
 
-						<div class="slide1" 
-<!-- 						     style="cursor: pointer; -->
-							    "><li>Chapter Policies (Click to Show)</li></div>
-							<div class="view1">
+<!-- 						<div class="slide1" style="cursor: pointer;"><li>Chapter Policies (Click to Show)</li></div> -->
+						<div><li>Chapter Policies (Click to Show)</li></div>
+<!-- 							<div class="view1"> -->
+								<div>
 								<ul>
 									<!-- Updated Spring 2021 -->
 									<li><a href="https://drive.google.com/file/d/133O--REAljuNQusq4yfWA8twK1szVkmc/view" target = "_blank">Bylaws</a></li>
