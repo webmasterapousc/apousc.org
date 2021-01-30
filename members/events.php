@@ -147,9 +147,9 @@ include_once("include/topnav.php");
 							$start_month=06;$end_month=12;
 						}
 						if(strcmp($_GET["span"],"semester") === 0) {$dateSpan = "WHERE end >= '$current_year-$start_month-01 00:00:00' && start <= '$current_year-$end_month-31 11:59:59'";} // Semester view will display all events from January 1 through May 31 inclusive, or June 1 through December 31 inclusive, depending on what particular time of the year it is right now. Think of this as the semester divider - fall semester starts on June 1 and ends on December 31.
-						else if(strcmp($_GET["span"],"soon") === 0)  {$dateSpan = "WHERE `end` >= NOW() AND `end` <= DATE_ADD(CURDATE(), INTERVAL +14 DAY)";} // Note that this finds literally every upcoming event, even if it is in a future semester.
+						else if(strcmp($_GET["span"],"soon") === 0)  {$dateSpan = "WHERE `end` >= DATE_SUB(NOW(), INTERVAL '12' HOUR) AND `end` <= DATE_ADD(CURDATE(), INTERVAL +14 DAY)";} // Note that this finds literally every upcoming event, even if it is in a future semester.
 						else if(strcmp($_GET["span"],"forever") === 0) {} // This doesn't add a WHERE statement to the MySQL query, because we don't want any limitations on what events we fetch. Fetch them all!
-						else {$dateSpan = "WHERE `end` >= NOW()";}; // Similar to upcoming events -- this finds the next 14 days of events, no matter what semester they may be in.
+						else {$dateSpan = "WHERE `end` >= DATE_SUB(NOW(), INTERVAL '12' HOUR)";}; // Similar to upcoming events -- this finds the next 14 days of events, no matter what semester they may be in.
 					
 						// $q = "SELECT * FROM events 
 						// {$dateSpan} ORDER BY {$sortorder} ASC";
