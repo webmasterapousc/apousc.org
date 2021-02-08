@@ -105,6 +105,7 @@ HERE;
 		<!-- <li><li><a href='polls.php'>Polls</a></li>-->
 		<li><a href="../information/support_systems.php">Support Systems</a></li>
 		<li><a href="https://www.youtube.com/watch?v=M0Kf1X7gTIg&feature=youtu.be">APO Discord Tutorial</a></li>
+		<li><a href="https://docs.google.com/document/d/1Gg_aVr_KRJN8AvLbxO1OXTLePJAxKSpIWORbqPYQMbc/edit">Celebrate Black History Month!</a></li>
 	</ul>
 </li>
 
