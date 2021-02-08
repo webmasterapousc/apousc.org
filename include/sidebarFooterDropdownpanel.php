@@ -104,7 +104,7 @@ HERE;
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
 		<!-- <li><li><a href='polls.php'>Polls</a></li>-->
 		<li><a href="../information/support_systems.php">Support Systems</a></li>
-
+		<li><a href="https://www.youtube.com/watch?v=M0Kf1X7gTIg&feature=youtu.be">APO Discord Tutorial</a></li>
 	</ul>
 </li>
 
