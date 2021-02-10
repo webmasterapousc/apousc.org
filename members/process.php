@@ -434,7 +434,7 @@ class Process
 		global $session, $form;
 		
 		/* Account add attempt */
-		$retval = $session->addEvent($_POST['txt_Name'], $_POST['sel_Type'], $_POST['txtarea_eventDesc'], $_POST['sel_StartMo'], $_POST['sel_StartDay'], $_POST['sel_StartYear'], $_POST['sel_StartHr'], $_POST['sel_StartMin'], $_POST['sel_StartAmPm'], $_POST['sel_EndMo'], $_POST['sel_EndDay'], $_POST['sel_EndYear'], $_POST['sel_EndHr'], $_POST['sel_EndMin'], $_POST['sel_EndAmPm'], $_POST['sel_Hours'], $_POST['txt_Spaces'], (isset($_POST['chk_end']) ? "TRUE" : "FALSE"), (isset($_POST['chk_limited']) ? "TRUE" : "FALSE"), (isset($_POST['chk_walk']) ? "TRUE" : "FALSE"), $_POST['txt_Meet_Location'], $_POST['txt_Actual_Location'], $_POST['txt_Actual_Address'], (isset($_POST['chk_repeat']) ? "TRUE" : "FALSE"), $_POST['sel_StartMo2'], $_POST['sel_StartDay2'], $_POST['sel_StartMo3'], $_POST['sel_StartDay3'], $_POST['sel_StartMo4'], $_POST['sel_StartDay4'], $_POST['sel_StartMo5'], $_POST['sel_StartDay5'], $_POST['sel_Type2']);
+		$retval = $session->addEvent($_POST['txt_Name'], $_POST['sel_Type'], $_POST['txtarea_eventDesc'], $_POST['sel_StartMo'], $_POST['sel_StartDay'], $_POST['sel_StartYear'], $_POST['sel_StartHr'], $_POST['sel_StartMin'], $_POST['sel_StartAmPm'], $_POST['sel_EndMo'], $_POST['sel_EndDay'], $_POST['sel_EndYear'], $_POST['sel_EndHr'], $_POST['sel_EndMin'], $_POST['sel_EndAmPm'], $_POST['sel_Hours'], $_POST['txt_Spaces'], (isset($_POST['chk_end']) ? "TRUE" : "FALSE"), (isset($_POST['chk_limited']) ? "TRUE" : "FALSE"), (isset($_POST['chk_walk']) ? "TRUE" : "FALSE"), $_POST['txt_Meet_Location'], $_POST['txt_Actual_Location'], $_POST['txt_Actual_Address'], (isset($_POST['chk_repeat']) ? "TRUE" : "FALSE"), $_POST['sel_StartMo2'], $_POST['sel_StartDay2'], $_POST['sel_StartMo3'], $_POST['sel_StartDay3'], $_POST['sel_StartMo4'], $_POST['sel_StartDay4'], $_POST['sel_StartMo5'], $_POST['sel_StartDay5']);
 		/* Account Add Successful */
 		if ($retval == 0) {
 			$_SESSION['addevent'] = true;
@@ -462,7 +462,7 @@ class Process
 		global $session, $form;
 		
 		/* Event edit attempt */
-		$retval = $session->editEvent($_POST['eventid'], $_POST['txt_Name'], $_POST['sel_Type'], $_POST['txtarea_eventDesc'], $_POST['sel_StartMo'], $_POST['sel_StartDay'], $_POST['sel_StartYear'], $_POST['sel_StartHr'], $_POST['sel_StartMin'], $_POST['sel_StartAmPm'], $_POST['sel_EndMo'], $_POST['sel_EndDay'], $_POST['sel_EndYear'], $_POST['sel_EndHr'], $_POST['sel_EndMin'], $_POST['sel_EndAmPm'], $_POST['sel_Hours'], $_POST['txt_Spaces'], (isset($_POST['chk_end']) ? "TRUE" : "FALSE"), (isset($_POST['chk_limited']) ? "TRUE" : "FALSE"), (isset($_POST['chk_walk']) ? "TRUE" : "FALSE"), $_POST['txt_Meet_Location'], $_POST['txt_Actual_Location'], $_POST['txt_Actual_Address'], $_POST['sel_Type2']);
+		$retval = $session->editEvent($_POST['eventid'], $_POST['txt_Name'], $_POST['sel_Type'], $_POST['txtarea_eventDesc'], $_POST['sel_StartMo'], $_POST['sel_StartDay'], $_POST['sel_StartYear'], $_POST['sel_StartHr'], $_POST['sel_StartMin'], $_POST['sel_StartAmPm'], $_POST['sel_EndMo'], $_POST['sel_EndDay'], $_POST['sel_EndYear'], $_POST['sel_EndHr'], $_POST['sel_EndMin'], $_POST['sel_EndAmPm'], $_POST['sel_Hours'], $_POST['txt_Spaces'], (isset($_POST['chk_end']) ? "TRUE" : "FALSE"), (isset($_POST['chk_limited']) ? "TRUE" : "FALSE"), (isset($_POST['chk_walk']) ? "TRUE" : "FALSE"), $_POST['txt_Meet_Location'], $_POST['txt_Actual_Location'], $_POST['txt_Actual_Address']);
 		/* Event Edit Successful */
 		if ($retval == 0) {
 			$_SESSION['editevent'] = true;
