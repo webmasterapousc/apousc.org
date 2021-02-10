@@ -118,7 +118,7 @@ if (!$session->isAdmin() && !$session->isOfficer()) {
 							</select>
 							<?php echo $form->error("sel_Type"); ?>
 						</li>
-						<li>
+<!-- 						<li>
 							<label for="sel_Type">Event Type 2</label>
 							<select id="sel_Type" name="sel_Type2" title="Select the Event Type" onchange ="selectConditional('sel_Type2');">
 								<option value="">Please select one&hellip;</option>
@@ -135,7 +135,7 @@ if (!$session->isAdmin() && !$session->isOfficer()) {
 								?>
 							</select>
 							<?php echo $form->error("sel_Type2"); ?>
-						</li>
+						</li> -->
 						<li id="0" class="conditional">
 							<label for="sel_Hours">Hours</label>
 							<select id="sel_Hours" name="sel_Hours" title="Select the number of hours this event is worth">
