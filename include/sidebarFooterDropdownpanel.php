@@ -104,6 +104,7 @@ HERE;
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
 		<!-- <li><li><a href='polls.php'>Polls</a></li>-->
 		<li><a href="../information/support_systems.php">Support Systems</a></li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1jfhuzV2HDxURCe9_0iO9MG2JGiwk3wevOd2ezXmaT-M/edit?usp=sharing"><strong>!!Fellowship Reccuring Series</strong></a></li>
 		<li><a href="https://www.facebook.com/apoakcompliments/"><strong>!!APO Compliments</strong></a></li>
 		<li><a href="https://www.youtube.com/watch?v=M0Kf1X7gTIg&feature=youtu.be"><strong>!!APO Discord Tutorial</strong></a></li>
 		<li><a href="https://docs.google.com/document/d/1Gg_aVr_KRJN8AvLbxO1OXTLePJAxKSpIWORbqPYQMbc/edit"><strong>!!Celebrate Black History Month!</strong></a></li>
