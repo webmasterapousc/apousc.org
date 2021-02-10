@@ -118,6 +118,24 @@ if (!$session->isAdmin() && !$session->isOfficer()) {
 							</select>
 							<?php echo $form->error("sel_Type"); ?>
 						</li>
+						<li>
+							<label for="sel_Type">Event Type 2</label>
+							<select id="sel_Type" name="sel_Type2" title="Select the Event Type" onchange ="selectConditional('sel_Type2');">
+								<option value="">Please select one&hellip;</option>
+								<?php
+								for ($i=0; $i<count($eventType); $i++) {
+
+									// If page is reloaded with errors, remember which option was selected
+									$selected = "";
+									if (strcmp($form->value("sel_Type2"),"") !== 0 && $form->value("sel_Type2") == $i) {
+										$selected = " selected=\"selected\"";
+									}
+									echo ("\t\t\t\t\t\t\t\t<option value=\"$i\"".$selected.">".$eventType[$i]."</option>\n");
+								}
+								?>
+							</select>
+							<?php echo $form->error("sel_Type2"); ?>
+						</li>
 						<li id="0" class="conditional">
 							<label for="sel_Hours">Hours</label>
 							<select id="sel_Hours" name="sel_Hours" title="Select the number of hours this event is worth">
