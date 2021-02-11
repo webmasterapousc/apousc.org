@@ -84,12 +84,18 @@ include_once("include/topnav.php");
 					while ($row = mysql_fetch_array($result)) {
 						if ($row['status'] == 0 || $row['status'] == 1 || $row['status'] == 2 || $row['status'] == 7) {	
 							$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
+							$year_edit = $req_user_info['year'];
+							$semester_edit = ++$req_user_info['semester'];
+							if ($semester_edit > 1) {
+								$semester_edit = 0;
+								$year_edit--; 
+							}
 							echo "<tr" . $zebra . ">\n";
 							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" . $row['fname'] . "</a></td>\n";
 							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" .  $row['lname'] . "</a></td>\n";
 							echo "\t<td>" . $memberStatus[$row['status']] . "</td>\n";
 							//echo "\t<td>" . $families[$row['family']] . "</td>\n";
-							echo "\t<td>" . $pledgeClasses[$row['year'].$row['semester']] . "</td>\n";
+							echo "\t<td>" . $pledgeClasses[$year_edit . $semester_edit] . "</td>\n";
 								if ($session->logged_in) {
 									echo "\t\t\t\t\t\t<td>";
 										echo preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $row['phone']);
