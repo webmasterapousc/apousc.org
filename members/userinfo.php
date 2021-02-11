@@ -137,12 +137,17 @@ else {
 			echo " Chapter";
 		} else {
 			$year_edit = $req_user_info['year'];
-			$semester_edit = ++$req_user_info['semester'];
+			$semester_edit = $req_user_info['semester'] + 1;
 			if ($semester_edit > 1) {
 				$semester_edit = 0;
 				$year_edit--; 
 			}
-			echo $pledgeClasses[$year_edit . $semester_edit] . " Class";
+			if ($req_user_info['year'] <= 2020) {
+				echo $pledgeClasses[$req_user_info['year'] . $req_user_info['semester']] . " Class";
+			}
+			else {
+				echo $pledgeClasses[$year_edit . $semester_edit] . " Class";
+			}
 		}
 		echo ")";
 	}
