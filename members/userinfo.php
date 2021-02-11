@@ -136,7 +136,13 @@ else {
 			}
 			echo " Chapter";
 		} else {
-			echo $pledgeClasses[$req_user_info['year'] . $req_user_info['semester']] . " Class";
+			$year_edit = $req_user_info['year'];
+			$semester_edit = ++$req_user_info['semester'];
+			if ($semester_edit > 1) {
+				$semester_edit = 0;
+				$year_edit--; 
+			}
+			echo $pledgeClasses[$year_edit . $semester_edit] . " Class";
 		}
 		echo ")";
 	}
