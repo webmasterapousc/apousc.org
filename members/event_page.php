@@ -871,7 +871,7 @@ if (
         echo "<a href='https://www.google.com/calendar/render?action=TEMPLATE&text=$eventName&dates=$eventStart/$eventEnd&details=$eventDesc&location=$eventLoc&sf=true&output=xml');
         \">Click here to add event to Google Calendar</a>";
 	echo "<a href='https://www.google.com/calendar/render?action=TEMPLATE&text=$eventName&dates=$eventStart/$eventEnd&details=$eventDesc&location=$eventLoc&sf=true&output=xml' 
-		rel='external' title='Add to your google calendar'><img src='../img/google-calendar-icon.png' height='32' width='32' alt='Gcal' /></a>";
+		rel='external' title='Add to your google calendar'><img src='../img/google-calendar-icon.png' height='64' width='80' alt='Gcal' /></a>";
         /*************** USER COMMENTS *********************/
 # Display the current list of comments
 
