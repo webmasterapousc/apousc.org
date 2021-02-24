@@ -1708,6 +1708,7 @@ date_default_timezone_set('America/Los_Angeles');
 		   $this->username == "yelillia" || // interchapter
 		   $this->username == "alexiszi" || // sec
 		   $this->username == "junjieye" || // d&i
+		   $this->username == "chengea" || // almuni
 		   $this->username == "jordanjt" || // historian
 		   $this->username == "alfredot" || // phil
 		   $this->username == "tkyang" || // phil
