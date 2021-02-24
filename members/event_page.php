@@ -324,8 +324,7 @@ if (mysql_num_rows($result) > 0) {
         //LOOK HERE U TWAT :D this is where you give permission to take people off events
         //new webmasters add yourself here!! ^^
     ) {
-		echo "<th>Lead?</th>";
-		echo $session->username;
+		echo "<th>Lead? . $session->username . </th>";
 	}
 	echo "\t\t\t\t\t</tr>\n";
 	echo "\t\t\t\t</thead>\n";
