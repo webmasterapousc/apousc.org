@@ -1707,13 +1707,14 @@ date_default_timezone_set('America/Los_Angeles');
 		   $this->username == "shaniawa" || // communications
 		   $this->username == "yelillia" || // interchapter
 		   $this->username == "alexiszi" || // sec
-		   $this->username == "junjieye" || // d&i
+		   $this->username == "junjieye" || // creative director
 		   $this->username == "chengea" || // almuni
 		   $this->username == "jordanjt" || // historian
 		   $this->username == "alfredot" || // phil
 		   $this->username == "tkyang" || // phil
 		   $this->username == "amarizha" || // rush
-		   $this->username == "lian057" // rush
+		   $this->username == "lian057" || // rush
+		   $this->username == "junhkim" // d&i
 		   )
 			return true;
 		return false;
