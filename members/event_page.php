@@ -325,6 +325,7 @@ if (mysql_num_rows($result) > 0) {
         //new webmasters add yourself here!! ^^
     ) {
 		echo "<th>Lead?</th>";
+		echo $session->username;
 	}
 	echo "\t\t\t\t\t</tr>\n";
 	echo "\t\t\t\t</thead>\n";
