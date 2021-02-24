@@ -1694,25 +1694,25 @@ date_default_timezone_set('America/Los_Angeles');
 	function isOfficer()
 	{
 		if (($this->position >= 1 && $this->position <= 33)|| $this->position == -1 || $this->isAdmin() ||
-		   $this->username == "ipeng" ||
-		   $this->username == "chan043" ||
-		   $this->username == "yangvane" ||
-		   $this->username == "kirachan" ||
-		   $this->username == "licynthi" ||
-		   $this->username == "naomilin" ||
-		   $this->username == "joshuazh" ||
-		   $this->username == "annegao" ||
-		   $this->username == "lindsecy" ||
-		   $this->username == "tejawina" ||
-		   $this->username == "shaniawa" ||
-		   $this->username == "yelillia" ||
-		   $this->username == "alexiszi" ||
-		   $this->username == "junjieye" ||
-		   $this->username == "jordanjt" ||
-		   $this->username == "alfredot" ||
-		   $this->username == "tkyang" ||
-		   $this->username == "amarizha" ||
-		   $this->username == "lian057"
+		   $this->username == "ipeng" || // webmaster
+		   $this->username == "chan043" || // pledge master
+		   $this->username == "yangvane" || // puncle
+		   $this->username == "kirachan" || // pauntie
+		   $this->username == "licynthi" || // service
+		   $this->username == "naomilin" || // membership
+		   $this->username == "joshuazh" || // membership
+		   $this->username == "annegao" || // fellowship
+		   $this->username == "lindsecy" || // finance
+		   $this->username == "tejawina" || // finance
+		   $this->username == "shaniawa" || // communications
+		   $this->username == "yelillia" || // interchapter
+		   $this->username == "alexiszi" || // sec
+		   $this->username == "junjieye" || // d&i
+		   $this->username == "jordanjt" || // historian
+		   $this->username == "alfredot" || // phil
+		   $this->username == "tkyang" || // phil
+		   $this->username == "amarizha" || // rush
+		   $this->username == "lian057" // rush
 		   )
 			return true;
 		return false;
