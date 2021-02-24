@@ -1694,7 +1694,26 @@ date_default_timezone_set('America/Los_Angeles');
 	function isOfficer()
 	{
 		if (($this->position >= 1 && $this->position <= 33)|| $this->position == -1 || $this->isAdmin() ||
-		   $this->username == "ipeng")
+		   $this->username == "ipeng" ||
+		   $this->username == "chan043" ||
+		   $this->username == "yangvane" ||
+		   $this->username == "kirachan" ||
+		   $this->username == "licynthi" ||
+		   $this->username == "naomilin" ||
+		   $this->username == "joshuazh" ||
+		   $this->username == "annegao" ||
+		   $this->username == "lindsecy" ||
+		   $this->username == "tejawina" ||
+		   $this->username == "shaniawa" ||
+		   $this->username == "yelillia" ||
+		   $this->username == "alexiszi" ||
+		   $this->username == "junjieye" ||
+		   $this->username == "jordanjt" ||
+		   $this->username == "alfredot" ||
+		   $this->username == "tkyang" ||
+		   $this->username == "amarizha" ||
+		   $this->username == "lian057"
+		   )
 			return true;
 		return false;
 	}
