@@ -790,7 +790,28 @@ if (
 
 	($session->position == 33 && $req_event_info['type'] == 16) ||
 
-	(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)
+	(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7) || 
+	$session->username == "ipeng" || // webmaster
+		   $session->username == "chan043" || // pledge master
+		   $session->username == "yangvane" || // puncle
+		   $session->username == "kirachan" || // pauntie
+		   $session->username == "licynthi" || // service
+		   $session->username == "naomilin" || // membership
+		   $session->username == "joshuazh" || // membership
+		   $session->username == "annegao" || // fellowship
+		   $session->username == "lindsecy" || // finance
+		   $session->username == "tejawina" || // finance
+		   $session->username == "shaniawa" || // communications
+		   $session->username == "yelillia" || // interchapter
+		   $session->username == "alexiszi" || // sec
+		   $session->username == "junjieye" || // creative director
+		   $session->username == "chengea" || // almuni
+		   $session->username == "jordanjt" || // historian
+		   $session->username == "alfredot" || // phil
+		   $session->username == "tkyang" || // phil
+		   $session->username == "amarizha" || // rush
+		   $session->username == "lian057" || // rush
+		   $session->username == "junhkim" // d&i
 ) {
 	/*************** SIGN UP FOR THE EVENT ***************/
 	?>
