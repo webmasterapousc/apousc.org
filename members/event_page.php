@@ -677,7 +677,29 @@ echo "<span class='topContent'><span id='eventDetails'>";
         					$q = "SELECT * FROM `" . TBL_USERS . "` WHERE `status` <> " . ALUMNI_MEMBER . " AND `status` <> " . FROZEN_MEMBER . "  AND `username` <> \"admin\" ORDER BY `lname`";
         					$retval = $database->query($q);
         					while ($row = mysql_fetch_array($retval)) {
-        						if (strcmp($row['username'], $session->username) == 0) {
+//         						if (strcmp($row['username'], $session->username) == 0) {
+							if (	$session->username == "ipeng" || // webmaster
+								   $session->username == "chan043" || // pledge master
+								   $session->username == "yangvane" || // puncle
+								   $session->username == "kirachan" || // pauntie
+								   $session->username == "licynthi" || // service
+								   $session->username == "naomilin" || // membership
+								   $session->username == "joshuazh" || // membership
+								   $session->username == "annegao" || // fellowship
+								   $session->username == "lindsecy" || // finance
+								   $session->username == "tejawina" || // finance
+								   $session->username == "shaniawa" || // communications
+								   $session->username == "yelillia" || // interchapter
+								   $session->username == "alexiszi" || // sec
+								   $session->username == "junjieye" || // creative director
+								   $session->username == "chengea" || // almuni
+								   $session->username == "jordanjt" || // historian
+								   $session->username == "alfredot" || // phil
+								   $session->username == "tkyang" || // phil
+								   $session->username == "amarizha" || // rush
+								   $session->username == "lian057" || // rush
+								   $session->username == "junhkim" // d&i
+							    ) {
         							echo ("\t<option value=\"" . $row['username'] . "\"" . $selected . ">" . $row['lname'] . ", " . $row['fname'] . " (" . $row['username'] . ")</option>\n");
         						}
         					}
@@ -790,28 +812,29 @@ if (
 
 	($session->position == 33 && $req_event_info['type'] == 16) ||
 
-	(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7) || 
-	$session->username == "ipeng" || // webmaster
-		   $session->username == "chan043" || // pledge master
-		   $session->username == "yangvane" || // puncle
-		   $session->username == "kirachan" || // pauntie
-		   $session->username == "licynthi" || // service
-		   $session->username == "naomilin" || // membership
-		   $session->username == "joshuazh" || // membership
-		   $session->username == "annegao" || // fellowship
-		   $session->username == "lindsecy" || // finance
-		   $session->username == "tejawina" || // finance
-		   $session->username == "shaniawa" || // communications
-		   $session->username == "yelillia" || // interchapter
-		   $session->username == "alexiszi" || // sec
-		   $session->username == "junjieye" || // creative director
-		   $session->username == "chengea" || // almuni
-		   $session->username == "jordanjt" || // historian
-		   $session->username == "alfredot" || // phil
-		   $session->username == "tkyang" || // phil
-		   $session->username == "amarizha" || // rush
-		   $session->username == "lian057" || // rush
-		   $session->username == "junhkim" // d&i
+	(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)
+// 	||
+// 	$session->username == "ipeng" || // webmaster
+// 		   $session->username == "chan043" || // pledge master
+// 		   $session->username == "yangvane" || // puncle
+// 		   $session->username == "kirachan" || // pauntie
+// 		   $session->username == "licynthi" || // service
+// 		   $session->username == "naomilin" || // membership
+// 		   $session->username == "joshuazh" || // membership
+// 		   $session->username == "annegao" || // fellowship
+// 		   $session->username == "lindsecy" || // finance
+// 		   $session->username == "tejawina" || // finance
+// 		   $session->username == "shaniawa" || // communications
+// 		   $session->username == "yelillia" || // interchapter
+// 		   $session->username == "alexiszi" || // sec
+// 		   $session->username == "junjieye" || // creative director
+// 		   $session->username == "chengea" || // almuni
+// 		   $session->username == "jordanjt" || // historian
+// 		   $session->username == "alfredot" || // phil
+// 		   $session->username == "tkyang" || // phil
+// 		   $session->username == "amarizha" || // rush
+// 		   $session->username == "lian057" || // rush
+// 		   $session->username == "junhkim" // d&i
 ) {
 	/*************** SIGN UP FOR THE EVENT ***************/
 	?>
