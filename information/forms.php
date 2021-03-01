@@ -32,8 +32,8 @@ include_once("include/topnav.php");
 			<p>If you don't see what you're looking for, just contact an officer!</p>
 			<p>If you want to upload or update a document on this page feel free to contact webmaster.apousc@gmail.com!</p>                	
 					<ul>
-						<li><a href="https://goo.gl/forms/OGDeNB6XsVrpZ5cM2">Anon Evaluation Form</a></li>
-		       				<li><a href="https://goo.gl/forms/Oqg2mQ0OL2uuEK003">Event Evaluation Form</a></li>
+						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeO9JlApSE76RKqHGlITzFm-WjwCDc41TDNuSz6bIQWVyMkYA/viewform">Open Evaluation Form</a></li>
+		       				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8_c4TqemjrAvio0DxwyMUFv-q9fcNhhzd85PrclDFJz7MJw/viewform">Event Evaluation Form</a></li>
 						<li><a href='https://docs.google.com/forms/d/e/1FAIpQLSftdqT-xgSpVWNHtkmo7T4_L4NHbxt3iZlROEMcPVoxzlGUnw/viewform' target = "_blank">Diversity and Inclusion Survey</a></li>
 					  	<li><a href='https://forms.gle/jhC3w4TQ5X8grg1C7' target = "_blank">Diversity & Inclusion Event Reflection Form</a></li>
 						<li><a href="https://drive.google.com/file/d/1lNKrfgsSEAuOeZdyZPvuFWw37KZqyM_v/preview?format=pdf" target = "_blank">Outside Service Hours Log</a></li>
