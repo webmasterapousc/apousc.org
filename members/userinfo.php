@@ -168,7 +168,7 @@ else {
 
 	echo "<h3>Family Line</h3>\n";
 	$username = $req_user_info['username'];
-	echo "<li><a href='family_tree.php?user=$username'><strong>Family Tree</strong></a></li>";
+	echo "<li><a href=\"family_tree.php?user=" . $username . "\"><strong>Family Tree</strong></a></li>";
 
 	$q       = "SELECT U.fname, U.lname, U.big FROM `" . TBL_USERS . "` AS U WHERE U.username = '" . $req_user_info['big'] . "'";
 	$result  = $database->query($q);
