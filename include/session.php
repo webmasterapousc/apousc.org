@@ -1715,7 +1715,9 @@ date_default_timezone_set('America/Los_Angeles');
 		   $this->username == "amarizha" || // rush
 		   $this->username == "lian057" || // rush
 		   $this->username == "junhkim" || // d&i
-		   $this->username == "twong010" // omega fam head
+		   $this->username == "twong010" ||// omega fam head
+		   $this->username == "olay" || // phi fam head
+		   $this->username == "ewang057" // alpha fam head
 		   )
 			return true;
 		return false;
