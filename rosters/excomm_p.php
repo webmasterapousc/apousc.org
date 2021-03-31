@@ -54,7 +54,7 @@ include_once("include/topnav.php");
 							echo "\t\t\t\t\t</tr>\n";
 							$i++;
 						}
-		$q = "SELECT * FROM officer as O JOIN officer_position as P ON O.position = P.rank JOIN users as U ON O.username = U.username WHERE O.position == 34 AND term = 22";
+		$q = "SELECT * FROM officer as O JOIN officer_position as P ON O.position = P.rank JOIN users as U ON O.username = U.username WHERE O.position = 34 AND term = 22";
 						$result = mysql_query($q);
 						$i = 0; // Counter used for alternating table row colors
 						while ($row = mysql_fetch_array($result)) {
