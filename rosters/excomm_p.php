@@ -54,6 +54,24 @@ include_once("include/topnav.php");
 							echo "\t\t\t\t\t</tr>\n";
 							$i++;
 						}
+		$q = "SELECT * FROM officer as O JOIN officer_position as P ON O.position = P.rank JOIN users as U ON O.username = U.username WHERE O.position == 34 AND term = 22";
+						$result = mysql_query($q);
+						$i = 0; // Counter used for alternating table row colors
+						while ($row = mysql_fetch_array($result)) {
+							$username = $row['username'];
+							$mail  = $row['email'];
+							$first = $row['fname'];
+							$last  = $row['lname'];
+							$pos   = $row['title'];
+							$zebra = ($i % 2 == 1) ? " class=\"zebra\"" : "";
+							echo "\t\t\t\t\t<tr".$zebra.">\n";
+							echo "\t\t\t\t\t\t<td>$pos</td>\n";
+							echo "\t\t\t\t\t\t<td><a href=/members/userinfo.php?user=$username . >$first $last</a></td>\n";
+							//,$mail
+							echo "\t\t\t\t\t\t<td>".$mail."</td>\n";
+							echo "\t\t\t\t\t</tr>\n";
+							$i++;
+						}
 					?>
 				</tbody>
 			</table>
