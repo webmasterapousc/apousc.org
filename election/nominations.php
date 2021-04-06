@@ -156,7 +156,7 @@ include_once("include/topnav.php");
 						}
 						?>
 					<tr class="thead">
-						<td>Pledge Master</td>
+						<td>New Member Educator</td>
 						<td></td>
 					</tr>
 						<?php
