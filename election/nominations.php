@@ -59,7 +59,12 @@ include_once("include/topnav.php");
 				$positionz[8] = "Diversity and Inclusion Chair";
 			?>
 			<div class="contentBox">
-				<p>Please review the <a href="https://drive.google.com/file/d/1boIJrEb5CTK81SMorV8RGWvcFKMkJ59g/view?usp=sharing">Officer Descriptions</a>, <a href="https://drive.google.com/open?id=13ebg2IfQ2B013lQxT5ZO1FjwKA4g-4k9">Bylaws</a>, and <a href="https://drive.google.com/open?id=1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu">Officer Election Policy</a> for procedures regarding elections and for a list of each position's responsibilities. If you wish to decline your nomination, please click "[Decline]" next to your name, or email <a href="mailto:webmaster.apousc@gmail.com">webmaster.apousc@gmail.com</a> so that the website administrator may decline on your behalf. <br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://drive.google.com/file/d/1LEu8h8FG_kEgBcLw9ZUZ_EV86tZ-WN8d/view?usp=sharing">E-Board Application</a> by 11:59 PM on Sunday, October 4. </strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://drive.google.com/file/d/1iNasU68zo-C2SlTOOF3r6XM12ax2Ak-2/view?usp=sharing">A-Board Application </a> by 11:59 PM on Monday, October 19.</strong></p> 
+				<p>Please review the <a href="https://drive.google.com/file/d/1boIJrEb5CTK81SMorV8RGWvcFKMkJ59g/view?usp=sharing">Officer Descriptions</a>, 
+					<a href="https://drive.google.com/open?id=13ebg2IfQ2B013lQxT5ZO1FjwKA4g-4k9">Bylaws</a>, and <a href="https://drive.google.com/open?id=1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu">Officer Election Policy</a> 
+					for procedures regarding elections and for a list of each position's responsibilities. If you wish to decline your nomination, please click "[Decline]" next to your name, or email <a href="mailto:webmaster.apousc@gmail.com">webmaster.apousc@gmail.com</a> 
+					so that the website administrator may decline on your behalf. <br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://docs.google.com/document/d/1uVfEY7P9IcKabiNCmc2bUr9hYiZR50SeSFyR710v2xk/edit">E-Board Application</a> by 11:59 PM on Sunday, October 4. 
+					</strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://docs.google.com/document/d/1TP5goDQeJ1hpN6Z9H2wlY6DAevSg_3r2_hMZnui6f6k/edit">A-Board Application </a> 
+						by 11:59 PM on Monday, October 19.</strong></p> 
 				
 			</div>
 			<form action="process.php" method="post">
