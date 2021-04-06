@@ -49,7 +49,7 @@ include_once("include/topnav.php");
 					echo ("\t\t\t<p>Nomination added successfully!</p>\n");
 				}
 				$positionz[0] = "President";
-				$positionz[1] = "Pledge Master";
+				$positionz[1] = "New Member Educator";
 				$positionz[2] = "VP of Service";
 				$positionz[3] = "VP of Membership";
 				$positionz[4] = "VP of Fellowship";
