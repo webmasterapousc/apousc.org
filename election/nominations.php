@@ -80,7 +80,7 @@ include_once("include/topnav.php");
 							<label for="sel_Member">Member</label>
 							<select name="sel_Member" id="sel_Member">
 							<?php
-							$q      = "SELECT * FROM `" . TBL_USERS . "` WHERE (`status` = 0 OR `status` = 2 OR `status` = 7) AND `username` <> \"admin\" ORDER BY `lname`";
+							$q      = "SELECT * FROM `" . TBL_USERS . "` WHERE (`status` = 1 OR `status` = 0 OR `status` = 2 OR `status` = 7) AND `username` <> \"admin\" ORDER BY `lname`";
 							$retval = $database->query($q);
 							while ($row = mysql_fetch_array($retval)) {
 								echo ("\t\t\t\t\t\t\t\t<option value=\"".$row['username']."\"$selected>".$row['lname'].", ".$row['fname']." (".$row['username'].")</option>\n");
