@@ -45,7 +45,7 @@ include_once("include/topnav.php");
 			<h2>Candidate Documents</h2>
           
            <h3>President</h3>
-		<ul> 
+<!-- 		<ul> 
             <li><b>Anjel Tan</b></li>
             <ul><a href = "https://drive.google.com/file/d/1fjQ03Oev-p4Ke-9qx7qGFpVa3orZWmXz/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Resume </a></ul>
@@ -55,10 +55,10 @@ include_once("include/topnav.php");
             <li><b>James Liu Tang</b></li>
             <ul><a href = "https://drive.google.com/file/d/1XHx7ZRQdV7uUxXVF5SP5JL9ch8uuN9pO/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1XsA-7oQuFvChV7gpvzRtbqqu6RzQAaLB/view?usp=sharing"> Resume </a></ul>
-            </ul>
+            </ul> -->
 
           <h3>Pledgemaster</h3>
-           <ul>    
+<!--            <ul>    
            <li><b>Justin Chang</b></li>
             <ul><a href = "https://drive.google.com/file/d/1Ii78DwrgXD3uzFGCcj1JIZ6Y4KjeDm_5/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/14MEP0q9VOUBzM8WpRsEsWddfVoGNDP2w/view?usp=sharing"> Resume</a></ul>
@@ -69,9 +69,9 @@ include_once("include/topnav.php");
             <ul><a href = "https://drive.google.com/file/d/19p4UBk8R3_AvBSMWg6aq4qkBn6vbFbO_/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1t_-YrCoioG4WP_kuN13gQpNFIeZIyPrg/view?usp=sharing"> Resume </a></ul>
              </ul> 
-
+ -->
           <h3>Co-VP of Membership</h3>
-	<ul>
+<!-- 	<ul>
             <li><b>Naomi Lin</b></li>
             <ul><a href = "https://drive.google.com/file/d/1lwxHF1P4F--wXtkA-0mCq9xzRXUnW2Bl/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1E3oqEgHy-BOdhiCE7gRV7NSZQzlDiHF6/view?usp=sharing"> Resume </a></ul>
@@ -79,19 +79,19 @@ include_once("include/topnav.php");
             <ul><a href = "https://drive.google.com/file/d/19AGS_Z3Hbrg0SBDdDh6sNFdZBHzm8Ew_/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1WxLGyazPLn525lWQE1eMYZIL-Ps80lVR/view?usp=sharing"> Resume </a></ul>
 
-            </ul>
+            </ul> -->
 
           <h3>VP of Fellowship</h3>
-			  <ul>
+<!-- 			  <ul>
              
              <li><b>Anne Gao</b></li>
             <ul><a href = "https://drive.google.com/file/d/1tiC1YcrFogP-MWH_uUe7q7If8NrOm5v2/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1PiL1EfA6QoucmJz3XPHj2UeMs77Mqk5Y/view?usp=sharing"> Resume </a></ul>
 
-              </ul>
+              </ul> -->
 
           <h3>Co-VP of Finance</h3>
- 		        <ul>
+<!--  		        <ul>
 		          <li><b>Felicia Tejawinata</b></li>
                 <ul><a href = "https://drive.google.com/file/d/1y3imK-_r_fqTzokucpnrq5bcf-KwhejV/view?usp=sharing"> Application </a></ul>
                 <ul><a href = "https://drive.google.com/file/d/1Rs9MGj904qA7Gr79fnuC8BV-ju9poen-/view?usp=sharing"> Resume </a></ul>
@@ -99,29 +99,29 @@ include_once("include/topnav.php");
                 <ul><a href = "https://drive.google.com/file/d/1tcC7GIqU59jAmwKUmuO3o3pY7sg0Dl9G/view?usp=sharing"> Application </a></ul>
                 <ul><a href = "https://drive.google.com/file/d/1rXCT-zkvsZ-inx4I9IH7kAIkrKoeVgcU/view?usp=sharing"> Resume </a></ul>
               </ul>
-            </ul> 
+            </ul>  -->
 
           <h3>VP of Communications</h3>
-		<ul>
+<!-- 		<ul>
                 <li><b>Shania Wang</b></li>
                 <ul><a href = "https://drive.google.com/file/d/1lIEUozGSWaHEygV_BN3WcK5VJX6xBB-B/view?usp=sharing"> Application </a></ul>
                 <ul><a href = "https://drive.google.com/file/d/1HWPtnrvGcxRtoahsiXhqm1bqLqvcCSZ9/view?usp=sharing"> Resume </a></ul>
-              </ul>
+              </ul> -->
             
                   
           <h3>Interchapter Chair</h3>
-           	<ul>
+<!--            	<ul>
               <li><b>Lillian Ye</b></li>
               <ul><a href = "https://drive.google.com/file/d/1ChkuSaZOFJ1TGCF0BjSYJaPSI0wdwG8o/view?usp=sharing"> Application </a></ul>
               <ul><a href = "https://drive.google.com/file/d/1tcAMbM98OWiqi37fbA6tmFiV1eJ2mLRo/view?usp=sharing"> Resume </a></ul>
-            </ul> 
+            </ul>  -->
 
 <h3>Diversity and Inclusion Chair</h3>
-		<ul>
+<!-- 		<ul>
               <li><b>Jun Kim</b></li>
               <ul><a href = "https://drive.google.com/file/d/1IKhFLgPhiUuHIJR84R0oLhN9qsDfWCt_/view?usp=sharing"> Application </a></ul>
               <ul><a href = "https://drive.google.com/file/d/1TzfbIcSnDH3oyRAnlii8_2tJ_vSkbW7d/view?usp=sharing"> Resume </a></ul>
-            </ul>
+            </ul> -->
     
 			<p class="bottomNote">Note: <abbr title="Portable Document Format">PDF</abbr> files require the Adobe Reader from Adobe Systems, Incorporated. Adobe and the Adobe logo are trademarks of Adobe Systems, Incorporated. Click on the following link to download.</p>
 			<a href="http://get.adobe.com/reader/"><img src="img/get_adobe_reader.png" height="39" width="158" alt="Download Adobe Reader" /></a>
