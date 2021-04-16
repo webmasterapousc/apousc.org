@@ -45,31 +45,43 @@ include_once("include/topnav.php");
 			<h2>Candidate Documents</h2>
           
            <h3>President</h3>
-<!-- 		<ul> 
-            <li><b>Anjel Tan</b></li>
-            <ul><a href = "https://drive.google.com/file/d/1fjQ03Oev-p4Ke-9qx7qGFpVa3orZWmXz/view?usp=sharing"> Application </a></ul>
-            <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Resume </a></ul>
+		<ul> 
+            <li><b>Anjelica Tan</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1MWG7oedVf61mQj1kYpXqpOPzTTvZjw2V/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://docs.google.com/document/d/1cO-PSsJKSALIVsk9aPAwIN6hvAMjhZOjSEjBScGtRJE/edit?usp=sharing"> Resume </a></ul>
+	    <ul><a href = "https://drive.google.com/file/d/19zC_fNy_TwUL1VT3D8KxMA2fRxf65_pl/view?usp=sharing"> Schedule </a></ul>
             </ul>
             
           <ul> 
-            <li><b>James Liu Tang</b></li>
-            <ul><a href = "https://drive.google.com/file/d/1XHx7ZRQdV7uUxXVF5SP5JL9ch8uuN9pO/view?usp=sharing"> Application </a></ul>
-            <ul><a href = "https://drive.google.com/file/d/1XsA-7oQuFvChV7gpvzRtbqqu6RzQAaLB/view?usp=sharing"> Resume </a></ul>
-            </ul> -->
+            <li><b>Joshua Zhu</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1e5qZcwPOF8N7tYkMhGdWqRJrpfPHrf3P/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1i_OYovUURjGeaKd13qRShv3HFYvcPMFD/view?usp=sharing"> Resume </a></ul>
+	    <ul><a href = "https://drive.google.com/file/d/1Gxaryl-PZv81ssUlFdgyUAArYRMyCymp/view?usp=sharing"> Schedule </a></ul>
+            </ul>
 
-          <h3>Pledgemaster</h3>
+          <ul> 
+            <li><b>Matthew Ayala</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1Gxaryl-PZv81ssUlFdgyUAArYRMyCymp/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1ffDDdPCDBVJeTAP-BDouv5RwicSXmnZM/view?usp=sharing"> Resume </a></ul>
+	    <ul><a href = "https://drive.google.com/file/d/1PSvbIOHkyASdIIknRseJJfJuLyO39VnX/view?usp=sharing"> Schedule </a></ul>
+            </ul>
+
+          <h3>New Member Educator</h3>
 <!--            <ul>    
            <li><b>Justin Chang</b></li>
             <ul><a href = "https://drive.google.com/file/d/1Ii78DwrgXD3uzFGCcj1JIZ6Y4KjeDm_5/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/14MEP0q9VOUBzM8WpRsEsWddfVoGNDP2w/view?usp=sharing"> Resume</a></ul>
+	  <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Schedule </a></ul>
+          </ul>  -->
 
-            </ul> 
           <h3>VP of Service</h3>
-	<ul><li><b>Cynthia Li</b></li>
+<!-- 	    <ul>
+            <li><b>Cynthia Li</b></li>
             <ul><a href = "https://drive.google.com/file/d/19p4UBk8R3_AvBSMWg6aq4qkBn6vbFbO_/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1t_-YrCoioG4WP_kuN13gQpNFIeZIyPrg/view?usp=sharing"> Resume </a></ul>
-             </ul> 
- -->
+	    <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Schedule </a></ul>
+             </ul>  -->
+
           <h3>Co-VP of Membership</h3>
 <!-- 	<ul>
             <li><b>Naomi Lin</b></li>
