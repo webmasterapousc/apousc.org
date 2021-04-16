@@ -75,12 +75,12 @@ include_once("include/topnav.php");
           </ul> 
 
           <h3>VP of Service</h3>
-<!-- 	    <ul>
-            <li><b>Cynthia Li</b></li>
-            <ul><a href = "https://drive.google.com/file/d/19p4UBk8R3_AvBSMWg6aq4qkBn6vbFbO_/view?usp=sharing"> Application </a></ul>
-            <ul><a href = "https://drive.google.com/file/d/1t_-YrCoioG4WP_kuN13gQpNFIeZIyPrg/view?usp=sharing"> Resume </a></ul>
-	    <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Schedule </a></ul>
-             </ul>  -->
+	    <ul>
+            <li><b>Trinity Yang</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1FvvIqhDjcImx8eYYw-Fpp72-7yFC1wBN/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1KR2Iu5EFQ2b35Xp-Xnni7800bvNpcD6f/view?usp=sharing"> Resume </a></ul>
+	    <ul><a href = "https://drive.google.com/file/d/12nVmdWAt0nlgl3lwxVfhCMuP1tFbUovL/view?usp=sharing"> Schedule </a></ul>
+             </ul> 
 
           <h3>Co-VP of Membership</h3>
 <!-- 	<ul>
