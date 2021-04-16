@@ -67,12 +67,12 @@ include_once("include/topnav.php");
             </ul>
 
           <h3>New Member Educator</h3>
-<!--            <ul>    
-           <li><b>Justin Chang</b></li>
-            <ul><a href = "https://drive.google.com/file/d/1Ii78DwrgXD3uzFGCcj1JIZ6Y4KjeDm_5/view?usp=sharing"> Application </a></ul>
-            <ul><a href = "https://drive.google.com/file/d/14MEP0q9VOUBzM8WpRsEsWddfVoGNDP2w/view?usp=sharing"> Resume</a></ul>
-	  <ul><a href = "https://drive.google.com/file/d/1dJCyA-PtgKCgGFO9VuTZbQ8VqOIL8BRE/view?usp=sharing"> Schedule </a></ul>
-          </ul>  -->
+           <ul>    
+           <li><b>James Liu Tang</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1PDgZl34wteJc7dXAkR_iiLZAgYV0uacW/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1FsxIir6xgBzG8hNnphiTOWukMkkhk4lW/view?usp=sharing"> Resume</a></ul>
+	  <ul><a href = "https://drive.google.com/file/d/184MjOQOWRfTnRcEc4s6R8Jj-2brnw8cq/view?usp=sharing"> Schedule </a></ul>
+          </ul> 
 
           <h3>VP of Service</h3>
 <!-- 	    <ul>
