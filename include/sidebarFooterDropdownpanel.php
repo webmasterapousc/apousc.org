@@ -97,7 +97,7 @@ HERE;
 		<li><a href="../information/finance.php">Finance</a></li>
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
 		<li><a href="../information/announcements.php">Announcements</a></li>
-		<li><a href="../information/documents.php">Documents</a></li>
+<!-- 		<li><a href="../information/documents.php">Documents</a></li> -->
 		<li><a href="../information/forms.php">Forms</a></li>
 		<li><a href="../information/academic_resources.php">Academic Resources</a></li>
 		<!--<li><a href="requirements.php">Requirements</a></li>-->
