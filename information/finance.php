@@ -29,7 +29,7 @@ include_once("include/topnav.php");
 ?>
 <br />
 			<h2>Finance</h2>
-			<p>If you don't see what you're looking for, just contact Lindsey Yu or Felicia Tejawinata!</p>
+			<p>If you don't see what you're looking for, just contact Shania Wang or Michelle Ramos!</p>
 
                 <h3>Spring 2021 Information</h3>
                 <ul>
