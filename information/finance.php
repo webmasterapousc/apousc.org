@@ -77,7 +77,7 @@ include_once("include/topnav.php");
 				
 				<h3>Reimbursements</h3>
 				
-				<p>In order to get reimbursed, please send your receipts to Lindsey Yu or Felicia Tejawinata at finance.apousc@gmail.com.</p>
+				<p>In order to get reimbursed, please send your receipts to Shania Wang or Michelle Ramos at finance.apousc@gmail.com.</p>
 				
 <br />
 				
