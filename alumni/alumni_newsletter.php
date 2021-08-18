@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Google Analytics
 include_once("include/analytics.php");
 
@@ -36,4 +36,4 @@ include_once("include/topnav.php");
 ##################################################
 // Load sidebar, footer, and dropdown stats panel
 include_once("include/sidebarFooterDropdownpanel.php");
-?>
+?> -->
