@@ -295,7 +295,7 @@ if (mysql_num_rows($result) > 0) {
         //alumni liason
         ($session->username == "mwu20216" && $req_event_info['type'] == 6) || 
         //historian
-        ($session->username == "ggenito" && $req_event_info['type'] == 1) ||
+        ($session->username == "ggenito" && $req_event_info['type'] == 5) ||
         //philanthropy chairs
         (($session->username == "chengea" || $session->username == "jwoon") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //directors of recruitment
@@ -324,7 +324,6 @@ if (mysql_num_rows($result) > 0) {
         ($session->username == "nickchen") || // webmaster YOTE
 	($session->username == "ipeng") || // webmaster YAAAAAAAAAAAAAAAAYEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET
 	($session->username == "kjma") //webmaster :DDDDDD
-	//($session->username == "ggenito") //webmaster :DDDDDD
         //LOOK HERE U TWAT :D this is where you give permission to take people off events
         //new webmasters add yourself here!! ^^
     ) {
@@ -409,7 +408,7 @@ if (mysql_num_rows($result) > 0) {
         //alumni liason
         ($session->username == "mwu20216" && $req_event_info['type'] == 6) || 
         //historian
-        ($session->username == "ggenito" && $req_event_info['type'] == 1) ||
+        ($session->username == "ggenito" && $req_event_info['type'] == 5) ||
         //philanthropy chairs
         (($session->username == "chengea" || $session->username == "jwoon") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //directors of recruitment
@@ -438,7 +437,6 @@ if (mysql_num_rows($result) > 0) {
         ($session->username == "nickchen") || // webmaster YOTE
 	($session->username == "ipeng") || // webmaster YAAAAAAAAAAAAAAAAYEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET
 	($session->username == "kjma") //webmaster :DDDDDD
-	//($session->username == "ggenito") //webmaster :DDDDDD
         //LOOK HERE U TWAT :D this is where you give permission to take people off events
         //new webmasters add yourself here!! ^^
     )
