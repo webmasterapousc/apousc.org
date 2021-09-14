@@ -31,53 +31,58 @@ include_once("include/topnav.php");
 			<h2>Finance</h2>
 			<p>If you don't see what you're looking for, just contact Shania Wang or Michelle Ramos!</p>
 
-                <h3>Spring 2021 Information</h3>
+                <h3>Fall 2021 Information</h3>
                 <ul>
-                    <li><a href='https://docs.google.com/spreadsheets/d/1i0HwDQ_ZVqr24Lv5dOUhTYxk0pgVXH9wwkgeSA-VSrI/edit#gid=2132359598'>Budget</a></li>
+                    <li><a href='https://docs.google.com/spreadsheets/d/1rdB9kJOPOf6awQxTiB96YFRWXKXqcHh9RRIUpw23H-A/edit?usp=sharing'>Budget</a></li>
                     <li>Venmo: @apoakusc</li>
                     <li>Email: <a href="mailto:finance.apousc@gmail.com">finance.apousc@gmail.com</a></li>
                 </ul>
                 
                 <h3>Dues</h3>
-                <p>Please contact Lindsey Yu or Felicia Tejawinata if you need additional financial accommodations for our payment plans.</p>
-		<h4><b>Actives: $35 regular, $30 early</b></h4>
-<!--                 <h4><b>Associates: $55 regular, $49 early</b></h4> -->
-		<h4><b>New Members: $150 regular, n/a early</b></h4>
+                <p>Please contact Shania Wang or Michelle Ramos if you need additional financial accommodations for our payment plans.</p>
+		<h4><b>Actives: $100 regular</b></h4>
+                <h4><b>Associates: $55 regular</b></h4>
+<!-- 		<h4><b>New Members: $150 regular, n/a early</b></h4> -->
 		<p><b>Actives Payment Plan (Regular)</b></p>	
                 <ul>
-                    <li>Monday, February 22: $35</li>
-<!--                 	<li>Monday, March 2: $40</li>
-                    <li>Monday, March 30: $40</li> -->
+                    <li>Friday, September 17: $40</li>
+                    <li>Friday, October 1: $30</li>
+                    <li>Friday, October 15: $30</li>
             	</ul>
-            	<p><b>Actives Payment Plan (Early)</b></p>	
+<!--             	<p><b>Actives Payment Plan (Early)</b></p>	
                 <ul>
                     <li>Monday, February 22 (Finish Recruitment Requirements): $30</li>
-<!--                 	<li>Monday, February 24: $35</li>
-                    <li>Monday, March 23: $35</li> -->
-            	</ul>
-<!--             	<p><b>Associates Payment Plan (Regular)</b></p>	
+                	<li>Monday, February 24: $35</li>
+                    <li>Monday, March 23: $35</li>
+            	</ul> -->
+             	<p><b>Associates Payment Plan (Regular)</b></p>	
                 <ul>
-                    <li>Monday, February 10: $25</li>
-                	<li>Monday, March 2: $15</li>
-                    <li>Monday, March 30: $10</li>
+                    <li>Friday, September 17: $20</li>
+                	<li>Friday, October 1: $20</li>
+                    <li>Friday, October 15: $15</li>
             	</ul>
-            	<p><b>Associates Payment Plan (Early)</b></p>	
+<!--            	<p><b>Associates Payment Plan (Early)</b></p>	
                 <ul>
                     <li>Monday, before February 10: $23</li>
                 	<li>Monday, February 24: $13</li>
                     <li>Monday, March 23: $13</li>
             	</ul> -->
-			<p><b>New Members Payment Plan (Regular)</b></p>	
+<!-- 			<p><b>New Members Payment Plan (Regular)</b></p>	
                 <ul>
                     <li>Monday, February 22: $50</li>
                 	<li>Monday, March 8: $50</li>
                     <li>Monday, March 22: $50</li>
-            	</ul>
+            	</ul> -->
 				<p><b>*If you do not pay your dues and do not communicate with the VPs, we will have to freeze your account until the matter is resolved.</b></p>
 				
 				<h3>Reimbursements</h3>
 				
 				<p>In order to get reimbursed, please send your receipts to Shania Wang or Michelle Ramos at finance.apousc@gmail.com.</p>
+		<ul>
+                    <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdmjUhyBOLKsOkqHvPEa7z6pwkte7uHt1W-1ZsdKJSIu4Br-w/viewform?pli=1'>Driver Reimbursement Request Form</a></li>
+		    <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdywg6OkglBkCn6tPhyIbTnJRwqnmWPnXlA_iqVxB1Z7X-t4A/viewform'>Driver Reimbursement General Information Form</a></li>
+		    <li><a href='https://bit.ly/apo-reimbursement'>General APO Reimbursement Form</a></li>
+                </ul>
 				
 <br />
 				
