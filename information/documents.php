@@ -39,20 +39,20 @@ include_once("include/topnav.php");
                     </ul> -->
 		                
 		<h3> Service Opportunities Document for Actives </h3>
-                	<ul>
+                	<!--<ul>
 
                 		<li><a href = "https://docs.google.com/document/d/1-oIO667jdBa0vwfcx2ySUnWTjRPix4A5i2cs8JzNdZY/edit?usp=sharing" target = "_blank"> APO USC Spring 2021 Service + Phil Opportunities (Actives) </a></li>
-                	</ul>
+                	</ul> -->
 
                 <h3> New Member Documents </h3>
-                	<ul>
+<!--                 	<ul>
 
                 		<li><a href = "https://docs.google.com/forms/d/e/1FAIpQLSeddzN3u2WXBybN7SEL1V_c1TdnOUGd0PR1xrSNxB1bQ41pkA/viewform?vc=0&c=0&w=1" target = "_blank"> Lead Form </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1EvoK6dl5HQ4yPwsXTYqdhZVnzQOvoqc8/preview?format=pdf" target = "_blank"> Blank Interview Sheets </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1R3BGfeqEDDnIcHU9EKX3cdo6Nw0hi8LW/preview?format=pdf" target = "_blank"> Alpha Pi Syllabus </a></li>
                 		<li><a href = "https://drive.google.com/file/d/1b5YOGHgOC53KTs1uY7-7b__caCzI33qvbJ3qEMAlsXs/preview?format=pdf" target = "_blank"> Enrichment Points and Strikes</a></li>
 
-                	</ul>
+                	</ul> -->
 
                 <h3>Requirements</h3>
 
