@@ -38,11 +38,11 @@ include_once("include/topnav.php");
                         <li><a href="docs/Spring 2015 Appointed Officer Application.docx">Spring 2015 Appointed Officer Application</a></li>
                     </ul> -->
 		                
-		<h3> Service Opportunities Document for Actives </h3>
-                	<!--<ul>
+		<h3> Extra Opportunities for Actives </h3>
+                	<ul>
 
-                		<li><a href = "https://docs.google.com/document/d/1-oIO667jdBa0vwfcx2ySUnWTjRPix4A5i2cs8JzNdZY/edit?usp=sharing" target = "_blank"> APO USC Spring 2021 Service + Phil Opportunities (Actives) </a></li>
-                	</ul> -->
+                		<li><a href = "https://docs.google.com/document/d/1pn-ziU0mPktuEIpjjbMkLmPAZUX9Ac1o_Uuv8bcNs74/edit?usp=sharing" target = "_blank"> D&I Opportunities</a></li>
+                	</ul>
 
                 <h3> New Member Documents </h3>
 <!--                 	<ul>
