@@ -43,6 +43,10 @@ include_once("include/topnav.php");
 
                 		<li><a href = "https://docs.google.com/document/d/1pn-ziU0mPktuEIpjjbMkLmPAZUX9Ac1o_Uuv8bcNs74/edit?usp=sharing" target = "_blank"> D&I Opportunities</a></li>
                 	</ul>
+                	<ul>
+
+                		<li><a href = "https://docs.google.com/spreadsheets/d/1lCCRz0nA3raejqXYLtyp9kCoU0Ifqsjh-GvsyyR458U/htmlview" target = "_blank"> Service + Phil Opportunities (Fall 2021)</a></li>
+                	</ul>
 
                 <h3> New Member Documents </h3>
 <!--                 	<ul>
