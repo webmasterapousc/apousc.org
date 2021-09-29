@@ -310,6 +310,8 @@ if (mysql_num_rows($result) > 0) {
         ($session->username == "mlwang" && $req_event_info['type'] == 16) ||
         //sectionals chair
         // ($session->username == CURRENT_SECTIONALS_CHAIR && $req_event_info['type']==9)  || 
+	//president
+	($session->username == "anjelict") ||
         //webmasters
         ($session->username == "kaiyunhs") || //webmaster (S2017)
         ($session->username == "mvong") || //webmaster (F2016)
@@ -423,6 +425,8 @@ if (mysql_num_rows($result) > 0) {
         ($session->username == "mlwang" && $req_event_info['type'] == 16) ||
         //sectionals chair
         // ($session->username == CURRENT_SECTIONALS_CHAIR && $req_event_info['type']==9)  || 
+	//president
+	($session->username == "anjelict") ||
         //webmasters
         ($session->username == "kaiyunhs") || //webmaster (S2017)
         ($session->username == "mvong") || //webmaster (F2016)
