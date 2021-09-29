@@ -36,7 +36,7 @@ include_once("include/topnav.php");
 					<ul>
            					<li><a href="https://forms.gle/4jdZvNKVDNULs8BH8">APO Chegg Request Form</a></li>
 						<li><a href="https://docs.google.com/spreadsheets/d/1T4rq8Lrn3aT7DWqzACcQPGi55NcQQBjDebeICYm2kYY/edit?usp=sharing">APO Rate My Professor</a></li>
-						<p style="margin-left: 40px"><a href="https://docs.google.com/forms/d/1juFFfm194F-G-jvGt73iTJqavQjz8H86NXeb84g6bwk/edit" target = "_blank">  Rate My Professor Submission Form</a></p>
+						<p style="margin-left: 40px"><a href="https://forms.gle/MrRESyHe4PR8gP4x5" target = "_blank">  Rate My Professor Submission Form</a></p>
 						<li><a href="https://skydrive.live.com/"  target = "_blank">Test Bank</a> (<b>username:</b> membership.apousc@gmail.com <b>PW:</b> Forgetmenot)</li>
 						<p style="margin-left: 40px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5CeE3p2uNKBla-K660MKXDRMBgadoBiKNcFqhpkenvTM4kg/viewform" target = "_blank">  Test Bank Submission Form</a></p>
 						<li><a href="https://docs.google.com/spreadsheets/d/1iM_FjljVmDGYxuDT_VGWVCiKi0I0lhMDaiXMAdskcv4/edit#gid=0">Mentoring Resources</a></li>
