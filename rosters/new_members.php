@@ -28,7 +28,9 @@ include_once("include/topnav.php");
 	if ($session->logged_in) {
 ?>
 <br />
-			<h2>Hi if you're seeing this :D</h2>
+<!-- add Alpha Sigma class -->
+			<h2>Hi <3</h2>
+
 
 
                 		
