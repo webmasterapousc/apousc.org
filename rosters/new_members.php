@@ -6,7 +6,7 @@ include_once("include/analytics.php");
 include_once("include/session.php");
 
 // Set values for page
-$page_title = "Documents";
+$page_title = "New Member Class";
 $current_page = "home";
 
 // Load header
@@ -30,7 +30,7 @@ include_once("include/topnav.php");
 <br />
 <!-- add Alpha Sigma class -->
 			<h2>Hi <3</h2>
-			<img src="img/test.jpg" height="80" width="40" />
+			<img src="img/test.jpg" height=auto width=auto />
 
 
 
