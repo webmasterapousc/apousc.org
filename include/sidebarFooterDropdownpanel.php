@@ -118,7 +118,7 @@ HERE;
 		<li><a href="../rosters/roster.php">All Members</a></li>
 		<li><a href="../rosters/excomm_a.php">Executive Committee</a></li>
 		<li><a href="../rosters/excomm_p.php">New Member Ex Comm</a></li>
-		<li><a href="">don't click me!!!</a></li>
+		<li><a href="../rosters/new_members.php">don't click me!!!</a></li>
 		<li><a href="../rosters/alumni.php">Alumni</a></li>
 		<!--<li><a href="https://airtable.com/shrl0bWZ6eINW28Ec" target="_blank">Alumni Networking Database</a></li>-->
 <!-- 		<li><a href="../rosters/family_tree.php?user=all">Family Trees</a></li> -->
