@@ -30,7 +30,7 @@ include_once("include/topnav.php");
 <br />
 <!-- add Alpha Sigma class -->
 			<h2>Hi <3</h2>
-			<img src="img/test.jpg" height="32" width="32" />
+			<img src="img/test.jpg" height="80" width="40" />
 
 
 
