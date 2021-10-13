@@ -69,6 +69,7 @@ include_once("include/topnav.php");
                 	
                 <h3>Reference Documents</h3>
 					<ul>
+						<li><a href="https://docs.google.com/document/d/1_NwPwC5hdDuhlNMXvF916Hz3B_9rZxPi9g-rOCR1lBY/edit?usp=sharing">APO Chapter Project Meeting Notes</a></li>
 						<li><a href="docs/F18_DeclReq.pdf" target = "_blank">Declining Requirement Policy</a></li>
 						<li><a href="https://docs.google.com/spreadsheets/d/127ov46_ZDQnMvgfN4MlC-XS2SOIWMHb6xNXJ-hFuL2k/edit?usp=sharing" target = "_blank">Past Semester Standings</a></li>
 						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/preview?format=pdf">Alpha Kappa Letterhead</a></li>
