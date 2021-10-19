@@ -1693,7 +1693,7 @@ date_default_timezone_set('America/Los_Angeles');
 	 */
 	function isOfficer()
 	{
-		if (($this->position >= 1 && $this->position <= 33)|| $this->position == -1 || $this->isAdmin() ||
+		if (($this->position >= 1 && $this->position <= 20)|| $this->position == -1 || $this->isAdmin() ||
 		   $this->username == "kjma" || // webmaster
 		   $this->username == "jameslta" || // pledge master
 		   $this->username == "ipeng" || // puncle
