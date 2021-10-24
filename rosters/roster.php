@@ -37,7 +37,8 @@ include_once("include/topnav.php");
 						<th scope="col"><a href="roster.php?order=first&amp;sort=<?php echo $ascdesc; ?>">First Name</a></th>
 						<th scope="col"><a href="roster.php?order=last&amp;sort=<?php echo $ascdesc; ?>">Last Name</a></th>
 						<th scope="col"><a href="roster.php?order=status&amp;sort=<?php echo $ascdesc; ?>">Status</a></th>
-<!-- 						<th scope="col"><a href="roster.php?order=family&amp;sort=<?php echo $ascdesc; ?>">Family</a></th> -->
+						<th scope="col"><a href="roster.php?order=family&amp;sort=<?php echo $ascdesc; ?>">Family</a></th> 
+						<!-- comment family until pledges get fams ^-->
 						<th scope="col"><a href="roster.php?order=pledge&amp;sort=<?php echo $ascdesc; ?>">Pledge Semester</a></th> 
 						<?php if ($session->logged_in) {echo "<th scope='col' width='100'>Phone Number</th>";}; ?>
 
