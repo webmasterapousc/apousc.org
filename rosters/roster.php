@@ -94,7 +94,7 @@ include_once("include/topnav.php");
 							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" . $row['fname'] . "</a></td>\n";
 							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" .  $row['lname'] . "</a></td>\n";
 							echo "\t<td>" . $memberStatus[$row['status']] . "</td>\n";
-// 							echo "\t<td>" . $families[$row['family']] . "</td>\n";
+							echo "\t<td>" . $families[$row['family']] . "</td>\n"; //comment this at the beginning of semester until pledges get fams
 							if ($row['year'] <= 2020) {
 								echo "\t<td>" . $pledgeClasses[$row['year'].$row['semester']] . "</td>\n";
 							}
