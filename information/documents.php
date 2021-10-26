@@ -47,8 +47,12 @@ include_once("include/topnav.php");
 
                 		<li><a href = "https://docs.google.com/spreadsheets/d/1lCCRz0nA3raejqXYLtyp9kCoU0Ifqsjh-GvsyyR458U/htmlview" target = "_blank"> Service + Phil Opportunities (Fall 2021)</a></li>
                 	</ul>
+			<ul>
 
-                <h3> New Member Documents </h3>
+                		<li><a href = "https://docs.google.com/spreadsheets/d/1NBAvysusEPn8agwXS8lZ4WF--uXYqezRno5sYKE1zBs/edit?fbclid=IwAR1MelaIzhfud9yR-QK2g7oElZHz1UftqafDcrV7Q-Ndczo1yr_1yWQ6K5c#gid=0" target = "_blank"> IC GBMs </a></li>
+                	</ul>
+
+<!--                 <h3> New Member Documents </h3> -->
 <!--                 	<ul>
 
                 		<li><a href = "https://docs.google.com/forms/d/e/1FAIpQLSeddzN3u2WXBybN7SEL1V_c1TdnOUGd0PR1xrSNxB1bQ41pkA/viewform?vc=0&c=0&w=1" target = "_blank"> Lead Form </a></li>
