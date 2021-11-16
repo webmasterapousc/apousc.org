@@ -67,9 +67,9 @@ include_once("include/topnav.php");
 					<br/><br/>If you would like to comment on a candidate during elections, but would like to stay anonymous to the chapter, 
 					please fill out the <a href="https://forms.gle/V18LS1ijSPFjgvW76">Election Candidate Eval Form</a>
 					
-					<br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://docs.google.com/document/d/1uVfEY7P9IcKabiNCmc2bUr9hYiZR50SeSFyR710v2xk/edit">E-Board Application</a> by 11:59 PM on Wednesday, April 14. 
-					</strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://docs.google.com/document/d/1TP5goDQeJ1hpN6Z9H2wlY6DAevSg_3r2_hMZnui6f6k/edit">A-Board Application </a> 
-						by 11:59 PM on Monday, April 26.</strong></p> 
+					<br/><br/><strong>If you are accepting your nominations, please be sure to submit the <a href="https://docs.google.com/document/d/1assxYKmubw9ykjkO9eAO-qWw44bo0MQc/edit?usp=sharing&ouid=114849692149195937267&rtpof=true&sd=true">E-Board Application</a> by 12:00 PM on WEDNESDAY, NOVEMBER 24. 
+					</strong></br></br><strong>If you would like to apply for an appointed position, please submit your <a href="https://docs.google.com/document/d/18Vd460lAekF7P-1RoF9GFa0hEsk1FhFu/edit?usp=sharing&ouid=114849692149195937267&rtpof=true&sd=true">A-Board Application </a> 
+						by 12:00 PM on TUESDAY, NOVEMBER 30.</strong></p> 
 				
 			</div>
 			<form action="process.php" method="post">
