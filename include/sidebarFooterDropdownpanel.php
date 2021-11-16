@@ -89,9 +89,9 @@ HERE;
 	<h5>Information</h5>
 	<ul>
 		<!--Only needed during Officer Nominations period -->
-<!-- 		<li><a href="../election/nominations.php"><strong>Nominations</strong></a></li> -->
-<!-- 		<li><a href="../election/election_documents.php"><strong>Candidate Documents</strong></a></li>  -->
-<!-- 		<li><a href="https://docs.google.com/document/d/1TP5goDQeJ1hpN6Z9H2wlY6DAevSg_3r2_hMZnui6f6k/edit?usp=sharing"><strong>A-Board Applications</strong></a></li> -->
+		<li><a href="../election/nominations.php"><strong>Nominations</strong></a></li> 
+		<li><a href="../election/election_documents.php"><strong>Candidate Documents</strong></a></li> 
+ 		<li><a href="https://docs.google.com/document/d/1TP5goDQeJ1hpN6Z9H2wlY6DAevSg_3r2_hMZnui6f6k/edit?usp=sharing"><strong>A-Board Applications</strong></a></li>
 		<!--Always Keep-->
 		</b><li><a href="https://docs.google.com/spreadsheets/d/190bqWLHFBr_m9PFzjylaKGczxm9ek0ZpKYNEZCrI5OM/edit#gid=0">Master Doc</a></li>
 		<li><a href="../information/finance.php">Finance</a></li>
