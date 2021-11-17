@@ -39,6 +39,7 @@ include_once("include/topnav.php");
 						<p style="margin-left: 40px"><a href="https://forms.gle/MrRESyHe4PR8gP4x5" target = "_blank">  Rate My Professor Submission Form</a></p>
 						<li><a href="https://skydrive.live.com/"  target = "_blank">Test Bank</a> (<b>username:</b> membership.apousc@gmail.com <b>PW:</b> Forgetmenot)</li>
 						<p style="margin-left: 40px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5CeE3p2uNKBla-K660MKXDRMBgadoBiKNcFqhpkenvTM4kg/viewform" target = "_blank">  Test Bank Submission Form</a></p>
+						<p style="margin-left; 40px"><a href="https://docs.google.com/spreadsheets/d/1W4FYRia8ZOAPYxh9c3_AWsJWzUTfmLHlFuB_0D0hTrc/edit?resourcekey#gid=712533421" target = "_blank"> Test Bank Responses</a></p>
 						<li><a href="https://docs.google.com/spreadsheets/d/1iM_FjljVmDGYxuDT_VGWVCiKi0I0lhMDaiXMAdskcv4/edit#gid=0">Mentoring Resources</a></li>
 					</ul>
 						
