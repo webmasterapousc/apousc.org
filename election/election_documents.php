@@ -52,11 +52,6 @@ include_once("include/topnav.php");
             <ul><a href = "https://drive.google.com/file/d/1evR2r8htlauzaDQf0QjMEWSitStkVqjT/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/1uYpyCvgIiw4XmOmW7PzW9m89yLFAbh9j/view?usp=sharing"> Resume </a></ul>
 	    <ul><a href = "https://drive.google.com/file/d/1XUt2-sANKqcjtHhg7PUjChBBVmsk4L3a/view?usp=sharing"> Schedule </a></ul>
-		    
-	    <li><b>Andrew Li</b></li>
-            <ul><a href = "https://drive.google.com/file/d/1nW6NyKnoOTJXHDU1KSMj1ysjV-9aYUGG/view?usp=sharing"> Application </a></ul>
-            <ul><a href = "https://drive.google.com/file/d/1CAkiqxQYZr-czlny3W3CzN0BKfcwcKrl/view?usp=sharing"> Resume </a></ul>
-	    <ul><a href = "https://drive.google.com/file/d/1sLe3QlN91dUEIftqySy-5XzCPmAewxrT/view?usp=sharing"> Schedule </a></ul>
             </ul>
            
 
