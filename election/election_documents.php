@@ -69,6 +69,11 @@ include_once("include/topnav.php");
             <ul><a href = "https://drive.google.com/file/d/1MaQhjXYuRbmqnYhxsrEeDv0mlyO5GI-A/view?usp=sharing"> Application </a></ul>
             <ul><a href = "https://drive.google.com/file/d/151lFnW2R3xumylV3FrDrRJBQ-fIN8-zI/view?usp=sharing"> Resume </a></ul>
 	    <ul><a href = "https://drive.google.com/file/d/1Bh6l6IdZAP-zE-J7hS5oQXN1FkYrfd-f/view?usp=sharing"> Schedule </a></ul>
+		    
+	<li><b>Bethany Cheng</b></li>
+            <ul><a href = "https://drive.google.com/file/d/1hbK3DBoRiPJqkYLlB5u-LdvBklhOR5Te/view?usp=sharing"> Application </a></ul>
+            <ul><a href = "https://drive.google.com/file/d/1o5Ca4iLHlTJBPNTTT7NyOHxXwgiqoaHB/view?usp=sharing"> Resume </a></ul>
+	    <ul><a href = "https://drive.google.com/file/d/1YReTO5aRcOs0WQ5WeXvTbsDWFzyiBtR1/view?usp=sharing"> Schedule </a></ul>
              </ul> 
 
           <h3>Co-VP of Membership</h3>
