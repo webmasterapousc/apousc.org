@@ -269,37 +269,37 @@ if (mysql_num_rows($result) > 0) {
 	}
 	if (
         //pledge master
-        ($session->username == "jameslta" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) || 
+        ($session->username == "tamhoang" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) || 
         //puncle
-        ($session->username == "ipeng" && $req_event_info['type'] == 5) ||
+        ($session->username == "aaronval" && $req_event_info['type'] == 5) ||
         //puncle
-        ($session->username == "jordanjt" && $req_event_info['type'] == 5) ||
+        ($session->username == "anjelict" && $req_event_info['type'] == 5) ||
 	//pauntie
-	($session->username == "amarizha" && $req_event_info['type'] == 5) ||
+	($session->username == "clarecho" && $req_event_info['type'] == 5) ||
         //vp service
-        ($session->username == "tkyang" && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
+        ($session->username == "jutabha" && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //vps membership
-        (($session->username == "ali068" || $session->username == "lian057") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 14)) || 
+        (($session->username == "alfredot" || $session->username == "samantyl") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 14)) || 
         //vp fellowship
-        ($session->username == "machado" && $req_event_info['type'] == 1) || 
+        ($session->username == "mwu20216" && $req_event_info['type'] == 1) || 
         //vps finance
-        (($session->username == "shaniawa" || $session->username == "mgramos") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 2)) || 
+        (($session->username == "qquan" || $session->username == "lntran") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 2)) || 
         //vp comm
-        ($session->username == "lindsecy" && $req_event_info['type'] == 8) || 
+        ($session->username == "ggenito" && $req_event_info['type'] == 8) || 
         //ic chair
-        ($session->username == "chaubria" && $req_event_info['type'] == 3) || 
+        ($session->username == "rjtsang" && $req_event_info['type'] == 3) || 
         //special events coord
-        ($session->username == "tejawina" && $req_event_info['type'] == 9) || 
+        ($session->username == "woosarah" && $req_event_info['type'] == 9) || 
         //creative director
-        ($session->username == "qquan" && $req_event_info['type'] == 8) || 
+        ($session->username == "dayonlee" && $req_event_info['type'] == 8) || 
         //alumni liason
-        ($session->username == "mwu20216" && $req_event_info['type'] == 6) || 
+        ($session->username == "leman" && $req_event_info['type'] == 6) || 
         //historian
-        ($session->username == "ggenito" && $req_event_info['type'] == 5) ||
+        ($session->username == "kuloszew" && $req_event_info['type'] == 5) ||
         //philanthropy chairs
-        (($session->username == "chengea" || $session->username == "jwoon") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
+        (($session->username == "wahlgren" || $session->username == "bohler") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //directors of recruitment
-        (($session->username == "garywu" || $session->username == "ayalam") && ($req_event_info['type'] == 5 || $req_event_info['type'] == 8)) ||
+        (($session->username == "ipeng" || $session->username == "mlwang") && ($req_event_info['type'] == 5 || $req_event_info['type'] == 8)) ||
         //alpha fam head
         ($session->username == CURRENT_ALPHA_HEAD && $req_event_info['type'] == 10) ||
         //phi fam head
@@ -307,11 +307,11 @@ if (mysql_num_rows($result) > 0) {
         //omega fam head
         ($session->username == CURRENT_OMEGA_HEAD && $req_event_info['type'] == 12) ||
      	//Diversity and Inclusion
-        ($session->username == "mlwang" && $req_event_info['type'] == 16) ||
+        ($session->username == "jfu12446" && $req_event_info['type'] == 16) ||
         //sectionals chair
         // ($session->username == CURRENT_SECTIONALS_CHAIR && $req_event_info['type']==9)  || 
 	//president
-	($session->username == "anjelict") ||
+	($session->username == "tkyang") ||
         //webmasters
         ($session->username == "kaiyunhs") || //webmaster (S2017)
         ($session->username == "mvong") || //webmaster (F2016)
@@ -383,38 +383,38 @@ if (mysql_num_rows($result) > 0) {
                 (($session->username == CURRENT_VP_MEMBERSHIP1 || $session->username == CURRENT_VP_MEMBERSHIP2) && ($req_event_info['type'] == 4 || $req_event_info['type'] == 14)) || 
                 //vp fellowship
                 ($session->username == CURRENT_VP_FELLOWSHIP && $req_event_info['type'] == 1) || 
- //pledge master
-        ($session->username == "jameslta" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) || 
+//pledge master
+        ($session->username == "tamhoang" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) || 
         //puncle
-        ($session->username == "ipeng" && $req_event_info['type'] == 5) ||
+        ($session->username == "aaronval" && $req_event_info['type'] == 5) ||
         //puncle
-        ($session->username == "jordanjt" && $req_event_info['type'] == 5) ||
+        ($session->username == "anjelict" && $req_event_info['type'] == 5) ||
 	//pauntie
-	($session->username == "amarizha" && $req_event_info['type'] == 5) ||
+	($session->username == "clarecho" && $req_event_info['type'] == 5) ||
         //vp service
-        ($session->username == "tkyang" && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
+        ($session->username == "jutabha" && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //vps membership
-        (($session->username == "ali068" || $session->username == "lian057") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 14)) || 
+        (($session->username == "alfredot" || $session->username == "samantyl") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 14)) || 
         //vp fellowship
-        ($session->username == "machado" && $req_event_info['type'] == 1) || 
+        ($session->username == "mwu20216" && $req_event_info['type'] == 1) || 
         //vps finance
-        (($session->username == "shaniawa" || $session->username == "mgramos") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 2)) || 
+        (($session->username == "qquan" || $session->username == "lntran") && ($req_event_info['type'] == 4 || $req_event_info['type'] == 2)) || 
         //vp comm
-        ($session->username == "lindsecy" && $req_event_info['type'] == 8) || 
+        ($session->username == "ggenito" && $req_event_info['type'] == 8) || 
         //ic chair
-        ($session->username == "chaubria" && $req_event_info['type'] == 3) || 
+        ($session->username == "rjtsang" && $req_event_info['type'] == 3) || 
         //special events coord
-        ($session->username == "tejawina" && $req_event_info['type'] == 9) || 
+        ($session->username == "woosarah" && $req_event_info['type'] == 9) || 
         //creative director
-        ($session->username == "qquan" && $req_event_info['type'] == 8) || 
+        ($session->username == "dayonlee" && $req_event_info['type'] == 8) || 
         //alumni liason
-        ($session->username == "mwu20216" && $req_event_info['type'] == 6) || 
+        ($session->username == "leman" && $req_event_info['type'] == 6) || 
         //historian
-        ($session->username == "ggenito" && $req_event_info['type'] == 5) ||
+        ($session->username == "kuloszew" && $req_event_info['type'] == 5) ||
         //philanthropy chairs
-        (($session->username == "chengea" || $session->username == "jwoon") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
+        (($session->username == "wahlgren" || $session->username == "bohler") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //directors of recruitment
-        (($session->username == "garywu" || $session->username == "ayalam") && ($req_event_info['type'] == 5 || $req_event_info['type'] == 8)) ||
+        (($session->username == "ipeng" || $session->username == "mlwang") && ($req_event_info['type'] == 5 || $req_event_info['type'] == 8)) ||
         //alpha fam head
         ($session->username == CURRENT_ALPHA_HEAD && $req_event_info['type'] == 10) ||
         //phi fam head
@@ -422,11 +422,11 @@ if (mysql_num_rows($result) > 0) {
         //omega fam head
         ($session->username == CURRENT_OMEGA_HEAD && $req_event_info['type'] == 12) ||
      	//Diversity and Inclusion
-        ($session->username == "mlwang" && $req_event_info['type'] == 16) ||
+        ($session->username == "jfu12446" && $req_event_info['type'] == 16) ||
         //sectionals chair
         // ($session->username == CURRENT_SECTIONALS_CHAIR && $req_event_info['type']==9)  || 
 	//president
-	($session->username == "anjelict") ||
+	($session->username == "tkyang") ||
         //webmasters
         ($session->username == "kaiyunhs") || //webmaster (S2017)
         ($session->username == "mvong") || //webmaster (F2016)
@@ -802,7 +802,7 @@ if (
 
 	(($session->position >= 25 || $session->position <= 28) && $req_event_info['type'] == 7)
 	||
-	$session->username == "ipeng" // webmaster
+	$session->username == "kjma" // webmaster
 ) {
 	/*************** SIGN UP FOR THE EVENT ***************/
 	?>
