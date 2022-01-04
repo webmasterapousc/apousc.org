@@ -1688,37 +1688,37 @@ date_default_timezone_set('America/Los_Angeles');
 		return True;
 	}
 	/**
-	 * isOfficer - Returns true if currently logged in user is
+	 * - Returns true if currently logged in user is
 	 * an officer, false otherwise.
 	 */
 	function isOfficer()
 	{
 		if (($this->position >= 1 && $this->position <= 20)|| $this->position == -1 || $this->isAdmin() ||
 		   $this->username == "kjma" || // webmaster
-		   $this->username == "jameslta" || // pledge master
-		   $this->username == "ipeng" || // puncle
-		   $this->username == "jordanjt" || // puncle
-		   $this->username == "amarizha" || // pauntie
-		   $this->username == "tkyang" || // service
-		   $this->username == "ali068" || // membership
-		   $this->username == "lian057" || // membership
-		   $this->username == "machado" || // fellowship
-		   $this->username == "shaniawa" || // finance
-		   $this->username == "mgramos" || // finance
-		   $this->username == "lindsecy" || // communications
-		   $this->username == "chaubria" || // interchapter
-		   $this->username == "tejawina" || // sec
-		   $this->username == "qquan" || // creative director
-		   $this->username == "mwu20216" || // almuni
-		   $this->username == "ggenito" || // historian
-		   $this->username == "chengea" || // phil
-		   $this->username == "jwoon" || // phil
-		   $this->username == "ayalam" || // rush
-		   $this->username == "garywu" || // rush
-		   $this->username == "mlwang" || // d&i
-		   //$this->username == "ggenito" ||// omega fam head
-		   $this->username == "lntran" || // phi fam head
-		   $this->username == "jennaogi" // alpha fam head
+		   $this->username == "tamhoang" || // pledge master
+		   $this->username == "aaronval" || // puncle
+		   $this->username == "anjelict" || // puncle
+		   $this->username == "clarecho" || // pauntie
+		   $this->username == "jutabha" || // service
+		   $this->username == "alfredot" || // membership
+		   $this->username == "samantyl" || // membership
+		   $this->username == "mwu20216" || // fellowship
+		   $this->username == "qquan" || // finance
+		   $this->username == "lntran" || // finance
+		   $this->username == "ggenito" || // communications
+		   $this->username == "rjtsang" || // interchapter
+		   $this->username == "woosarah" || // sec
+		   $this->username == "dayonlee" || // creative director
+		   $this->username == "dleman" || // almuni
+		   $this->username == "kuloszew" || // historian
+		   $this->username == "wahlgren" || // phil
+		   $this->username == "bohler" || // phil
+		   $this->username == "ipeng" || // rush
+		   $this->username == "mlwang" || // rush
+		   $this->username == "jfu12446" || // d&i
+// 		   $this->username == "ggenito" ||// omega fam head
+// 		   $this->username == "lntran" || // phi fam head
+// 		   $this->username == "jennaogi" // alpha fam head
 		   )
 			return true;
 		return false;
