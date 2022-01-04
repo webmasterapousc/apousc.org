@@ -98,8 +98,8 @@ HERE;
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
 		<li><a href="../information/announcements.php">Announcements</a></li>
 		<li><a href="../information/documents.php">Documents</a></li>
-		<li><a href="../information/forms.php">Forms</a></li>
-		<li><a href="../information/academic_resources.php">Academic Resources</a></li>
+<!-- 		<li><a href="../information/forms.php">Forms</a></li>
+		<li><a href="../information/academic_resources.php">Academic Resources</a></li> -->
 		<!--<li><a href="requirements.php">Requirements</a></li>-->
 		<!-- <li><a href="../information/archives.php">Archives</a></li> -->
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
@@ -118,7 +118,7 @@ HERE;
 		<li><a href="../rosters/roster.php">All Members</a></li>
 		<li><a href="../rosters/excomm_a.php">Executive Committee</a></li>
 		<li><a href="../rosters/excomm_p.php">New Member Ex Comm</a></li>
-		<li><a href="../rosters/new_members.php">don't click me!!!</a></li>
+<!-- 		<li><a href="../rosters/new_members.php">don't click me!!!</a></li> -->
 		<li><a href="../rosters/alumni.php">Alumni</a></li>
 		<!--<li><a href="https://airtable.com/shrl0bWZ6eINW28Ec" target="_blank">Alumni Networking Database</a></li>-->
 <!-- 		<li><a href="../rosters/family_tree.php?user=all">Family Trees</a></li> -->
