@@ -52,6 +52,30 @@ include_once("include/topnav.php");
                 		<li><a href = "https://docs.google.com/spreadsheets/d/1NBAvysusEPn8agwXS8lZ4WF--uXYqezRno5sYKE1zBs/edit?fbclid=IwAR1MelaIzhfud9yR-QK2g7oElZHz1UftqafDcrV7Q-Ndczo1yr_1yWQ6K5c#gid=0" target = "_blank"> IC GBMs </a></li>
                 	</ul>
 
+		<h3>Forms </h3>
+			<ul>
+<!-- 						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeO9JlApSE76RKqHGlITzFm-WjwCDc41TDNuSz6bIQWVyMkYA/viewform">Open Evaluation Form</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8_c4TqemjrAvio0DxwyMUFv-q9fcNhhzd85PrclDFJz7MJw/viewform">Event Evaluation Form</a></li>
+				<li><a href='https://docs.google.com/forms/d/e/1FAIpQLSftdqT-xgSpVWNHtkmo7T4_L4NHbxt3iZlROEMcPVoxzlGUnw/viewform' target = "_blank">Diversity and Inclusion Survey</a></li>
+				<li><a href='https://forms.gle/jhC3w4TQ5X8grg1C7' target = "_blank">Diversity & Inclusion Event Reflection Form</a></li>
+				<li><a href="https://drive.google.com/file/d/1lNKrfgsSEAuOeZdyZPvuFWw37KZqyM_v/preview?format=pdf" target = "_blank">Outside Service Hours Log</a></li> -->
+				<li><a href="https://forms.gle/myvywQUroWRXGGvF9">APO Service Feedback (Fall 2021)</a></li>
+				<li><a href="https://www.facebook.com/APO-Compliments-Spring-2020-115121043370901/">APO Compliments Form</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdPnubmuQwhKJhf4JtFFxzTDjkflzsvxbmO2DUSQHdlkOI6PA/viewform">TOWNHALL - Bylaw Changes Form</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfwHqdGqvpBEYDECuXez5nMVKWjYrZCMsnyxdA_wn-LrksgJg/viewform">Open Evaluations Form</a></li>
+			</ul>
+
+		 <h3>Academic Documents</h3>
+			<ul>
+				<li><a href="https://forms.gle/4jdZvNKVDNULs8BH8">APO Chegg Request Form</a></li>
+				<li><a href="https://docs.google.com/spreadsheets/d/1T4rq8Lrn3aT7DWqzACcQPGi55NcQQBjDebeICYm2kYY/edit?usp=sharing">APO Rate My Professor</a></li>
+				<p style="margin-left: 40px"><a href="https://forms.gle/MrRESyHe4PR8gP4x5" target = "_blank">  Rate My Professor Submission Form</a></p>
+				<li><a href="https://skydrive.live.com/"  target = "_blank">Test Bank</a> (<b>username:</b> membership.apousc@gmail.com <b>PW:</b> Forgetmenot)</li>
+				<p style="margin-left: 40px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5CeE3p2uNKBla-K660MKXDRMBgadoBiKNcFqhpkenvTM4kg/viewform" target = "_blank">  Test Bank Submission Form</a></p>
+				<p style="margin-left: 40px"><a href="https://docs.google.com/spreadsheets/d/1W4FYRia8ZOAPYxh9c3_AWsJWzUTfmLHlFuB_0D0hTrc/edit?resourcekey#gid=712533421" target = "_blank"> Test Bank Responses</a></p>
+				<li><a href="https://docs.google.com/spreadsheets/d/1iM_FjljVmDGYxuDT_VGWVCiKi0I0lhMDaiXMAdskcv4/edit#gid=0">Mentoring Resources</a></li>
+			</ul>
+
 <!--                 <h3> New Member Documents </h3> -->
 <!--                 	<ul>
 
