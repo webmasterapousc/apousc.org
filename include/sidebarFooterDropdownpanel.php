@@ -91,7 +91,7 @@ HERE;
 		<!--Only needed during Officer Nominations period -->
 <!-- 		<li><a href="../election/nominations.php"><strong>Nominations</strong></a></li> 
 		<li><a href="../election/election_documents.php"><strong>Candidate Documents</strong></a></li>  -->
- 		<li><a href="https://docs.google.com/document/d/18Vd460lAekF7P-1RoF9GFa0hEsk1FhFu/edit?usp=sharing&ouid=114849692149195937267&rtpof=true&sd=true"><strong>A-Board Applications</strong></a></li>
+<!--  		<li><a href="https://docs.google.com/document/d/18Vd460lAekF7P-1RoF9GFa0hEsk1FhFu/edit?usp=sharing&ouid=114849692149195937267&rtpof=true&sd=true"><strong>A-Board Applications</strong></a></li> -->
 		<!--Always Keep-->
 		</b><li><a href="https://docs.google.com/spreadsheets/d/190bqWLHFBr_m9PFzjylaKGczxm9ek0ZpKYNEZCrI5OM/edit#gid=0">Master Doc</a></li>
 		<li><a href="../information/finance.php">Finance</a></li>
