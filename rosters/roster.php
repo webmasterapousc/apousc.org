@@ -37,7 +37,7 @@ include_once("include/topnav.php");
 						<th scope="col"><a href="roster.php?order=first&amp;sort=<?php echo $ascdesc; ?>">First Name</a></th>
 						<th scope="col"><a href="roster.php?order=last&amp;sort=<?php echo $ascdesc; ?>">Last Name</a></th>
 						<th scope="col"><a href="roster.php?order=status&amp;sort=<?php echo $ascdesc; ?>">Status</a></th>
-						<th scope="col"><a href="roster.php?order=family&amp;sort=<?php echo $ascdesc; ?>">Family</a></th> 
+<!-- 						<th scope="col"><a href="roster.php?order=family&amp;sort=<?php echo $ascdesc; ?>">Family</a></th>  -->
 						<!-- comment family until pledges get fams ^-->
 						<th scope="col"><a href="roster.php?order=pledge&amp;sort=<?php echo $ascdesc; ?>">Pledge Semester</a></th> 
 						<?php if ($session->logged_in) {echo "<th scope='col' width='100'>Phone Number</th>";}; ?>
@@ -95,7 +95,7 @@ include_once("include/topnav.php");
 							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" . $row['fname'] . "</a></td>\n";
 							echo "\t<td><a href=\"../members/userinfo.php?user=" . $row['username'] . "\">" .  $row['lname'] . "</a></td>\n";
 							echo "\t<td>" . $memberStatus[$row['status']] . "</td>\n";
-							echo "\t<td>" . $families[$row['family']] . "</td>\n"; //comment this at the beginning of semester until pledges get fams
+// 							echo "\t<td>" . $families[$row['family']] . "</td>\n"; //comment this at the beginning of semester until pledges get fams
 							if ($row['year'] <= 2020) {
 								echo "\t<td>" . $pledgeClasses[$row['year'].$row['semester']] . "</td>\n";
 							}
