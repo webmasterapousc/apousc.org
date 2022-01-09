@@ -105,10 +105,10 @@ HERE;
 		<!--<li><a href="beyond.php">Beyond Alpha Kappa</a></li>-->
 		<!-- <li><li><a href='polls.php'>Polls</a></li>-->
 		<li><a href="../information/support_systems.php">Support Systems</a></li>
-		<li><a href="https://docs.google.com/spreadsheets/d/1jfhuzV2HDxURCe9_0iO9MG2JGiwk3wevOd2ezXmaT-M/edit?usp=sharing"><strong>!!Fellowship Reccuring Series</strong></a></li>
+<!-- 		<li><a href="https://docs.google.com/spreadsheets/d/1jfhuzV2HDxURCe9_0iO9MG2JGiwk3wevOd2ezXmaT-M/edit?usp=sharing"><strong>!!Fellowship Reccuring Series</strong></a></li> -->
 		<li><a href="https://www.facebook.com/apoakcompliments/"><strong>!!APO Compliments</strong></a></li>
 		<li><a href="https://www.youtube.com/watch?v=M0Kf1X7gTIg&feature=youtu.be"><strong>!!APO Discord Tutorial</strong></a></li>
-		<li><a href="https://linktr.ee/apousc"><strong>!!APO Linktree</strong></a></li>
+<!-- 		<li><a href="https://linktr.ee/apousc"><strong>!!APO Linktree</strong></a></li> -->
 	</ul>
 </li>
 
@@ -117,7 +117,7 @@ HERE;
 	<ul>
 		<li><a href="../rosters/roster.php">All Members</a></li>
 		<li><a href="../rosters/excomm_a.php">Executive Committee</a></li>
-		<li><a href="../rosters/excomm_p.php">New Member Ex Comm</a></li>
+<!-- 		<li><a href="../rosters/excomm_p.php">New Member Ex Comm</a></li> -->
 <!-- 		<li><a href="../rosters/new_members.php">don't click me!!!</a></li> -->
 		<li><a href="../rosters/alumni.php">Alumni</a></li>
 		<!--<li><a href="https://airtable.com/shrl0bWZ6eINW28Ec" target="_blank">Alumni Networking Database</a></li>-->
