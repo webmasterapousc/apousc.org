@@ -229,7 +229,7 @@ include_once("include/convert_text.php");
 ?>
 // <!--/This is where we define the /-->
 <!-- <table class="calendar pretty" cellpadding="0" cellspacing="0" border="0"> -->
-<!-- <caption class="calendar-month"><span class="calendar-prev"><?php echo "<a href=\"calendar.php?month=".$prevmonth."&amp;year=".$prevyear."\">&laquo;&nbsp;".$monthsOfTheYear[$prevmonth]."</a>"; ?></span>&nbsp;<?php echo ($monthsOfTheYear[$curmonth]." ".$curyear); ?>&nbsp;<span class="calendar-next"><?php echo "<a href=\"calendar.php?month=".$nextmonth."&amp;year=".$nextyear."\">".$monthsOfTheYear[$nextmonth]."&nbsp;&raquo;</a>"; ?></span></caption> -->
+<!-- <caption class="calendar-month"><span class="calendar-prev"><?php //echo "<a href=\"calendar.php?month=".$prevmonth."&amp;year=".$prevyear."\">&laquo;&nbsp;".$monthsOfTheYear[$prevmonth]."</a>"; ?></span>&nbsp;<?php //echo ($monthsOfTheYear[$curmonth]." ".$curyear); ?>&nbsp;<span class="calendar-next"><?php //echo "<a href=\"calendar.php?month=".$nextmonth."&amp;year=".$nextyear."\">".$monthsOfTheYear[$nextmonth]."&nbsp;&raquo;</a>"; ?></span></caption> -->
 <!-- <tr class="header-row"><th abbr="Sunday">Sun</th><th abbr="Monday">Mon</th><th abbr="Tuesday">Tue</th><th abbr="Wednesday">Wed</th><th abbr="Thursday">Thu</th><th abbr="Friday">Fri</th><th abbr="Saturday">Sat</th></tr> -->
 <?php
 // 	echo ("<tr class=\"day-row\">");
