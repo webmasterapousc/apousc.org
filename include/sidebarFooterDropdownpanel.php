@@ -94,7 +94,7 @@ HERE;
 <!--  		<li><a href="https://docs.google.com/document/d/18Vd460lAekF7P-1RoF9GFa0hEsk1FhFu/edit?usp=sharing&ouid=114849692149195937267&rtpof=true&sd=true"><strong>A-Board Applications</strong></a></li> -->
 		<li><a href = "https://experienced-allosaurus-19a.notion.site/ACTIVE-FAQs-f697522e3ac64003b2902479bbb44b5e"><strong>FAQ for Recruitment</strong></a></li>
 		<!--Always Keep-->
-		</b><li><a href="https://docs.google.com/spreadsheets/d/134Vp8w4zez11fgD49xeZWLxULwmD1Dddc2WRwRjOmNc">Master Doc</a></li>
+		</b><li><a href="https://docs.google.com/spreadsheets/d/134Vp8w4zez11fgD49xeZWLxULwmD1Dddc2WRwRjOmNc" target="_blank">Master Doc</a></li>
 		<li><a href="../information/finance.php">Finance</a></li>
 		<!--<li><a href="https://drive.google.com/file/d/0B2ce5YDkshNjQzVwMGFWQURkVF9telZiNzJoaGpvT05kU0Mw/view?usp=sharing">Intern Application</a></li>-->	
 		<li><a href="../information/announcements.php">Announcements</a></li>
