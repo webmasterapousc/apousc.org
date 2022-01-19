@@ -29,38 +29,38 @@ include_once("include/topnav.php");
 ?>
 <br />
 			<h2>Finance</h2>
-			<p>If you don't see what you're looking for, just contact Shania Wang or Michelle Ramos!</p>
+			<p>If you don't see what you're looking for, just contact Queenie Quan or Lilly Tran!</p>
 
-                <h3>Fall 2021 Information</h3>
+                <h3>Spring 2022 Information</h3>
                 <ul>
-                    <li><a href='https://docs.google.com/spreadsheets/d/1rdB9kJOPOf6awQxTiB96YFRWXKXqcHh9RRIUpw23H-A/edit?usp=sharing'>Budget</a></li>
+                    <li><a href=''>Budget</a></li>
                     <li>Venmo: @apoakusc</li>
                     <li>Email: <a href="mailto:finance.apousc@gmail.com">finance.apousc@gmail.com</a></li>
                 </ul>
                 
                 <h3>Dues</h3>
-                <p>Please contact Shania Wang or Michelle Ramos if you need additional financial accommodations for our payment plans.</p>
-		<h4><b>Actives: $100 regular</b></h4>
-                <h4><b>Associates: $55 regular</b></h4>
+                <p>Please contact Queenie Quan or Lilly Tran if you need additional financial accommodations for our payment plans.</p>
+<!-- 		<h4><b>Actives: $100 regular</b></h4>
+                <h4><b>Associates: $55 regular</b></h4> -->
 <!-- 		<h4><b>New Members: $150 regular, n/a early</b></h4> -->
-		<p><b>Actives Payment Plan (Regular)</b></p>	
+<!-- 		<p><b>Actives Payment Plan (Regular)</b></p>	
                 <ul>
                     <li>Friday, September 17: $40</li>
                     <li>Friday, October 1: $30</li>
                     <li>Friday, October 15: $30</li>
-            	</ul>
+            	</ul> -->
 <!--             	<p><b>Actives Payment Plan (Early)</b></p>	
                 <ul>
                     <li>Monday, February 22 (Finish Recruitment Requirements): $30</li>
                 	<li>Monday, February 24: $35</li>
                     <li>Monday, March 23: $35</li>
             	</ul> -->
-             	<p><b>Associates Payment Plan (Regular)</b></p>	
+<!--              	<p><b>Associates Payment Plan (Regular)</b></p>	
                 <ul>
                     <li>Friday, September 17: $20</li>
                 	<li>Friday, October 1: $20</li>
                     <li>Friday, October 15: $15</li>
-            	</ul>
+            	</ul> -->
 <!--            	<p><b>Associates Payment Plan (Early)</b></p>	
                 <ul>
                     <li>Monday, before February 10: $23</li>
@@ -77,11 +77,11 @@ include_once("include/topnav.php");
 				
 				<h3>Reimbursements</h3>
 				
-				<p>In order to get reimbursed, please send your receipts to Shania Wang or Michelle Ramos at finance.apousc@gmail.com.</p>
+				<p>In order to get reimbursed, please send your receipts to Queenie Quan or Lilly Tran at finance.apousc@gmail.com.</p>
 		<ul>
-                    <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdmjUhyBOLKsOkqHvPEa7z6pwkte7uHt1W-1ZsdKJSIu4Br-w/viewform?pli=1'>Driver Reimbursement Request Form</a></li>
-		    <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdywg6OkglBkCn6tPhyIbTnJRwqnmWPnXlA_iqVxB1Z7X-t4A/viewform'>Driver Reimbursement General Information Form</a></li>
-		    <li><a href='https://bit.ly/apo-reimbursement'>General APO Reimbursement Form</a></li>
+                    <li><a href='https://forms.gle/yVdbgUXsz2ahTTqT8'>Driver Reimbursement Request Form</a></li>
+		    <li><a href='https://forms.gle/AnGrSUY3D7yFGW7N8'>Driver Reimbursement General Information Form</a></li>
+		    <li><a href='https://forms.gle/djetcadNP4LsKrzT7'>General APO Reimbursement Form</a></li>
                 </ul>
 				
 <br />
