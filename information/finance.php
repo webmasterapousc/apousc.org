@@ -82,6 +82,9 @@ include_once("include/topnav.php");
                     <li><a href='https://forms.gle/yVdbgUXsz2ahTTqT8'>Driver Reimbursement Request Form</a></li>
 		    <li><a href='https://forms.gle/AnGrSUY3D7yFGW7N8'>Driver Reimbursement General Information Form</a></li>
 		    <li><a href='https://forms.gle/djetcadNP4LsKrzT7'>General APO Reimbursement Form</a></li>
+			<li><a href='https://forms.gle/QXumnz4a7fb8QZJi6'>Financial Aid Application</a></li>
+			<li><a href='https://docs.google.com/spreadsheets/d/13YhwYRl9CbMReKS98Kb_6XWKXJT8-tWoZs4HRDJEPH0/edit#gid=0'>Dues Breakdown</a></li>
+			<li><a href='https://docs.google.com/spreadsheets/d/1x9XIh9mjRXdK5HI4_aqES2yVP0TQ-4vDHp-YxXfPsJo/edit?usp=sharing'>Semester Calendar</a></li>
                 </ul>
 				
 <br />
