@@ -33,12 +33,12 @@ include_once("include/topnav.php");
 
                 <h3>Spring 2022 Information</h3>
                 <ul>
-                    <li><a href='https://docs.google.com/spreadsheets/d/1qaElKBSyFNGHO4g7xOjabfuVr89o2-eh84t5SgJtRiw/edit?usp=sharing'>Budget</a></li>
+                    <li><a href='https://docs.google.com/spreadsheets/d/1qaElKBSyFNGHO4g7xOjabfuVr89o2-eh84t5SgJtRiw/edit?usp=sharing' target = "_blank">Budget</a></li>
                     <li>Venmo: @apoakusc</li>
                     <li>Email: <a href="mailto:finance.apousc@gmail.com">finance.apousc@gmail.com</a></li>
-			<li><a href='https://forms.gle/QXumnz4a7fb8QZJi6'>Financial Aid Application</a></li>
-			<li><a href='https://docs.google.com/spreadsheets/d/13YhwYRl9CbMReKS98Kb_6XWKXJT8-tWoZs4HRDJEPH0/edit#gid=0'>Dues Breakdown</a></li>
-			<li><a href='https://docs.google.com/spreadsheets/d/1x9XIh9mjRXdK5HI4_aqES2yVP0TQ-4vDHp-YxXfPsJo/edit?usp=sharing'>Semester Calendar</a></li>
+			<li><a href='https://forms.gle/QXumnz4a7fb8QZJi6' target = "_blank">Financial Aid Application</a></li>
+			<li><a href='https://docs.google.com/spreadsheets/d/13YhwYRl9CbMReKS98Kb_6XWKXJT8-tWoZs4HRDJEPH0/edit#gid=0' target = "_blank">Dues Breakdown</a></li>
+			<li><a href='https://docs.google.com/spreadsheets/d/1x9XIh9mjRXdK5HI4_aqES2yVP0TQ-4vDHp-YxXfPsJo/edit?usp=sharing' target = "_blank">Semester Calendar</a></li>
                 </ul>
                 
                 <h3>Dues</h3>
@@ -74,9 +74,9 @@ include_once("include/topnav.php");
 				
 				<p>In order to get reimbursed, please send your receipts to Queenie Quan or Lilly Tran at finance.apousc@gmail.com.</p>
 		<ul>
-                    <li><a href='https://forms.gle/yVdbgUXsz2ahTTqT8'>Driver Reimbursement Request Form</a></li>
-		    <li><a href='https://forms.gle/AnGrSUY3D7yFGW7N8'>Driver Reimbursement General Information Form</a></li>
-		    <li><a href='https://forms.gle/djetcadNP4LsKrzT7'>General APO Reimbursement Form</a></li>
+                    <li><a href='https://forms.gle/yVdbgUXsz2ahTTqT8' target = "_blank">Driver Reimbursement Request Form</a></li>
+		    <li><a href='https://forms.gle/AnGrSUY3D7yFGW7N8' target = "_blank">Driver Reimbursement General Information Form</a></li>
+		    <li><a href='https://forms.gle/djetcadNP4LsKrzT7' target = "_blank">General APO Reimbursement Form</a></li>
                 </ul>
 				
 <br />
