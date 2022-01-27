@@ -33,40 +33,35 @@ include_once("include/topnav.php");
 
                 <h3>Spring 2022 Information</h3>
                 <ul>
-                    <li><a href=''>Budget</a></li>
+                    <li><a href='https://docs.google.com/spreadsheets/d/1qaElKBSyFNGHO4g7xOjabfuVr89o2-eh84t5SgJtRiw/edit?usp=sharing'>Budget</a></li>
                     <li>Venmo: @apoakusc</li>
                     <li>Email: <a href="mailto:finance.apousc@gmail.com">finance.apousc@gmail.com</a></li>
+			<li><a href='https://forms.gle/QXumnz4a7fb8QZJi6'>Financial Aid Application</a></li>
+			<li><a href='https://docs.google.com/spreadsheets/d/13YhwYRl9CbMReKS98Kb_6XWKXJT8-tWoZs4HRDJEPH0/edit#gid=0'>Dues Breakdown</a></li>
+			<li><a href='https://docs.google.com/spreadsheets/d/1x9XIh9mjRXdK5HI4_aqES2yVP0TQ-4vDHp-YxXfPsJo/edit?usp=sharing'>Semester Calendar</a></li>
                 </ul>
                 
                 <h3>Dues</h3>
                 <p>Please contact Queenie Quan or Lilly Tran if you need additional financial accommodations for our payment plans.</p>
-<!-- 		<h4><b>Actives: $100 regular</b></h4>
-                <h4><b>Associates: $55 regular</b></h4> -->
+		<p>Payments due @ 11:59 PM of each deadline or your account will be frozen :(</p>
+		<h4><b>Actives: $140 early bird, $145 regular</b></h4>
+                <h4><b>Associates: $55 regular</b></h4>
 <!-- 		<h4><b>New Members: $150 regular, n/a early</b></h4> -->
-<!-- 		<p><b>Actives Payment Plan (Regular)</b></p>	
+		<p><b>Actives Payment Plan</b></p>	
                 <ul>
-                    <li>Friday, September 17: $40</li>
-                    <li>Friday, October 1: $30</li>
-                    <li>Friday, October 15: $30</li>
-            	</ul> -->
-<!--             	<p><b>Actives Payment Plan (Early)</b></p>	
+			<li> Pay in full early bird - January 31: $140</li>
+                    <li>January 31: $50</li>
+                    <li>February 14: $50</li>
+                    <li>February 28: $45</li>
+            	</ul>
+
+             	<p><b>Associates Payment Plan</b></p>	
                 <ul>
-                    <li>Monday, February 22 (Finish Recruitment Requirements): $30</li>
-                	<li>Monday, February 24: $35</li>
-                    <li>Monday, March 23: $35</li>
-            	</ul> -->
-<!--              	<p><b>Associates Payment Plan (Regular)</b></p>	
-                <ul>
-                    <li>Friday, September 17: $20</li>
-                	<li>Friday, October 1: $20</li>
-                    <li>Friday, October 15: $15</li>
-            	</ul> -->
-<!--            	<p><b>Associates Payment Plan (Early)</b></p>	
-                <ul>
-                    <li>Monday, before February 10: $23</li>
-                	<li>Monday, February 24: $13</li>
-                    <li>Monday, March 23: $13</li>
-            	</ul> -->
+                    <li>January 31: $20</li>
+                	<li>February 14: $20</li>
+                    <li>February 28: $15</li>
+            	</ul>
+
 <!-- 			<p><b>New Members Payment Plan (Regular)</b></p>	
                 <ul>
                     <li>Monday, February 22: $50</li>
@@ -82,9 +77,6 @@ include_once("include/topnav.php");
                     <li><a href='https://forms.gle/yVdbgUXsz2ahTTqT8'>Driver Reimbursement Request Form</a></li>
 		    <li><a href='https://forms.gle/AnGrSUY3D7yFGW7N8'>Driver Reimbursement General Information Form</a></li>
 		    <li><a href='https://forms.gle/djetcadNP4LsKrzT7'>General APO Reimbursement Form</a></li>
-			<li><a href='https://forms.gle/QXumnz4a7fb8QZJi6'>Financial Aid Application</a></li>
-			<li><a href='https://docs.google.com/spreadsheets/d/13YhwYRl9CbMReKS98Kb_6XWKXJT8-tWoZs4HRDJEPH0/edit#gid=0'>Dues Breakdown</a></li>
-			<li><a href='https://docs.google.com/spreadsheets/d/1x9XIh9mjRXdK5HI4_aqES2yVP0TQ-4vDHp-YxXfPsJo/edit?usp=sharing'>Semester Calendar</a></li>
                 </ul>
 				
 <br />
