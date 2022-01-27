@@ -46,7 +46,7 @@ include_once("include/topnav.php");
 		<p>Payments due @ 11:59 PM of each deadline or your account will be frozen :(</p>
 		<h4><b>Actives: $140 early bird, $145 regular</b></h4>
                 <h4><b>Associates: $55 regular</b></h4>
-<!-- 		<h4><b>New Members: $150 regular, n/a early</b></h4> -->
+		<h4><b>New Members: $325 regular</b></h4>
 		<p><b>Actives Payment Plan</b></p>	
                 <ul>
 			<li> Pay in full early bird - January 31: $140</li>
