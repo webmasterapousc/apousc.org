@@ -66,7 +66,7 @@ include_once("include/topnav.php");
 				<li><a href="https://forms.gle/myvywQUroWRXGGvF9" target = "_blank">APO Service Feedback (Fall 2021)</a></li>
 				<li><a href="https://www.facebook.com/APO-Compliments-Spring-2020-115121043370901/" target = "_blank">APO Compliments Form</a></li>
 				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdPnubmuQwhKJhf4JtFFxzTDjkflzsvxbmO2DUSQHdlkOI6PA/viewform" target = "_blank">TOWNHALL - Bylaw Changes Form</a></li>
-				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfwHqdGqvpBEYDECuXez5nMVKWjYrZCMsnyxdA_wn-LrksgJg/viewform" target = "_blank">Open Evaluations Form</a></li>
+				<li><a href="https://forms.gle/wjtJziux5ufDEyvr8" target = "_blank">Open Evaluations Form</a></li>
 			</ul>
 
 		 <h3>Academic Documents</h3>
@@ -100,7 +100,7 @@ include_once("include/topnav.php");
                 	
                 <h3>Reference Documents</h3>
 					<ul>
-						<li><a href="https://docs.google.com/document/d/1_NwPwC5hdDuhlNMXvF916Hz3B_9rZxPi9g-rOCR1lBY/edit?usp=sharing">APO Chapter Project Meeting Notes</a></li>
+<!-- 						<li><a href="https://docs.google.com/document/d/1_NwPwC5hdDuhlNMXvF916Hz3B_9rZxPi9g-rOCR1lBY/edit?usp=sharing">APO Chapter Project Meeting Notes</a></li> -->
 						<li><a href="docs/F18_DeclReq.pdf" target = "_blank">Declining Requirement Policy</a></li>
 						<li><a href="https://docs.google.com/spreadsheets/d/127ov46_ZDQnMvgfN4MlC-XS2SOIWMHb6xNXJ-hFuL2k/edit?usp=sharing" target = "_blank">Past Semester Standings</a></li>
 						<li><a href="https://drive.google.com/file/d/1Rc7qMa0AZRMHBiirImLnB1_dFfigAEks/preview?format=pdf">Alpha Kappa Letterhead</a></li>
