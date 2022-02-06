@@ -386,11 +386,11 @@ if (mysql_num_rows($result) > 0) {
 //pledge master
         ($session->username == "tamhoang" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) || 
         //puncle
-        ($session->username == "aaronval" && $req_event_info['type'] == 5) ||
+        ($session->username == "aaronval" && $req_event_info['type'] == 5) || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
         //puncle
-        ($session->username == "anjelict" && $req_event_info['type'] == 5) ||
+        ($session->username == "anjelict" && $req_event_info['type'] == 5) || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
 	//pauntie
-	($session->username == "clarecho" && $req_event_info['type'] == 5) ||
+	($session->username == "clarecho" && $req_event_info['type'] == 5) || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
         //vp service
         ($session->username == "jutabha" && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //vps membership
