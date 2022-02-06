@@ -271,11 +271,11 @@ if (mysql_num_rows($result) > 0) {
         //pledge master
         ($session->username == "tamhoang" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) || 
         //puncle
-        ($session->username == "aaronval" && ($req_event_info['type'] == 5) || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
+        ($session->username == "aaronval" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
         //puncle
-        ($session->username == "anjelict" && ($req_event_info['type'] == 5) || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
+        ($session->username == "anjelict" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
 	//pauntie
-	($session->username == "clarecho" && ($req_event_info['type'] == 5) || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
+	($session->username == "clarecho" && ($req_event_info['type'] == 5 || $req_event_info['type'] == 9 || $req_event_info['type'] == 14)) ||
         //vp service
         ($session->username == "jutabha" && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //vps membership
@@ -296,6 +296,8 @@ if (mysql_num_rows($result) > 0) {
         ($session->username == "leman" && $req_event_info['type'] == 6) || 
         //historian
         ($session->username == "kuloszew" && $req_event_info['type'] == 5) ||
+	//Diversity and Inclusion
+        ($session->username == "jfu12446" && $req_event_info['type'] == 16) ||
         //philanthropy chairs
         (($session->username == "wahlgren" || $session->username == "bohler") && ($req_event_info['type'] == 7 || $req_event_info['type'] == 0)) ||
         //directors of recruitment
@@ -306,8 +308,6 @@ if (mysql_num_rows($result) > 0) {
         ($session->username == CURRENT_PHI_HEAD && $req_event_info['type'] == 11) || 
         //omega fam head
         ($session->username == CURRENT_OMEGA_HEAD && $req_event_info['type'] == 12) ||
-     	//Diversity and Inclusion
-        ($session->username == "jfu12446" && $req_event_info['type'] == 16) ||
         //sectionals chair
         // ($session->username == CURRENT_SECTIONALS_CHAIR && $req_event_info['type']==9)  || 
 	//president
