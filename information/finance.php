@@ -62,7 +62,7 @@ include_once("include/topnav.php");
                     <li>February 28: $15</li>
             	</ul>
 
-		<p><b>New Members Payment Plan (Regular)</b></p>	
+		<p><b>New Members Payment Plan</b></p>	
                 <ul>
                     <li>February 21: $125</li>
                 	<li>March 7: $100</li>
