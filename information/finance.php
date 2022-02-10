@@ -62,12 +62,12 @@ include_once("include/topnav.php");
                     <li>February 28: $15</li>
             	</ul>
 
-<!-- 			<p><b>New Members Payment Plan (Regular)</b></p>	
+		<p><b>New Members Payment Plan (Regular)</b></p>	
                 <ul>
-                    <li>Monday, February 22: $50</li>
-                	<li>Monday, March 8: $50</li>
-                    <li>Monday, March 22: $50</li>
-            	</ul> -->
+                    <li>February 21: $125</li>
+                	<li>March 7: $100</li>
+                    <li>March 28: $100</li>
+            	</ul>
 				<p><b>*If you do not pay your dues and do not communicate with the VPs, we will have to freeze your account until the matter is resolved.</b></p>
 				
 				<h3>Reimbursements</h3>
