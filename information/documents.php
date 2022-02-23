@@ -116,7 +116,7 @@ include_once("include/topnav.php");
 									<li><a href="https://drive.google.com/file/d/1oyHvE_AcHis1i_HdOB7jGNKrtJc4tUGS/preview?format=pdf" target = "_blank">Officer Descriptions</a> </li>
 									<!-- Updated Spring 2015 -->
 									<li><a href="https://drive.google.com/file/d/1b-4t8zc7_i8f9V_H0hqRt6zFd956RbDu/preview?format=pdf" target = "_blank">Officer Election Policy</a></li>
-									<li><a href="https://drive.google.com/file/d/1OZJRnf2h5TdKSRN4--Hwiv8Cd32Lenie/preview?format=pdf" target = "_blank">Driver Reimbursement Policy</a></li>
+					
 								</ul>
 							</div>
 					</ul>			
